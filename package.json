@@ -1,0 +1,28 @@
+{
+  "name": "h_vuePressProject",
+
+  "version": "1.0.0",
+
+  "main": "index.js",
+
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "d": "bash deploy.sh" 
+
+  },
+  "keywords": [],
+  "author": "yaya",
+  "license": "ISC",
+  "directories": {
+     "doc": "docs"
+  },
+  "description": "",
+  "dependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
