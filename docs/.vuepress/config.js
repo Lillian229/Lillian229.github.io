@@ -6,8 +6,8 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/star_byya.png' }],  
     ],
-    
-    base:'/Lillian229.github.io/',
+
+    // base:'/Lillian229.github.io/',
 
     markdown: {
         lineNumbers: true
