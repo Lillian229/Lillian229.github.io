@@ -65,7 +65,7 @@ jobs:
          git config --global init.defaultBranch main
          git init
          git config user.name "yaya"
-         git config user.email leelillian402@gmail.com
+         git config user.email "${{ secrets.GIT_EMAIL }}"
          git add .
          # git commit -m "Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")"
          git commit -m 'deploy'
