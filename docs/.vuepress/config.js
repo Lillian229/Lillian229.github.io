@@ -1,3 +1,6 @@
+
+const sidebarConfig =  require("./sidebarConfig");
+
 module.exports = {
     title: '莉安\'blog', // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
     description: '莉安的前端学习之路', // meta 中的描述文字，用于SEO
@@ -14,7 +17,7 @@ module.exports = {
     },
 
     themeConfig: {
-        sidebar: 'auto',
+        // sidebar: 'auto',
         // sidebarDepth: 1 
         
         logo: '/star_byya.png',  
@@ -54,40 +57,49 @@ module.exports = {
                   link: 'https://github.com/Lillian229' }
             ],
 
-
+        sidebar: sidebarConfig,
         //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
-        sidebar:
-                {
-                    '/fontEnd/00-HTML/':[{
-                        title:'HTML',
-                        collapsable:true,
-                        sidebarDepth:1,
-                        children:[
-                            { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
-                            // [,'']
-                        ]
+        // sidebar:
+        //         {
+        //             '/fontEnd/00-HTML/':[{
+        //                 title:'HTML',
+        //                 collapsable:true,
+        //                 sidebarDepth:1,
+        //                 children:[
+        //                     { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
+        //                     // [,'']
+        //                 ]
 
-                    }],
-                    '/fontEnd/02-javascript/':[{
-                        title: 'JS基础',   // 一级菜单名称
-                            collapsable: false, // false为默认展开菜单, 默认值true是折叠,
-                            sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
-                            children: [
-                                ['2.md', '子菜单1'],  
-                                ['3.md', '子菜单2']
-                            ]
-                        },
-                        {
-                            title: 'JS进阶',
-                            collapsable: false, 
-                            children: [
-                                ['4.md', '子菜单1']
-                            ]
-                        }
-                    ],
+        //             }],
+        //             '/fontEnd/02-javascript/':[{
+        //                 title: 'JS基础',   // 一级菜单名称
+        //                     collapsable: false, // false为默认展开菜单, 默认值true是折叠,
+        //                     sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
+        //                     children: [
+        //                         ['2.md', '子菜单1'],  
+        //                         ['3.md', '子菜单2']
+        //                     ]
+        //                 },
+        //                 {
+        //                     title: 'JS进阶',
+        //                     collapsable: false, 
+        //                     children: [
+        //                         ['4.md', '子菜单1']
+        //                     ]
+        //                 }
+        //             ],
                     
-            //...可添加多个不同的侧边栏，不同页面会根据路径显示不同的侧边栏
-        }
+        //     //...可添加多个不同的侧边栏，不同页面会根据路径显示不同的侧边栏
+        // }
+
+
+
+
+
+
+
+
+
 
 
 

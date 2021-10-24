@@ -12,7 +12,9 @@
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "d": "bash deploy.sh" 
+    "d": "bash deploy.sh" ,
+    "updata": "npm version patch",
+    "push": "npm publish"
 
   },
   "keywords": [],
