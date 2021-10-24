@@ -45,7 +45,7 @@ module.exports = {
                   items: [
                     { text: "git",link: "/tools/git/"},
                     { text: "正则",link:"/tools/正则/"},
-
+                    { text: "obsidian",link:"/tools/obsidian/"},
 
                 ]},
 
@@ -56,27 +56,39 @@ module.exports = {
 
 
         //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
-        sidebar: {'/fontEnd/02-javascript/':[         
+        sidebar:
                 {
-                  title: 'JS基础',   // 一级菜单名称
-                    collapsable: false, // false为默认展开菜单, 默认值true是折叠,
-                    sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
-                    children: [
-                        ['2.md', '子菜单1'],  
-                        ['3.md', '子菜单2']
-                    ]
-                },
-                {
-                    title: 'JS进阶',
-                    collapsable: false, 
-                    children: [
-                        ['4.md', '子菜单1']
-                    ]
-                }
-            ],
-            
+                    '/fontEnd/00-HTML/':[{
+                        title:'HTML',
+                        collapsable:true,
+                        sidebarDepth:1,
+                        children:[
+                            { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
+                            // [,'']
+                        ]
+
+                    }],
+                    '/fontEnd/02-javascript/':[{
+                        title: 'JS基础',   // 一级菜单名称
+                            collapsable: false, // false为默认展开菜单, 默认值true是折叠,
+                            sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
+                            children: [
+                                ['2.md', '子菜单1'],  
+                                ['3.md', '子菜单2']
+                            ]
+                        },
+                        {
+                            title: 'JS进阶',
+                            collapsable: false, 
+                            children: [
+                                ['4.md', '子菜单1']
+                            ]
+                        }
+                    ],
+                    
             //...可添加多个不同的侧边栏，不同页面会根据路径显示不同的侧边栏
         }
+
 
 
 
