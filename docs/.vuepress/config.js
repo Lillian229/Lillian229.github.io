@@ -2,7 +2,6 @@
 const sidebarConfig = require("./sidebarConfig");
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
 
-
 module.exports = {
     title: '莉安\'blog', // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
     description: '莉安的前端学习之路', // meta 中的描述文字，用于SEO
@@ -20,7 +19,7 @@ module.exports = {
 
     themeConfig: {
         // sidebar: 'auto',
-        // sidebarDepth: 1 
+        // sidebarDepth: 1,
 
         logo: '/star_byya.png',
         nav: [
