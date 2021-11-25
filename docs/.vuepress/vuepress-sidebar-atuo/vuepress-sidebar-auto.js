@@ -2,7 +2,8 @@
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
 const fs = require('fs')
 const path = require('path')
- 
+// const {getChildren} = require("vuepress-sidebar-atuo")
+
 /**
  * 过滤所要导航的文件
  * 文件名 包含.md 但 不包含  README */

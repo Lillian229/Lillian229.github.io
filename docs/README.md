@@ -6,10 +6,10 @@ tagline: 人生必有痴，而后有成
 actionText: 马上进入 →
 actionLink: /fontEnd/
 features:
+- title: 计算机基础
+  details: 数据结构、操作系统、计算机网络及设计模式等内容
 - title: 前端学习
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 工具使用
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 英语学习
-  details: 长期保持英语学习计划。
+  details: 包含html,css,js前端三件法宝，nodejs后台全栈开发，vue、react框架等内容
+- title: 工具使用/英语学习
+  details: git，webpack，正则等工具使用；obsidian，drawboard好用工具分享；英语资源分享，长期保持英语学习计划。
 ---

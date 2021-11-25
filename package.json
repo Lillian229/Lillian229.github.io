@@ -1,10 +1,7 @@
 {
   "name": "h_vuePressProject",
-
   "version": "1.0.0",
-
   "main": "index.js",
-
   "scripts": {
     "dev": "vuepress dev docs --temp .temp",
     "docs:dev": "vuepress dev docs",
@@ -12,19 +9,20 @@
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "d": "bash deploy.sh" ,
+    "d": "bash deploy.sh",
     "updata": "npm version patch",
     "push": "npm publish"
-
   },
   "keywords": [],
   "author": "yaya",
   "license": "ISC",
   "directories": {
-     "doc": "docs"
+    "doc": "docs"
   },
   "description": "",
   "dependencies": {
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "vuepress-auto-sidebar-doumjun": "^1.0.1",
+    "vuepress-sidebar-atuo": "^1.0.4"
   }
 }
