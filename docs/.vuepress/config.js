@@ -18,7 +18,7 @@ module.exports = {
     },
 
     themeConfig: {
-        // sidebar: 'auto',
+        sidebar: 'auto',
         // sidebarDepth: 1,
 
         logo: '/star_byya.png',
@@ -89,7 +89,7 @@ module.exports = {
             }
         ],
 
-        sidebar: sidebarConfig,
+        // sidebar: sidebarConfig,
 
 
         //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
