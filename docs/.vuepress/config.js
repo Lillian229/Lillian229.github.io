@@ -1,5 +1,6 @@
+const { getChildren } = require("vuepress-sidebar-atuo")
 
-const sidebarConfig = require("./sidebarConfig");
+// const sidebarConfig = require("./sidebarConfig");
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
 
 module.exports = {
@@ -12,13 +13,13 @@ module.exports = {
     ],
     base: '/',
     // base:'/Lillian229.github.io/',
-
     markdown: {
-        lineNumbers: true
+        lineNumbers: true,
+        extractHeaders: ['h2', 'h3', 'h4']
     },
 
     themeConfig: {
-        sidebar: 'auto',
+        // sidebar: 'auto',
         // sidebarDepth: 1,
 
         logo: '/star_byya.png',
@@ -88,6 +89,27 @@ module.exports = {
                 link: 'https://github.com/Lillian229'
             }
         ],
+
+
+        '/fontEnd/': [{
+            title: 'HTML',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: getChildren('./docs/fontEnd/00-HTML/')
+            // children:[
+            //     { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
+            // [,'']
+            //     ]
+
+        },
+        {
+            title: 'JS基础',   // 一级菜单名称
+            collapsable: false, // false为默认展开菜单, 默认值true是折叠,
+            sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
+            children: getChildren('./docs/fontEnd/02-javascript/')
+        },
+        ],
+
 
         // sidebar: sidebarConfig,
 
