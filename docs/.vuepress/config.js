@@ -1,4 +1,4 @@
-const { getChildren } = require("vuepress-sidebar-atuo")
+// const { getChildren } = require("vuepress-sidebar-atuo")
 
 // const sidebarConfig = require("./sidebarConfig");
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
@@ -39,13 +39,13 @@ module.exports = {
                 text: "前端基础",
                 ariaLabel: '🎉前端基础相关知识在这里诶~✨',   //用于识别的label
                 items: [
-                    { text: "HTML", link: "/fontEnd/00-HTML/" },
-                    { text: "CSS", link: "/fontEnd/01-CSS/" },
-                    { text: "javascript", link: "/fontEnd/02-javascript/" },
-                    { text: "webAPI", link: "/fontEnd/03-webAPI/" },
-                    { text: "jQuery", link: "/fontEnd/04-jQuery/" },
-                    { text: "数据可视化", link: "/fontEnd/05-dataVisualization/" },
-                    { text: "ajax", link: "/fontEnd/06-ajax/" },
+                    { text: "HTML", link: "/frontEnd/00-HTML/" },
+                    { text: "CSS", link: "/frontEnd/01-CSS/" },
+                    { text: "javascript", link: "/frontEnd/02-javascript/" },
+                    { text: "webAPI", link: "/frontEnd/03-webAPI/" },
+                    { text: "jQuery", link: "/frontEnd/04-jQuery/" },
+                    { text: "数据可视化", link: "/frontEnd/05-dataVisualization/" },
+                    { text: "ajax", link: "/frontEnd/06-ajax/" },
 
                 ]
             },
@@ -90,25 +90,36 @@ module.exports = {
             }
         ],
 
-
-        '/fontEnd/': [{
-            title: 'HTML',
-            collapsable: true,
-            sidebarDepth: 1,
-            children: getChildren('./docs/fontEnd/00-HTML/')
-            // children:[
-            //     { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
-            // [,'']
-            //     ]
-
-        },
-        {
-            title: 'JS基础',   // 一级菜单名称
-            collapsable: false, // false为默认展开菜单, 默认值true是折叠,
-            sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
-            children: getChildren('./docs/fontEnd/02-javascript/')
-        },
-        ],
+        sidebar: {
+            '/frontEnd/00-HTML/':[
+                '',
+                '2',
+                '01-browser&variable'
+            ],
+            '/frontEnd/02-javascript/':[
+                '',
+                '2',
+                '45',
+                'Aliyun_服务器',
+                'cut_string'
+            ]
+        }
+       
+        // {
+        //     '/frontEnd/00-HTML/': [{
+        //         title: 'HTML',
+        //         collapsable: true,
+        //         sidebarDepth: 1,
+        //         children: getChildren('./docs/frontEnd/00-HTML/')
+        //         // children:[
+        //         //     { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
+        //         // [,'']
+        //         //     ]
+    
+        //     },
+        //     ],
+        // }
+        
 
 
         // sidebar: sidebarConfig,
@@ -117,11 +128,11 @@ module.exports = {
         //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
         // sidebar:
         //         {
-        //             '/fontEnd/00-HTML/':[{
+        //             '/frontEnd/00-HTML/':[{
         //                 title:'HTML',
         //                 collapsable:true,
         //                 sidebarDepth:1,
-        //                 children:autosidebar('/fontEnd/00-HTML/')
+        //                 children:autosidebar('/frontEnd/00-HTML/')
         //                 // children:[
         //                 //     { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
         //                     // [,'']
@@ -130,7 +141,7 @@ module.exports = {
         //             }
         //         ],
         //         }
-        //             '/fontEnd/02-javascript/':[{
+        //             '/frontEnd/02-javascript/':[{
         //                 title: 'JS基础',   // 一级菜单名称
         //                     collapsable: false, // false为默认展开菜单, 默认值true是折叠,
         //                     sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
