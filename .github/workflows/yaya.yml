@@ -59,7 +59,6 @@ jobs:
          git config user.name "yaya"
          git config user.email "${{ secrets.GIT_EMAIL }}"
          git add .
-         # git commit -m "Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")"
          git commit -m 'deploy'
-         # git push -f https://zchaoGe:${{ secrets.ACCESS_TOKEN }}@github.com/zchaoGe/blog.git main:gh-pages 
+         main:gh-pages 
          git push -f git@github.com:Lillian229/Lillian229.github.io.git master:gh-pages
