@@ -77,7 +77,7 @@ module.exports = {
                 text: "tools",
                 items: [
                     { text: "git", link: "/tools/git/" },
-                    { text: "正则", link: "/tools/正则/" },
+                    { text: "正则", link: "/tools/regexp/RegExp_class_notes/" },
                     { text: "obsidian", link: "/tools/obsidian/" },
 
                 ]
@@ -102,6 +102,9 @@ module.exports = {
                 '45',
                 'Aliyun_服务器',
                 'cut_string'
+            ],
+            '/tools/regexp/':[
+                'RegExp_class_notes'
             ]
         }
        
