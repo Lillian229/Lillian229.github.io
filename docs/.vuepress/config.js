@@ -1,5 +1,5 @@
 // const { getChildren } = require("vuepress-sidebar-atuo")
-
+const sidebarMyself = require("./sidebarMyself")
 // const sidebarConfig = require("./sidebarConfig");
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
 
@@ -15,11 +15,17 @@ module.exports = {
     // base:'/Lillian229.github.io/',
     markdown: {
         lineNumbers: true,
-        extractHeaders: ['h2', 'h3', 'h4']
+        extractHeaders: ['h2', 'h3', 'h4','h5']
+    },
+    plugins:{
+        '@vuepress/active-header-links':{
+            sidebarLinkSelector: '.sidebar-link',
+            headerAnchorSelector: '.header-anchor'
+        }
     },
 
     themeConfig: {
-        // sidebar: 'auto',
+
         // sidebarDepth: 1,
 
         logo: '/star_byya.png',
@@ -31,6 +37,18 @@ module.exports = {
                 items: [
                     { text: "MDN", link: "https://developer.mozilla.org/zh-CN/docs/Web" },
                     { text: "Express", link: "https://www.expressjs.com.cn/en/resources/middleware/session.html" },
+                    
+                    { text: "Vue.js", link: "https://cn.vuejs.org/",alt: '🎉渐进式JavaScript 框架✨'},
+
+                    { text: "vuepress", link: "https://vuepress.vuejs.org/zh/" },
+                    { text: "npm", link: "https://www.npmjs.com/" },
+                    { text: "webpack", link: "https://webpack.docschina.org/" },
+                    { text: "elementUI", link: "https://element.eleme.cn/#/zh-CN" },
+                    { text: "ESlint", link: "https://eslint.bootcss.com/" },
+
+
+
+                    
 
                 ]
             },
@@ -89,24 +107,26 @@ module.exports = {
                 link: 'https://github.com/Lillian229'
             }
         ],
-
-        sidebar: {
-            '/frontEnd/00-HTML/':[
-                '',
-                '2',
-                '01-browser&variable'
-            ],
-            '/frontEnd/02-javascript/':[
-                '',
-                '2',
-                '45',
-                'Aliyun_服务器',
-                'cut_string'
-            ],
-            '/tools/regexp/':[
-                'RegExp_class_notes'
-            ]
-        }
+        // sidebar: 'auto',
+        sidebar: sidebarMyself
+        // {
+        //     '/frontEnd/00-HTML/':[
+        //         '',
+        //         '2',
+        //         '01-browser&variable'
+        //     ],
+        //     '/frontEnd/02-javascript/':[
+        //         '',
+        //         '2',
+        //         '45',
+        //         'Aliyun_服务器',
+        //         'cut_string',
+        //         'array'
+        //     ],
+        //     '/tools/regexp/':[
+        //         'RegExp_class_notes'
+        //     ]
+        // }
        
         // {
         //     '/frontEnd/00-HTML/': [{
