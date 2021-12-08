@@ -1,5 +1,6 @@
-// const { getChildren } = require("vuepress-sidebar-atuo")
-const sidebarMyself = require("./sidebarMyself")
+// const { getChildren } = require("./vuepress-sidebar-atuo/vuepress-sidebar-auto")
+const {getChildren} = require("vuepress-sidebar-atuo")
+// const sidebarMyself = require("./sidebarMyself")
 // const sidebarConfig = require("./sidebarConfig");
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
 
@@ -17,12 +18,13 @@ module.exports = {
         lineNumbers: true,
         extractHeaders: ['h2', 'h3', 'h4','h5']
     },
-    plugins:{
-        '@vuepress/active-header-links':{
-            sidebarLinkSelector: '.sidebar-link',
-            headerAnchorSelector: '.header-anchor'
-        }
-    },
+    // plugins:{
+    //     '@vuepress/active-header-links':{
+    //         sidebarLinkSelector: '.sidebar-link',
+    //         headerAnchorSelector: '.header-anchor'
+    //     }
+    // },
+
 
     themeConfig: {
 
@@ -94,6 +96,7 @@ module.exports = {
             {
                 text: "tools",
                 items: [
+                    { text: "常用工具", link: "/tools/common_tools/" },
                     { text: "git", link: "/tools/git/" },
                     { text: "正则", link: "/tools/regexp/RegExp_class_notes/" },
                     { text: "obsidian", link: "/tools/obsidian/" },
@@ -107,8 +110,47 @@ module.exports = {
                 link: 'https://github.com/Lillian229'
             }
         ],
+
+        sidebar:{
+            
+            '/frontEnd/':[
+                {
+                    title: 'HTML',
+                    collapsable: true,
+                    children:getChildren('./docs/frontEnd/00-HTML/')
+                },
+            {
+                    title: 'JS',
+                    collapsable: true,
+                    children:getChildren('./docs/frontEnd/02-javascript/')
+            }
+            ],
+            '/tools/':[
+                {
+                    title: '常用工具',
+                    collapsable: true,
+                    children:getChildren('./docs/tools/common_tools/')
+                },
+                {
+                    title: '正则',
+                    collapsable: true,
+                    children:getChildren('./docs/tools/regexp/')
+                },
+            ],
+        }
+
+
+
+
+
+
+
+
+
+
+
         // sidebar: 'auto',
-        sidebar: sidebarMyself
+        // sidebar: sidebarMyself
         // {
         //     '/frontEnd/00-HTML/':[
         //         '',
