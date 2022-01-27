@@ -1,6 +1,6 @@
-// const { getChildren } = require("./vuepress-sidebar-atuo/vuepress-sidebar-auto")
-const {getChildren} = require("vuepress-sidebar-atuo")
-// const sidebarMyself = require("./sidebarMyself")
+// const {getChildren} = require("vuepress-sidebar-atuo")
+const sidebarMyself = require("./sidebarMyself")
+const navMyself = require("./navMyself")
 // const sidebarConfig = require("./sidebarConfig");
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
 
@@ -16,128 +16,56 @@ module.exports = {
     // base:'/Lillian229.github.io/',
     markdown: {
         lineNumbers: true,
-        extractHeaders: ['h2', 'h3', 'h4','h5']
+        extractHeaders: ['h2', 'h3', 'h4', 'h5']
     },
-    // plugins:{
-    //     '@vuepress/active-header-links':{
-    //         sidebarLinkSelector: '.sidebar-link',
-    //         headerAnchorSelector: '.header-anchor'
-    //     }
+    plugins:
+        ['@vuepress/active-header-links', '@vuepress/back-to-top'],
+    //     '@vuepress/active-header-links', {
+    //     sidebarLinkSelector: '.sidebar-link',
+    //     headerAnchorSelector: '.header-anchor'
     // },
+
+    // ['@vuepress/back-to-top']
 
 
     themeConfig: {
 
-        // sidebarDepth: 1,
 
         logo: '/star_byya.png',
-        nav: [
-            //跳转到外部网页，需http/https前缀
-            {
-                text: "参考手册",
-                ariaLabel: '📘这里有参考手册哦',
-                items: [
-                    { text: "MDN", link: "https://developer.mozilla.org/zh-CN/docs/Web" },
-                    { text: "Express", link: "https://www.expressjs.com.cn/en/resources/middleware/session.html" },
-                    
-                    { text: "Vue.js", link: "https://cn.vuejs.org/",alt: '🎉渐进式JavaScript 框架✨'},
-
-                    { text: "vuepress", link: "https://vuepress.vuejs.org/zh/" },
-                    { text: "npm", link: "https://www.npmjs.com/" },
-                    { text: "webpack", link: "https://webpack.docschina.org/" },
-                    { text: "elementUI", link: "https://element.eleme.cn/#/zh-CN" },
-                    { text: "ESlint", link: "https://eslint.bootcss.com/" },
+        nav: navMyself,
+        sidebar: sidebarMyself,
+        sidebarDepth: 2,
+        collapsable: true,
 
 
 
-                    
+        // sidebar:{
 
-                ]
-            },
-
-            {
-                text: "前端基础",
-                ariaLabel: '🎉前端基础相关知识在这里诶~✨',   //用于识别的label
-                items: [
-                    { text: "HTML", link: "/frontEnd/00-HTML/" },
-                    { text: "CSS", link: "/frontEnd/01-CSS/" },
-                    { text: "javascript", link: "/frontEnd/02-javascript/" },
-                    { text: "webAPI", link: "/frontEnd/03-webAPI/" },
-                    { text: "jQuery", link: "/frontEnd/04-jQuery/" },
-                    { text: "数据可视化", link: "/frontEnd/05-dataVisualization/" },
-                    { text: "ajax", link: "/frontEnd/06-ajax/" },
-
-                ]
-            },
-            {
-                text: "前端框架",
-                ariaLabel: '🎉前端框架相关知识在这里诶~✨',
-                items: [
-                    { text: "vue", link: "/frame/vue/" },
-                    { text: "react", link: "/frame/react/" },
-
-                ]
-            },
-            {
-                text: "前端工程化", link: "/",
-                ariaLabel: '🎉前端工程化相关知识在这里诶~✨',
-            },
-
-            {
-                text: "计算机基础",
-                ariaLabel: '🎉计算机基础相关知识在这里诶~✨',
-                items: [
-                    { text: "计算机网络", link: "/cs_basic/cs_network/" },
-                    { text: "数据结构", link: "/cs_basic/data_construct" },
-
-                ]
-            },
-
-            {
-                text: "tools",
-                items: [
-                    { text: "常用工具", link: "/tools/common_tools/" },
-                    { text: "git", link: "/tools/git/" },
-                    { text: "正则", link: "/tools/regexp/RegExp_class_notes/" },
-                    { text: "obsidian", link: "/tools/obsidian/" },
-
-                ]
-            },
-
-            {
-                text: 'Github',
-                ariaLabel: '👧lillian\'github',   //用于识别的label
-                link: 'https://github.com/Lillian229'
-            }
-        ],
-
-        sidebar:{
-            
-            '/frontEnd/':[
-                {
-                    title: 'HTML',
-                    collapsable: true,
-                    children:getChildren('./docs/frontEnd/00-HTML/')
-                },
-            {
-                    title: 'JS',
-                    collapsable: true,
-                    children:getChildren('./docs/frontEnd/02-javascript/')
-            }
-            ],
-            '/tools/':[
-                {
-                    title: '常用工具',
-                    collapsable: true,
-                    children:getChildren('./docs/tools/common_tools/')
-                },
-                {
-                    title: '正则',
-                    collapsable: true,
-                    children:getChildren('./docs/tools/regexp/')
-                },
-            ],
-        }
+        //     '/frontEnd/':[
+        //         {
+        //             title: 'HTML',
+        //             collapsable: true,
+        //             children:getChildren('./docs/frontEnd/00-HTML/')
+        //         },
+        //     {
+        //             title: 'JS',
+        //             collapsable: true,
+        //             children:getChildren('./docs/frontEnd/02-javascript/')
+        //     }
+        //     ],
+        //     '/tools/':[
+        //         {
+        //             title: '常用工具',
+        //             collapsable: true,
+        //             children:getChildren('./docs/tools/common_tools/')
+        //         },
+        //         {
+        //             title: '正则',
+        //             collapsable: true,
+        //             children:getChildren('./docs/tools/regexp/')
+        //         },
+        //     ],
+        // }
 
 
 
@@ -150,7 +78,6 @@ module.exports = {
 
 
         // sidebar: 'auto',
-        // sidebar: sidebarMyself
         // {
         //     '/frontEnd/00-HTML/':[
         //         '',
@@ -169,7 +96,7 @@ module.exports = {
         //         'RegExp_class_notes'
         //     ]
         // }
-       
+
         // {
         //     '/frontEnd/00-HTML/': [{
         //         title: 'HTML',
@@ -180,11 +107,11 @@ module.exports = {
         //         //     { title:'浏览器三部分，变量名，数据类型',path:'/01-浏览器，三部分，变量名，数据类型.md'}
         //         // [,'']
         //         //     ]
-    
+
         //     },
         //     ],
         // }
-        
+
 
 
         // sidebar: sidebarConfig,

@@ -6,35 +6,36 @@
 - 原来的数组是否会发生改变
 
 # 目录
-判断数组
+1.判断数组
 - isArray
 - instanceof
-数组增删改，这一部分方法都会修改原有的数组
+
+2.数组增删改，这一部分方法都会修改原有的数组
 - push
 - unshift
 - shift
 - pop
 - splice
 
-查询和拼接，此组学习的方法，原来数组不会改变
-- sllice
+3.查询和拼接,原来数组不会改变
+- slice
 - concat
 
-数组=>字符串，原数组不变
+4.数组=>字符串，原数组不变
 - toString
 - join
 
 
-检测数组包含某一项，原数组不变
+5.检测数组包含某一项，原数组不变
 - indexOf 
 -  lastIndexOf 
 -   includes
 
-排序or排列，原来数组改变
+6.排序or排列，原来数组改变
 - reverse
 - sort
 
-遍历数组中每一项的方法
+7.遍历数组中每一项的方法
 - forEach
 - map
 - filter
@@ -43,7 +44,7 @@
 - some
 - ...
 
-Array.prototype 在控制台查看数组中所有提供的方 法，可以基于MDN网站去查询方法的用法
+8.Array.prototype 在控制台查看数组中所有提供的方 法，可以基于MDN网站去查询方法的用法
 
 
 
@@ -239,7 +240,7 @@ let ary2 = [40, 50, 60];
 let res = ary1.concat('珠峰培训' , ary2); console.log(res);
 ```
 
-```
+```js
 // 查找第一个匹配项
 const num = arr.find(function (item, i) {
   return item % 2 === 0; // 条件
@@ -268,14 +269,14 @@ const boo = arr.includes(2); // true
 ```
 
 
-### 包含
+## 包含
 检测数组中的是否包含某一项
-#### indexOf 
+### indexOf 
 检测当前项在数组中第一次出现位置的索引值
-#### lastIndexOf 
+### lastIndexOf 
 检测当前项在数组中最后一次出现位置的索引值
 验证是否包含，包含返回索引，不包含返回-1
-#### includes
+### includes
 包含：如果存在返回的是TRUE
 ```js
 indexOf / lastIndexOf : 检测当前项在数组 中第一次或者最后一次出现位置的索引值（在IE6~8中 不兼容）
@@ -334,8 +335,10 @@ ary = [12, 15, 9, 28, 10, 22];
 ary.sort(); 
 console.log(ary); 
 //=> [10, 12, 15, 22, 28, 9] 
-// 想要实现多位数正常排序，需要给SORT传递一个函 数，函数中返回 a-b 实现升序，返回 b-a 实现降序 
 
+
+// 想要实现多位数正常排序，需要给SORT传递一个函 数，
+// 函数中返回 a-b 实现升序，返回 b-a 实现降序 
 ary = [12, 15, 9, 28, 10, 22]; 
 // ary.sort(function(a,b){ return a-b; }); 
 ary.sort((a, b) => a - b); 
@@ -356,8 +359,7 @@ Array.prototype.mass = function () {
  //  return Math.random() - .5; // 50%几率小于0  50%几率大于0 
  // });
  return this.sort(() => Math.random() - .5); // 50%几率小于0  50%几率大于0 
- });
-};
+ };
 ```
 
 ::: 容器
@@ -371,8 +373,7 @@ Array.prototype.mass = function () {
 ```js
 forEach：遍历数组中的每一项内容 
 @params  回调函数
-@return
-原数组不变
+@return 原数组不变
 let ary = [12, 15, 9, 28, 10, 22]; 
 // 基于原生JS中的循环可以实现 
 for (let i = 0; i < ary.length; i++) { 
@@ -390,12 +391,35 @@ console.log('索引： ' + index + ' 内 容： ' + item);
 ```
 
 ### map
+.map() 映射数组
+```js
+let friends = [  
+ { name: 'John', age: 22 },  
+ { name: 'Peter', age: 23 },  
+ { name: 'Mark', age: 24 },  
+ { name: 'Maria', age: 22 },  
+ { name: 'Monica', age: 21 },  
+ { name: 'Martha', age: 19 },  
+]  
+  
+let friendsNames = Array.from(friends, ({name}) => name)  
+  
+console.log(friendsNames) //returns ["John", "Peter", "Mark", "Maria", "Monica", "Martha"]
+```
 ### filter
 ### find
 ### reduce
 ### some
 ### every
 ### ....
+...使用拓展运算符
+```js
+let fruits = ["banana", "apple", "orange", "watermelon", "apple", "orange", "grape", "apple"] 
+// 第一种方法  
+let uniqueFruits = Array.from(new Set(fruits))  
+//第二种方法  
+let uniqueFruits2 = [...new Set(fruits)]
+```
 Array.prototype 在控制台查看数组中所有提供的方 法，可以基于MDN网站去查询方法的用法
 
 
@@ -416,7 +440,7 @@ console.log([12].toString());
 //=>"12"
 ```
 
-#### join
+### join
 ```js
 join : 把数组转换为字符串 
 @params  指定的分隔符（字符串格式）
@@ -451,38 +475,6 @@ console.log(fruitsObj) // returns {0: “banana”, 1: “apple”, 2: �
 ```
 
 
-
-
-
-##  .from()数组去重：
-### .from()
-### ...使用拓展运算符
-```js
-let fruits = ["banana", "apple", "orange", "watermelon", "apple", "orange", "grape", "apple"] 
-// 第一种方法  
-let uniqueFruits = Array.from(new Set(fruits))  
-//第二种方法  
-let uniqueFruits2 = [...new Set(fruits)]
-```
-
-
-
-## 映射数组
-### .map() 
-```js
-let friends = [  
- { name: 'John', age: 22 },  
- { name: 'Peter', age: 23 },  
- { name: 'Mark', age: 24 },  
- { name: 'Maria', age: 22 },  
- { name: 'Monica', age: 21 },  
- { name: 'Martha', age: 19 },  
-]  
-  
-let friendsNames = Array.from(friends, ({name}) => name)  
-  
-console.log(friendsNames) //returns ["John", "Peter", "Mark", "Maria", "Monica", "Martha"]
-```
 
 
 ##  清空数组

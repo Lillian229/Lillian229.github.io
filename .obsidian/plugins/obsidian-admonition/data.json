@@ -1,0 +1,23 @@
+{
+  "userAdmonitions": {
+    "abstract": {
+      "type": "abstract",
+      "color": "0, 59, 168",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": true,
+      "title": "Reading_Abstract",
+      "injectColor": true
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": true,
+  "version": "6.5.1",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "syncLinks": false,
+  "enableMarkdownProcessor": false,
+  "injectColor": true
+}

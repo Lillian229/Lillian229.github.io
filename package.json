@@ -22,8 +22,7 @@
   "description": "",
   "dependencies": {
     "vuepress": "^1.8.2",
-    "vuepress-auto-sidebar-doumjun": "^1.0.1",
-    "vuepress-sidebar-atuo": "^1.0.4"
+    "vuepress-auto-sidebar-doumjun": "^1.0.1"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2"

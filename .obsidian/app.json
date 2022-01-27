@@ -1,0 +1,22 @@
+{
+  "promptDelete": false,
+  "attachmentFolderPath": "附件",
+  "fileSortOrder": "alphabetical",
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "foldIndent": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "communityPluginSortOrder": "download",
+  "communityThemeSortOrder": "download",
+  "showFrontmatter": true,
+  "foldHeading": true,
+  "defaultViewMode": "preview",
+  "vimMode": false,
+  "spellcheck": true
+}
