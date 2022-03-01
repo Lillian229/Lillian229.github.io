@@ -28,8 +28,7 @@ let nav = [
         text: "前端基础",
         ariaLabel: '🎉前端基础相关知识在这里诶~✨',   //用于识别的label
         items: [
-            { text: "HTML", link: "/frontEnd/00-HTML/" },
-            { text: "CSS", link: "/frontEnd/01-CSS/" },
+            { text: "HTML&CSS", link: "/frontEnd/00-HTML&CSS/" },
             { text: "javascript", link: "/frontEnd/02-javascript/" },
             { text: "webAPI", link: "/frontEnd/03-webAPI/" },
             { text: "jQuery", link: "/frontEnd/04-jQuery/" },
@@ -84,9 +83,9 @@ let nav = [
     {
         text: "tools",
         items: [
-            { text: "常用工具", link: "/tools/common-tools/" },
             { text: "git", link: "/tools/git/" },
             { text: "正则", link: "/tools/regexp/RegExp_class_notes/" },
+            { text: "常用工具", link: "/tools/common-tools/" },
             { text: "obsidian", link: "/tools/obsidian/" },
 
         ]

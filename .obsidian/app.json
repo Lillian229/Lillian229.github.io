@@ -18,5 +18,7 @@
   "foldHeading": true,
   "defaultViewMode": "preview",
   "vimMode": false,
-  "spellcheck": true
+  "spellcheck": true,
+  "legacyEditor": false,
+  "livePreview": false
 }

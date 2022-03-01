@@ -1,16 +1,18 @@
 {
   "main": {
-    "id": "4b2f83c109683d8e",
+    "id": "49eb841088e83c1c",
     "type": "split",
     "children": [
       {
-        "id": "d7ea066cf7ed50d7",
+        "id": "53b8b2bbb999439d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/tools/git/README.md",
-            "mode": "preview"
+            "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
+            "mode": "preview",
+            "backlinks": true,
+            "source": true
           }
         }
       }
@@ -18,15 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "6cf518a42bfbddc6",
+    "id": "9fe57372686020d9",
     "type": "split",
     "children": [
       {
-        "id": "d918f86ad2492216",
+        "id": "5a6a3e4a2f6a930e",
         "type": "tabs",
         "children": [
           {
-            "id": "9e27c43d9a38e15d",
+            "id": "519ffa172d234570",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,12 +36,12 @@
             }
           },
           {
-            "id": "54bb66600a441f19",
+            "id": "a56a19ac3eb4338b",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "modules/user.js",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +51,7 @@
             }
           },
           {
-            "id": "cdd07f85a7f6ad2a",
+            "id": "924e4751e4237139",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -60,47 +62,47 @@
       }
     ],
     "direction": "horizontal",
-    "width": 182
+    "width": 300
   },
   "right": {
-    "id": "58a4f0957a3d3e31",
+    "id": "b3b31da532cd0220",
     "type": "split",
     "children": [
       {
-        "id": "cd35ada0382a7295",
+        "id": "67138f6fb8d51282",
         "type": "tabs",
         "children": [
           {
-            "id": "becde1eac93570ca",
+            "id": "488a12ce35d908f1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tools/git/README.md",
-                "collapseAll": true,
+                "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "d671b95facf25926",
+            "id": "534bed4293bea3e5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/tools/git/README.md",
+                "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "d4c2355083f5cacf",
+            "id": "464960e9deb90340",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -111,17 +113,17 @@
             }
           },
           {
-            "id": "103cafcf16af3b67",
+            "id": "714d7a7b11b0dbc6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tools/git/README.md"
+                "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md"
               }
             }
           },
           {
-            "id": "f3d591e562cc9e56",
+            "id": "3e0bfe344a50b007",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -129,31 +131,32 @@
             }
           },
           {
-            "id": "c4e9bd7e173306a0",
+            "id": "c1a8034f3ac79862",
             "type": "leaf",
             "state": {
               "type": "todo",
               "state": {}
             }
+          },
+          {
+            "id": "f8d2b8c79d5dad75",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 294
+    "width": 300
   },
-  "active": "d7ea066cf7ed50d7",
+  "active": "53b8b2bbb999439d",
   "lastOpenFiles": [
-    "docs/tools/git/README.md",
-    "md/14-人资中台/12-多语言tab页全屏主题.md",
-    "md/14-人资中台/11-主页审批-图表.md",
-    "md/14-人资中台/10-其他模块集成.md",
-    "md/14-人资中台/09-权限设计和管理.md",
-    "Classic  interview  Questions/hm_series/前端面试宝典V4.0.pdf",
-    "tools/emoji.md",
-    "study_abstract/website_build.md",
-    "md/12-VUE/01_vue脚手架_基础API.md",
-    "md/12-VUE/PPT/Day02_vue脚手架_基础API.pdf"
+    "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
+    "docs/frontEnd/00-HTML&CSS/05-stylesheets&selectors.md",
+    "docs/tools/common-tools/04little_issue.md"
   ]
 }

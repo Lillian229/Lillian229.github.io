@@ -1,0 +1,49 @@
+{
+    "files.autoSave": "afterDelay",
+    // "files.associations": {
+    //     "*.md": "markdown"
+    // },
+    // "languages": [{
+    //     "id": "markdown",
+    //     "extensions": [ ".md", ".markdown" ],
+    //     "aliases": [ "Markdown", "markdown" ]
+    // }],
+    "emmet.includeLanguages": {
+        "editor.formatOnType": "true",
+        "editor. formatOnSave": "true",
+        "Markdown": "markdown"
+    },
+    "emmet.excludeLanguages": [],
+    "emmet.triggerExpansionOnTab": true,
+
+
+	//快速添加文件头部注释和函数注释
+    "fileheader.configObj": {
+
+        "createFileTime": true, //设置为true则为文件新建时候作为date，否则注释生成时间为date
+        "autoAdd": true, //自动生成注释
+        "annotationStr": {
+    
+            "head": "/*",
+            "middle": " * @",
+            "end": " */",
+            "use": true //设置自定义注释可用
+        },
+    },
+    "fileheader.cursorMode": {
+        "description": "", // 函数注释生成之后，光标移动到这里
+        "param": "", // param 开启函数参数自动提取 需要将光标放在函数行或者函数上方的空白行
+        "return": "",
+
+       
+    },
+    "fileheader.customMade": {
+        "Description": "", //文件内容描述
+        "Author": "Lillian", //编辑人
+        "Date": "Do not edit", //时间
+        "LastEditTime": "Do not edit",
+         // 版权声明 保留文件所有权利 自动替换年份
+        "custom_string_obkoro1_copyright": "Copyright (c) ${now_year} by Lillian, All Rights Reserved. "
+    },
+    
+}

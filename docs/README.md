@@ -4,7 +4,7 @@ heroImage: /star_byya.png
 heroText: 莉安的前端学习
 tagline: 人生必有痴，而后有成
 actionText: 马上进入 →
-actionLink: /frontEnd/00-HTML/
+actionLink: /interview/
 features:
 - title: 计算机基础
   details: 数据结构、操作系统、计算机网络及设计模式等内容

@@ -2,7 +2,7 @@
 
 ## git开发流程图
 
-![](../../.vuepress/public/blog/git/git_dev_process.jpg)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/git_dev_process.jpg)
 
 ## git开发流程
 分支：大概三条主分支dev(develop开发分支)，pre-release(预发布分支)，master(发布分支)

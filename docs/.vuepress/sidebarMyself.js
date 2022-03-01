@@ -1,8 +1,20 @@
-// 写法一：
+ // 写法一：
 let sidebar = {
-    '/frontEnd/00-HTML/': [
+    // '/frontEnd/':[
+    //     ''
+    // ],
+    '/frontEnd/00-HTML&CSS/': [
         '',
-        '01-browser&variable'
+        '01-browser&variable',
+        '02-tag',
+        '03-tables&forms&list',
+        '04-css_selector',
+        '05-stylesheets&selectors',
+        '06-background&eledisplay',
+        '07-boxmodel&border&shadow&PS',
+        '08-float&position',
+        '09-sort&hidden',
+        '10-sprite&icon&tri'
     ],
 
     '/frontEnd/02-javascript/': [
@@ -163,14 +175,6 @@ let sidebar = {
 
 
 
-    '/tools/common-tools/': [
-        '',
-        'win_shortcut_command',
-        'mac_shortcut',
-        'common-code-blocks',
-        'emoji'
-    ],
-
     '/tools/git/': [
         '',
         'git',
@@ -184,11 +188,24 @@ let sidebar = {
         'RegExp_class_notes'
     ],
 
+    '/tools/common-tools/': [
+        '',
+        '01qualitySoftware&tools',
+        '02mac_shortcut',
+        '03win_shortcut_command',
+        '04little_issue',
+        '05vscode',
+        'common-code-blocks'
+    ],
+    
     '/tools/obsidian/': [
         '',
         'FAQ',
-        'qualityAbstracts'
-    ]
+        'shortcut&plugin',
+        'qualityAbstracts',
+        'markdown'
+    ], 
+
 }
 
 

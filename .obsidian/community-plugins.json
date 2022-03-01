@@ -1,6 +1,5 @@
 [
   "calendar",
-  "obsidian-git",
   "obsidian-kanban",
   "obsidian-mind-map",
   "pdf-to-markdown-plugin",
@@ -9,5 +8,6 @@
   "obsidian-checklist-plugin",
   "obsidian-dictionary-plugin",
   "obsidian-admonition",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-image-auto-upload-plugin"
 ]

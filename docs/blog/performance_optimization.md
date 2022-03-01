@@ -10,10 +10,12 @@ CRP（Critical Rendering Path）关键渲染路径
 
 ## 从输入URL地址到看到页面，中间都经历了啥
 ### 全过程概览
-![](../.vuepress/public/blog/01/Inkedurl_whole_process_LI.jpg)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/Inkedurl_whole_process_LI.jpg)
+
 ### 第一步：URL解析
 - 地址解析
-![](../.vuepress/public/blog/01/url_parses.png)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/url_parses.png)
+
 - 编码
 
 ### 第二步：缓存检查
@@ -34,19 +36,21 @@ CRP（Critical Rendering Path）关键渲染路径
 - 两者同时存在的话，Cache-Control优先级高于Expires
 
 
-![](../.vuepress/public/blog/01/cache01.png)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/cache01.png)
 
 #### 协商缓存 Last-Modified / ETag
 协商缓存就是强制缓存失效后，浏览器携带缓存标识向服务器发起请求，由服务器根据缓存标识决定是否使用缓存的过程
-![](../.vuepress/public/blog/01/cache02.png)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/cache02.png)
+
+
 
 #### 数据缓存
-![](../.vuepress/public/blog/01/cache03.png)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/cache03.png)
 
 ### 第三步：DNS解析
 - 递归查询
 - 迭代查询
-![](../.vuepress/public/blog/01/dns_parses.png)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/dns_parses.png)
 
 每一次DNS解析时间预计在20~120毫秒
 - 减少DNS请求次数
@@ -58,7 +62,8 @@ CRP（Critical Rendering Path）关键渲染路径
 - 抗压能力加强
 - 提高HTTP并发、
 - ……
-![](../.vuepress/public/blog/01/serve_split.png)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/serve_split.png)
+
 
 ### 第四步：TCP三次握手
 - seq序号，用来标识从TCP源端向目的端发送的字节流，发起方发送数据时对此进行标记
@@ -99,7 +104,8 @@ TCP作为一种可靠传输控制协议，其核心思想：既要保证数据�
   - ……
 
 ### 第六步：TCP四次挥手
-![](../.vuepress/public/blog/01/TCPfour.png)
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/TCPfour.png)
+
 #### ⭐为什么连接的时候是三次握手，关闭的时候却是四次握手？
 
 服务器端收到客户端的SYN连接请求报文后，可以直接发送SYN+ACK报文

@@ -95,7 +95,7 @@
   "markdown:toggle-preview": [
     {
       "modifiers": [
-        "Alt"
+        "Mod"
       ],
       "key": "E"
     }
@@ -308,14 +308,7 @@
   "app:open-help": [],
   "templater-obsidian:insert-templater": [],
   "templater-obsidian:jump-to-next-cursor-location": [],
-  "templater-obsidian:create-new-note-from-template": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "N"
-    }
-  ],
+  "templater-obsidian:create-new-note-from-template": [],
   "templater-obsidian:replace-in-file-templater": [],
   "templater-obsidian:template/template_study.md": [
     {
@@ -323,6 +316,40 @@
         "Alt"
       ],
       "key": "N"
+    }
+  ],
+  "obsidian-image-auto-upload-plugin:upload all images": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "I"
+    }
+  ],
+  "starred:star-current-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "O"
+    }
+  ],
+  "backlink:open-backlinks": [],
+  "outgoing-links:open-for-current": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "F"
+    }
+  ],
+  "outgoing-links:open": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "F"
     }
   ]
 }

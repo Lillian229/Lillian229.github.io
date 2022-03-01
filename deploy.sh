@@ -18,4 +18,4 @@ git commit -m '💻new Mac'
 # 格式为：git push -f git@github.com:'用户名'/'仓库名'.git master
 git push -f git@github.com:Lillian229/Lillian229.github.io.git master:gh-pages
 
-cd ~
+cd -
