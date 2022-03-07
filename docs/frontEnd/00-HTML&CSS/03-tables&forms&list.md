@@ -1,6 +1,5 @@
-
 # 1.3.表格、列表、表单
-## 表格
+## 一、表格
 ### 表格的主要作用
 
 表格不是用来布局页面的,而是用于显示、展示数据，可读性好。
@@ -61,7 +60,7 @@ align, border, cellpadding, cellspacing, width
 3. 删除多余的单元格。
 
 
-## 列表
+## 二、列表
 表格: 显示数据，列表: 布局
 
 分类：无序列表、有序列表和自定义列表
@@ -116,7 +115,7 @@ align, border, cellpadding, cellspacing, width
 ### 列表总结
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/列表总结.png)
 
-## 表单
+## 三、表单
 使用表单目的：**收集用户信息**。
 
 ​使用场景：在网页中，跟用户**进行交互**，收集**用户资料**。

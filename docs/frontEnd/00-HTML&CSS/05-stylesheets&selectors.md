@@ -1,5 +1,5 @@
 # 1.5.CSS样式表、复合选择器、三大特性、emmet语法
-## CSS样式表
+## 一、CSS样式表
 ​按照 CSS 样式书写的位置（或者引入的方式），CSS 样式表可以分为行内、内部、外部样式表
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/css引入方式总结.png)
 ### 行内样式表（行内式）
@@ -41,7 +41,7 @@
 <link rel="stylesheet"  href="css文件路径">
 ```
 
-## CSS的复合选择器
+## 二、CSS的复合选择器
 
 ### 1、什么是复合选择器？
 在 CSS 中，可以根据选择器的类型把选择器分为***基础选择器***和***复合选择器***，复合选择器是建立在基础选择器之上，对基本选择器进行组合形成的。 
@@ -225,7 +225,7 @@ input:focus {
 ### 复合选择器总结
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570868930472.png)
 
-## CSS三大特性
+## 三、CSS三大特性
 
 ### 1、层叠性
 相同选择器给设置相同的样式，此时一个样式就会覆盖（层叠）另一个冲突的样式。层叠性主要解决样式冲突的问题
@@ -316,7 +316,7 @@ text-，font-，line-这些元素开头的可以继承，以及color属性
         (支持所有的CSS Selectors level 4)
 
 
-## emmet语法
+## 四、emmet语法
 
 ### 1、简介
 - Emmet语法的前身是Zen coding,它使用缩写,来提高html/css的编写速度, Vscode内部已经集成该语法。

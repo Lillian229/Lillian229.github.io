@@ -1,7 +1,7 @@
 
 # 1.8.标准流、浮动、清除浮动、定位
 
-## 1、浮动
+## 一、浮动
 
 ### 1、传统网页布局的三种方式
 
@@ -97,7 +97,7 @@ eg.针对于一个花店的导航页，存在许多的图片显示，而有效�
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571544991989.png)
 
 
-## 三、常见网页布局
+## 二、常见网页布局
 
 ### 浮动布局注意点
 
@@ -111,7 +111,7 @@ eg.针对于一个花店的导航页，存在许多的图片显示，而有效�
 
 浮动的盒子只会影响浮动盒子后面的标准流,不会影响前面的标准流.
 
-## 四、清除浮动
+## 三、清除浮动
 
 [可参考文章](https://blog.csdn.net/asfcyg/article/details/109248984?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162729822216780262561695%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162729822216780262561695&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-5-109248984.pc_search_result_control_group&utm_term=CSS%E5%A1%8C%E9%99%B7%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D&spm=1018.2226.3001.4187)
 
@@ -257,7 +257,7 @@ overflow:hidden | auto | scroll;
 
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571556500074.png)
 
-## 定位(position)
+## 四、定位(position)
 
 ### 为什么使用定位
 
@@ -531,9 +531,9 @@ overflow:hidden | auto | scroll;
 
 
 
-## 定位(position)的应用
+## 五、定位(position)的应用
 
-### 3固定定位小技巧： 固定在版心左侧位置。
+### 固定定位小技巧： 固定在版心左侧位置。
 
 小算法：
 
@@ -608,7 +608,7 @@ overflow:hidden | auto | scroll;
 
 
 
-## 定位(position)的拓展
+## 六、定位(position)的拓展
 
 ### 绝对定位的盒子居中
 
@@ -661,7 +661,7 @@ display 是 显示模式， 可以改变显示模式有以下方式:
 浮动之所以不会压住文字，因为浮动产生的目的**最初是为了做文字环绕效果的。 文字会围绕浮动元素**
 
 
-## 网页布局总结
+## 七、网页布局总结
 
 通过盒子模型，清楚知道大部分html标签是一个盒子。
 

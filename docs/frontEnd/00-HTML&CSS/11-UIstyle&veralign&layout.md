@@ -1,5 +1,5 @@
 # 1.11.CSS 用户界面样式、vertical-align、省略号、常见布局技巧
-## 1.CSS 用户界面样式
+## 一、CSS 用户界面样式
 
 **什么是界面样式**
 
@@ -9,7 +9,7 @@
 - 表单轮廓
 - 防止表单域拖拽
 
-### 1.1 鼠标样式 cursor
+### 1.1.鼠标样式 cursor
 
 ```css
  li {
@@ -20,7 +20,7 @@
 **设置或检索在对象上移动的鼠标指针采用何种系统预定义的光标形状。**
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571521805183.png)
 
-### 1.2 轮廓线 outline
+### 1.2.轮廓线 outline
 给表单添加 outline: 0;   或者  outline: none; 样式之后，就可以去掉默认的蓝色边框。
 
 ```css
@@ -29,7 +29,7 @@
  }
 ```
 
-### 1.3 防止拖拽文本域 resize
+### 1.3.防止拖拽文本域 resize
 
  实际开发中，我们文本域右下角是不可以拖拽的。
 
@@ -41,7 +41,7 @@
 
 
 
-## 2. vertical-align 属性应用
+## 二、vertical-align 属性应用
 
 CSS 的 属性使用场景： 经常用于设置图片或者表单(行内块元素）和文字垂直对齐。
 
@@ -56,14 +56,14 @@ vertical-align : baseline | top | middle | bottom
 
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522040645.png)
 
-###  图片、表单和文字对齐
+### 2.1.图片、表单和文字对齐
 
 图片、表单都属于行内块元素，默认的 vertical-align 是基线对齐。
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522093729.png)
 
 此时可以给图片、表单这些行内块元素的 **vertical-align 属性设置为 middle** 就可以让文字和图片垂直居中对齐了。
 
-### 解决图片底部默认空白缝隙问题
+### 2.2.解决图片底部默认空白缝隙问题
 
 bug：图片底侧会有一个空白缝隙，原因是行内块元素会和文字的基线对齐。
 
@@ -74,9 +74,9 @@ bug：图片底侧会有一个空白缝隙，原因是行内块元素会和文�
 2.把图片转换为块级元素  **display: block**; 
 
 
-## 3. 溢出的文字省略号显示
+## 三、溢出的文字省略号显示
 
-### 单行文本溢出显示省略号
+### 3.1.单行文本溢出显示省略号
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522317809.png)
 
 单行文本溢出显示省略号--必须满足三个条件：
@@ -94,7 +94,7 @@ bug：图片底侧会有一个空白缝隙，原因是行内块元素会和文�
 
 
 
-### 多行文本溢出显示省略号（了解）
+### 3.2.多行文本溢出显示省略号（了解）
 多行文本溢出显示省略号，**有较大兼容性问题**，适合于webKit浏览器或移动端（移动端大部分是webkit内核）
 
 ```css
@@ -118,7 +118,7 @@ display: -webkit-box;
 
 
 
-## 4. 常见布局技巧
+## 四、常见布局技巧
 
 **巧妙利用一个技术更快更好的布局：**
 
@@ -127,7 +127,7 @@ display: -webkit-box;
 3. 行内块的巧妙运用
 4. CSS三角强化
 
-### 1. margin负值运用
+### 4.1.margin负值运用
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522666082.png)
 
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522683897.png)
@@ -136,7 +136,7 @@ display: -webkit-box;
 
 2.鼠标经过某个盒子的时候，提高当前盒子的层级即可（如果没有有定位，则加相对定位（保留位置），如果有定位，则加z-index）
 
-### 文字围绕浮动元素
+### 4.2.文字围绕浮动元素
 
 **效果**
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522777745.png)
@@ -147,7 +147,7 @@ display: -webkit-box;
 
 **巧妙运用浮动元素不会压住文字的特性**
 
-### 行内块巧妙运用
+### 4.3.行内块巧妙运用
 
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522898744.png)
 
@@ -158,7 +158,7 @@ display: -webkit-box;
 
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522910580.png)
 
-### CSS 三角强化 案例
+### 4.4CSS三角强化 
 
 #### 原理
 

@@ -59,6 +59,48 @@ git config --global user.email "your_email"
 [掘金教程](https://juejin.cn/post/6844903953675583496)
 
 ### 2.1.4.PHP
+1. 通过 brew 安装
+    `brew install php@版本号`，不写版本号默认安装最新版
+2. 刷新php连接
+    `brew link php`
+3. 查看php版本
+    `php -v`
+4. 查看PHP的服务
+`brew services list`
+如果有两个版本，停止老的PHP版本，启用新的php版本
+```sh
+# 停止老版本
+brew services stop php@老的版本号
+# 启动新的版本
+brew services start php@新的版本号
+```
+
+- 报错：Warning: No available formula with the name "php".
+
+    解决：
+    ```
+    rm -rf $(brew --repo homebrew/core)
+    brew tap homebrew/core
+    brew update
+    ```
+- 报错：homebrew安装软件时因为permission denied问题失败
+
+    解决： `sudo chown -R $(whoami) /usr/local` 依旧有错误，如下
+
+- 报错：`chown: /usr/local: Operation not permitted`
+
+    查到的解释是 /usr/local 不再被 chown’d in High Sierra.
+
+    解决：[链接](http://www.guoxiaolong.cn/?id=35)
+
+    `sudo chown -R $(whoami) $(brew --prefix)/*`
+
+### 2.1.5.MySql
+
+
+
+### 2.1.6.Navicat
+[破解版下载网址](https://macwk.com/soft/navicat-premium)
 
 
 

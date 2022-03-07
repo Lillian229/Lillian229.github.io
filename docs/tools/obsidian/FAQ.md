@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Author: Lillian
+ * @Date: 2022-01-24 23:59:42
+ * @LastEditTime: 2022-03-03 23:23:30
+ * Copyright (c) 2022 by Lillian, All Rights Reserved. 
+-->
 # obsidian常见问题 & 技巧
 ## 内容输入——Markdown
 [Markdown是什么&如何使用](./markdown.md)
@@ -41,6 +48,26 @@ Typora：也是一款较为常用的markdown编辑器<br>
 3. 上传服务设定：PicGo (app)，PicGo 路径：自己主机中安装的 PicGo.exe 的存放路径。
 4. 点击「验证图片上传选项」。
 5. 此时，PicGo 里多出两张图片，就说明连接成功了。
+
+### 更新了gitee-uploader插件的报错
+picgo图床更新了gitee-uploader插件，
+<details> 
+	<summary>报错：Error: Error in repo name  </summary> 
+	<pre><code> 
+	Error: Error in repo name  
+	at new Octo (/Users/hechunxia/Library/Application Support/picgo/node_modules/picgo-plugin-gitee-uploader/dist/lib/octokit.js:40:19)  
+	at Object.getIns (/Users/hechunxia/Library/Application Support/picgo/node_modules/picgo-plugin-gitee-uploader/dist/lib/octokit.js:230:11)  
+	at initOcto (/Users/hechunxia/Library/Application Support/picgo/node_modules/picgo-plugin-gitee-uploader/dist/index.js:11:27)  
+	at Object.handle (/Users/hechunxia/Library/Application Support/picgo/node_modules/picgo-plugin-gitee-uploader/dist/index.js:110:21)  
+	at Lifecycle.doUpload (/Applications/PicGo.app/Contents/Resources/app.asar/node_modules/picgo/dist/src/core/Lifecycle.js:80:77)  
+	at Lifecycle.start (/Applications/PicGo.app/Contents/Resources/app.asar/node_modules/picgo/dist/src/core/Lifecycle.js:26:24)  
+	at async PicGo.upload (/Applications/PicGo.app/Contents/Resources/app.asar/node_modules/picgo/dist/src/core/PicGo.js:205:32)  
+	at async Object.upload (/Applications/PicGo.app/Contents/Resources/app.asar/background.js:36:29196)  
+	at async Pt (/Applications/PicGo.app/Contents/Resources/app.asar/background.js:36:31625)  
+	at async /Applications/PicGo.app/Contents/Resources/app.asar/background.js:36:32625
+	</code></pre> 
+</details>
+解决方案：仓库路径应在前面加上gitee用户名 -> `leelillian/picgorepo`
 
 
 ## 图片——批量替换本地图片为图床链接

@@ -75,3 +75,61 @@ let vm = new Vue({
 <li v-for="(a, b) in str">{{a}} {{b}}</li>
 
 ```
+
+
+示例：
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<div id="app">
+	<ul>
+		v-for Array 数组有多少项就要生成多少个 li
+		<li v-for="(a, index) in arr">{{a.name}} {{a.age}} </li>
+
+		v-for Object 对象有多少个 key 就生成多少 li
+		<li v-for="(a, b) in obj">{{a}} {{b}}</li>
+
+		v-for num 生成 num 个 li
+		<li v-for="(a, b) in num">{{a}} {{b}}</li>
+
+		v-for str 生成 str.length 个 li
+		<li v-for="(a, b) in str">{{a}} {{b}}</li>
+	</ul>
+</div>
+
+<script src="js/vue.js"></script>
+<script>
+	let vm = new Vue({
+		el: '#app',
+		data: {
+			arr: [
+				{name: '张三', age: 15},
+				{name: '李四', age: 18}
+			],
+			num: 5,
+			str: 'zfpex',
+			obj: {
+				goods: 'iPhone',
+				manufacture: '富土康',
+				price: '$1000'
+			}
+		}
+	})
+	// v-for 用于列表渲染
+</script>
+</body>
+</html>
+```
+
+<!--
+ * @Description: 
+ * @Author: Lillian
+ * @Date: 2021-12-15 20:29:56
+ * @LastEditTime: 2022-03-03 16:58:05
+ * Copyright (c) 2022 by Lillian, All Rights Reserved. 
+-->

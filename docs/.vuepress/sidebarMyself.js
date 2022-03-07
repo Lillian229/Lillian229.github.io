@@ -14,7 +14,20 @@ let sidebar = {
         '07-boxmodel&border&shadow&PS',
         '08-float&position',
         '09-sort&hidden',
-        '10-sprite&icon&tri'
+        '10-sprite&icon&tri',
+        '11-UIstyle&veralign&layout',
+        '12-html5&SEO',
+        '13-css3',
+        '14-2D',
+        '15-3D',
+        '16-animation',
+        '17-webmobile',
+        '18-layout_fluid',
+        '19-layout_flex',
+        '20-layout_rem',
+        '21-layout_response'
+
+
     ],
 
     '/frontEnd/02-javascript/': [

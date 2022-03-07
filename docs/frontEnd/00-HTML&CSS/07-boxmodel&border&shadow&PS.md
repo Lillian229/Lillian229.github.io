@@ -1,5 +1,5 @@
 # 1.7.盒子模型(padding,margin,border)、其他样式、PS基本操作
-## 盒子模型
+## 一、盒子模型
 ### 1、网页布局的本质
 网页布局的核心本质： 就是利用 CSS 摆盒子。
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571492334739.png)
@@ -172,7 +172,7 @@ margin: 0 auto;
 
 
 
-## 其他样式 
+## 二、其他样式 
 ### 1、圆角边框
 
 在 CSS3 中，新增了圆角边框样式，盒子就可以变圆角了。
@@ -212,7 +212,7 @@ CSS3 中新增了盒子阴影，可以使用 box-shadow 属性为盒子添加阴
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571541954222.png)
 
 
-## PS 基本操作
+## 三、PS 基本操作
 ​因为网页美工大部分效果图都是利用 PS（Photoshop）来做的，所以以后我们大部分切图工作都是在 PS 里面完成。
 
 ​部分操作：
@@ -227,7 +227,7 @@ CSS3 中新增了盒子阴影，可以使用 box-shadow 属性为盒子添加阴
 
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571494543539.png)
 
-## PS 切图
+## 四、PS 切图
 
 ### 1、图层切图
 

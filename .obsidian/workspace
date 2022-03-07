@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
-            "mode": "preview",
+            "file": "docs/frontEnd/00-HTML&CSS/README.md",
+            "mode": "source",
             "backlinks": true,
             "source": true
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
+                "file": "docs/frontEnd/00-HTML&CSS/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
+                "file": "docs/frontEnd/00-HTML&CSS/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/frontEnd/00-HTML&CSS/01-browser&variable.md"
+                "file": "docs/frontEnd/00-HTML&CSS/README.md"
               }
             }
           },
@@ -151,12 +151,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 100
   },
   "active": "53b8b2bbb999439d",
   "lastOpenFiles": [
-    "docs/frontEnd/00-HTML&CSS/01-browser&variable.md",
-    "docs/frontEnd/00-HTML&CSS/05-stylesheets&selectors.md",
-    "docs/tools/common-tools/04little_issue.md"
+    "docs/frontEnd/00-HTML&CSS/README.md",
+    "docs/frontEnd/00-HTML&CSS/21-layout_response.md",
+    "docs/frontEnd/00-HTML&CSS/20-layout_rem.md",
+    "docs/frontEnd/00-HTML&CSS/19-layout_flex.md",
+    "docs/frontEnd/00-HTML&CSS/18-layout_fluid.md",
+    "docs/frontEnd/00-HTML&CSS/17-webmobile.md",
+    "docs/frontEnd/00-HTML&CSS/16-animation.md",
+    "docs/frontEnd/00-HTML&CSS/15-3D.md",
+    "docs/frontEnd/00-HTML&CSS/14-2D.md",
+    "docs/frontEnd/00-HTML&CSS/13-css3.md"
   ]
 }

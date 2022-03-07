@@ -72,6 +72,7 @@ html代码
 ```
 
 JS代码
+
 Vue 是 vue 的构造函数，在执行构造函数时需要传入一个对象；对象的属性都是配置 vue 应用的；
 ```js
 let vm = new Vue({
@@ -220,12 +221,14 @@ let vm = new Vue({
 	}
 });
 
-console.log(vm); // vm 是 Vue 的实例，会把 new Vue 配置对象 data 中的数据代理到 vm 自身上；并且在 Vue 实例初始化时，vm 中的属性都是响应式的（都会映射到视图中，如果修改这些属性，视图中的值也会跟着改变）;
+console.log(vm); 
+
+// vm 是 Vue 的实例，会把 new Vue 配置对象 data 中的数据代理到 vm 自身上；并且在 Vue 实例初始化时，vm 中的属性都是响应式的（都会映射到视图中，如果修改这些属性，视图中的值也会跟着改变）;
 
 // 修改这些属性的方式：
 
 // 1. 修改 vm 属性上的值
-// vm.user.school = '珠峰';
+// vm.user.school = 'zf';
 
 // 2. 使用 $set()
 // vm.$set(vm.user, 'school', 'ZF');

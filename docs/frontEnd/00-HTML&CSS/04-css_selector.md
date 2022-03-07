@@ -1,9 +1,9 @@
 # 1.4.CSS基础选择器、字体属性、文字属性
-## CSS简介
+## 一、CSS简介
 - CSS 是层叠样式表 ( Cascading Style Sheets ) 的简称，又称CSS样式表或级联样式表。
 - CSS 是也是一种标记语言
 - CSS 主要用于设置 HTML 页面中的文本内容（字体、大小、对齐方式等）、图片的外形（宽高、边框样式、边距等）以及版面的布局和外观显示样式。
-## CSS语法规范
+## 二、CSS语法规范
 CSS语法规范构成：选择器以及一条或多条声明。
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/css属性规则.png)
 
@@ -26,7 +26,7 @@ CSS语法规范构成：选择器以及一条或多条声明。
     </style>
 </head>
 ```
-## CSS代码风格：
+## 三、CSS代码风格
 1. 样式格式书写
     - 紧凑格式   
     ```html
@@ -62,7 +62,7 @@ CSS语法规范构成：选择器以及一条或多条声明。
     ```
 
 
-## CSS基础选择器
+## 四、CSS基础选择器
 基础选择器：**[标签选择器](#标签选择器)、[类选择器](#类选择器)、[id 选择器](#id选择器)和[通配符选择器](#通配符选择器)**
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/基础选择器总结.png)
 
