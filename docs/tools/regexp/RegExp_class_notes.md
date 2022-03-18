@@ -1,4 +1,4 @@
-## 正则表达式
+# 正则表达式
 
 > regular expression：RegExp
 >
@@ -17,7 +17,7 @@ str = "2019-08-12";
 reg.exec(str); //=>["2019",index:0,inputs:"原始字符串"]
 ```
 
-### 编写正则表达式
+## 编写正则表达式
 <!-- ## 啦啦 -->
 创建方式有两种
 
@@ -29,7 +29,7 @@ let reg1 = /\d+/;
 let reg2 = new RegExp("\\d+");
 ```
 
-### 正则表达式由两部分组成
+## 正则表达式由两部分组成
 
 - 元字符
 - 修饰符
@@ -82,7 +82,7 @@ g =>global      全局匹配
 */
 ```
 
-### 元字符详细解析
+## 元字符详细解析
 
 `^ $`
 
@@ -180,9 +180,9 @@ console.log(reg.test("2"));//=>true
 console.log(reg.test("10"));//=>false
 ```
 
-### 常用的正则表达式
+## 常用的正则表达式
 
-#### 1. 验证是否为有效数字
+### 1.验证是否为有效数字
 
    ```javascript
    /*
@@ -194,7 +194,7 @@ console.log(reg.test("10"));//=>false
    let reg = /^[+-]?(\d|([1-9]\d+))(\.\d+)?$/;
    ```
 
-#### 2. 验证密码
+### 2.验证密码
 
    ```javascript
    //=>数字、字母、下划线
@@ -220,7 +220,7 @@ console.log(reg.test("10"));//=>false
    */
    ```
 
-#### 3. 验证真实姓名的
+### 3.验证真实姓名
 
    ```javascript
    /*
@@ -231,7 +231,7 @@ console.log(reg.test("10"));//=>false
    let reg = /^[\u4E00-\u9FA5]{2,10}(·[\u4E00-\u9FA5]{2,10}){0,2}$/;
    ```
 
-#### 4. 验证邮箱的
+### 4.验证邮箱
 
    ```javascript
    let reg = /^\w+((-\w+)|(\.\w+))*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
@@ -253,7 +253,7 @@ console.log(reg.test("10"));//=>false
    //1. 这个匹配的是最后的域名（.com/.cn/.org/.edu/.net...）
    ```
 
-#### 5. 身份证号码
+### 5.身份证号码
 
    ```javascript
    /*
@@ -273,9 +273,8 @@ console.log(reg.test("10"));//=>false
    reg.exec("130828199012040617"); //=>["130828199012040617", "130828", "1990", "12", "04", "1", "7"...] 捕获结果是数组，包含每一个小分组单独获取的内容
    ```
 
-### 正则两种创建方式的区别
-
-   ```javascript
+## 正则两种创建方式的区别
+```javascript
 //=>构造函数因为传递的是字符串，\需要写两个才代表斜杠
 let reg = /\d+/g;
 reg = new RegExp("\\d+","g");
@@ -289,27 +288,22 @@ console.log(reg.test('@"""typeeeee"@')); //=>true
 //2.这种情况只能使用构造函数方式（因为它传递的规则是字符串，只有这样才能进行字符串拼接）
 reg = new RegExp("^@"+type+"@$");
 console.log(reg.test("@zhufeng@"));//=>true
-   ```
-
-
+```
 
 ----
 
 
 
-### 正则的捕获
-
-> 实现正则捕获的办法
->
-> - 正则RegExp.prototype上的方法
->   - exec
->   - test
->
-> - 字符串String.prototype上支持正则表达式处理的方法
->   - replace
->   - match
->   - splite
->   - .......
+## 正则的捕获
+实现正则捕获的办法
+- 正则RegExp.prototype上的方法
+  - exec
+  - test
+- 字符串String.prototype上支持正则表达式处理的方法
+  - replace
+  - match
+  - splite
+  - .......
 
 ```javascript
 let str = "zhufeng2019yangfan2020qihang2021";
@@ -327,6 +321,7 @@ let reg = /\d+/;
 console.log(reg.exec(str)); //=>["2019", index: 7, input: "zhufeng2019yangfan2020qihang2021"]
 console.log(reg.exec(str)); //=>["2019"...]
 
+
 /*
 //=>实现正则捕获的前提是：当前正则要和字符串匹配，如果不匹配捕获的结果是null
 let reg = /^\d+$/;
@@ -335,8 +330,7 @@ console.log(reg.exec(str)); //=>null
 */
 ```
 
-### 懒惰性的解决办法
-
+## 懒惰性的解决办法
 ```javascript
 let str = "zhufeng2019yangfan2020qihang2021";
 /*
@@ -394,7 +388,7 @@ console.log(reg.execAll("珠峰2019@2020培训"));
 console.log("珠峰2019@2020培训".match(reg));
 ```
 
-正则的分组捕获
+## 正则的分组捕获
 
 ```javascript
 //=>身份证号码
@@ -443,7 +437,7 @@ console.log(reg.test("deep")); //=>true
 console.log(reg.test("some")); //=>false
 ```
 
-**正则捕获的贪婪性**
+## **正则捕获的贪婪性**
 
 ```javascript
 let str = "珠峰2019@2020培训";
@@ -466,7 +460,7 @@ console.log(str.match(reg)); //=>["2", "0", "1", "9", "2", "0", "2", "0"]
 
 
 
-**其它正则捕获的方法**
+## **其它正则捕获的方法**
 
 1. test也能捕获（本意是匹配）
 

@@ -9,6 +9,56 @@
 
 3) 鼠标右键 git bash here
 
+
+## 关于yarn
+### yarn包管理器
+- 快速、可靠、安全的依赖管理工具。和 npm 类似, 都是包管理工具, 可以用于下载包, 就是比npm快
+
+中文官网地址: https://yarn.bootcss.com/
+
+### 下载yarn
+
+下载地址:  https://yarn.bootcss.com/docs/install/#windows-stable 
+
+* windows 不要安到带中文的路径下, 建议在C盘/
+
+
+### 使用yarn
+
+与npm类似, 可以试试, 新建一个空白文件夹, 执行以下命令尝试一下
+
+|      | yarn | npm  |
+| ---- | ---- | ---- |
+|   初始化   |   yarn init   |   npm init -y   |
+|   导入webpack包   |   yarn add webpack webpack-cli -D   |      |
+
+测试：
+```bash
+# 1. 初始化, 得到package.json文件(终端路径所在文件夹下)
+yarn init
+
+# 2. 添加依赖(下包)
+# 命令: yarn add [package]
+# 命令: yarn add [package]@[version]
+yarn add jquery
+yarn add jquery@3.5.1
+
+# 3. 移除包
+# 命令: yarn remove [package]
+yarn remove jquery
+             
+# 4. 安装项目全部依赖(一般拿到别人的项目时, 缺少node_modules)          
+yarn
+# 会根据当前项目package.json记录的包名和版本, 全部下载到当前工程中
+
+# 5. 全局
+# 安装: yarn global add [package]
+# 卸载: yarn global remove [package]
+# 注意: global一定在add左边
+yarn global add @vue/cli
+```
+
+
 ## 打开文件
 1) 在cmd进入文件
 - cd + "路径" (路径用双引号包裹可避免路径中中文和空格的报错)

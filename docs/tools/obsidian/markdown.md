@@ -328,18 +328,22 @@ HTML：`<a href="超链接地址" title="超链接title">超链接显示名</a>`
 `[显示的文字](完整网址#标题)/(文件地址#标题)`
 
 Markdown:
-```
+```markdown
 [Heading IDs](#heading-ids)
 or
 [Heading IDs](https://XXXXXX.com.cn/heading-ids.html#第一节)
 
 ```
+
 HTML:
 ```html
 <a href="#heading-ids">Heading IDs</a>
 
 ```
-[用链接跳转到pdf指定页](./FAQ.md#obsidian中pdf跳转到指定页)
+- [用链接跳转到pdf指定页](./FAQ.md#obsidian中pdf跳转到指定页)
+- 🔗本blog标题链接 —— 在写本blog时，有些小标题会带有`空格`，`_`，`-`，`.`等符号，直接在`#`后面写标题链接不到，即可查看要链接位置在浏览器的URL是如何书写的，复制`#`后面的内容 写入即可。
+
+
 
 
 #### 网址和Email地址

@@ -3,6 +3,9 @@ let sidebar = {
     // '/frontEnd/':[
     //     ''
     // ],
+    // '/list/':[
+    //     'LIST'
+    // ],
     '/frontEnd/00-HTML&CSS/': [
         '',
         '01-browser&variable',
@@ -32,20 +35,62 @@ let sidebar = {
 
     '/frontEnd/02-javascript/': [
         '',
-        'Aliyun',
-        'cut_string',
-        'array',
-        'string'
+        '00-basicconcepts',
+        '01-js&variable&datatype',
+        '02-datatype.md',
+        '02-01-array',
+        '02-02-string',
+        '02-03-function',
+        '03-operators&process',
+        '04-scope',
+        '04-array&function',
     ],
 
     '/interview/': [
         '',
+
+        {
+            title: 'HTML&CSS',
+            // path: '/cs_basic/data_construct/',
+            collapsable: true, // 可选的, 默认值是 true,
+            sidebarDepth: 1,    // 可选的, 默认值是 1
+            // initialOpenGroupIndex: -1,
+            // initialOpenGroupIndex: 0,
+            children: [
+                'html&css',
+            ]
+        },
+
+ 
+        // 'html&css',
         'JavaScript_basic',
         'JavaScript_pro',
         'Vue',
         'ES6',
         'Ajax',
         'Webpack'
+
+
+    ],
+        // {
+        //     // title: '时间复杂度',
+        //     // path: '/cs_basic/data_construct/',
+        //     collapsable: true, // 可选的, 默认值是 true,
+        //     sidebarDepth: 1,    // 可选的, 默认值是 1
+        //     // initialOpenGroupIndex: -1,
+        //     // initialOpenGroupIndex: 0,
+        //     children: [
+        //         '',
+        //         'html&css',
+        //         'JavaScript_basic',
+        //         'JavaScript_pro',
+        //         'Vue',
+        //         'ES6',
+        //         'Ajax',
+        //         'Webpack'
+        //     ]
+        // },
+
         // {
         //     title: 'interview_review',
         //     path: '/interview/',
@@ -140,7 +185,6 @@ let sidebar = {
         //     ]
         // },
 
-    ],
 
     '/frame/vue/': [
         '',
@@ -167,8 +211,15 @@ let sidebar = {
 
 
 
+    '/cs_basic/cs_basic/': [
+        'cs_basic',
+        'Aliyun',
 
+    ],
 
+    '/cs_basic/cs_network/': [
+        '',
+    ],
 
 
     '/cs_basic/data_construct/': [

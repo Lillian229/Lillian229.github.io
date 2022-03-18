@@ -51,12 +51,52 @@ git config --global user.email "your_email"
 [csdn教程](https://blog.csdn.net/xiaohanluo/article/details/53214933?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164270823616780357274002%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164270823616780357274002&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-3-53214933.first_rank_v2_pc_rank_v29&utm_term=mac%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85git&spm=1018.2226.3001.4187)
 
 ### 2.1.3.yarn
+- 快速、可靠、安全的依赖管理工具。和 npm 类似, 都是包管理工具, 可以用于下载包, 就是比npm快
+
 1. 打开终端
 2. brew install yarn
 3. yarn --version
 
 如果不成功：
 [掘金教程](https://juejin.cn/post/6844903953675583496)
+
+中文官网地址: https://yarn.bootcss.com/
+
+#### 使用yarn
+与npm类似, 可以试试, 新建一个空白文件夹, 执行以下命令尝试一下
+
+|      | yarn | npm  |
+| ---- | ---- | ---- |
+|   初始化   |   yarn init   |   npm init -y   |
+|   导入webpack包   |   yarn add webpack webpack-cli -D   |      |
+
+测试：
+```bash
+# 1. 初始化, 得到package.json文件(终端路径所在文件夹下)
+yarn init
+
+# 2. 添加依赖(下包)
+# 命令: yarn add [package]
+# 命令: yarn add [package]@[version]
+yarn add jquery
+yarn add jquery@3.5.1
+
+# 3. 移除包
+# 命令: yarn remove [package]
+yarn remove jquery
+             
+# 4. 安装项目全部依赖(一般拿到别人的项目时, 缺少node_modules)          
+yarn
+# 会根据当前项目package.json记录的包名和版本, 全部下载到当前工程中
+
+# 5. 全局
+# 安装: yarn global add [package]
+# 卸载: yarn global remove [package]
+# 注意: global一定在add左边
+yarn global add @vue/cli
+```
+
+
 
 ### 2.1.4.PHP
 1. 通过 brew 安装

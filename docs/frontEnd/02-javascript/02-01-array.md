@@ -1,11 +1,56 @@
-
-# 数组中常用的方法 
+# 2.2.1.数组中常用的方法 
 - 方法的作用和含义 
 - 方法的实参（类型和含义） 
 - 方法的返回值 
 - 原来的数组是否会发生改变
+## basic
+### 数组
+- 数组可以把一组相关的数据一起存放，并提供方便的访问(获取）方式。
+- 数组是指一组数据的集合，其中的每个数据被称作元素，在数组中可以存放任意类型（字符串，数字，布尔型)的元素。数组是一种将一组数据存储在单个变量名下的优雅方式。
 
-# 目录
+
+### 创建数组
+JS 中创建数组有两种方式：
+
+#### 1.new创建数组  
+
+  ```js
+  var 数组名 = new Array() ；
+  var arr = new Array();   // 创建一个新的空数组
+  ```
+
+  注意 Array () ，A 要大写    
+
+#### 2.数组字面量创建数组
+
+  ```js
+  //1. 使用数组字面量方式创建空的数组
+  var  数组名 = []；
+  //2. 使用数组字面量方式创建带初始值的数组
+  var  数组名 = ['小白','小黑','大黄','瑞奇'];
+  ```
+
+### 获取数组元素
+利用索引，索引是从0开始的。
+
+注意：如果访问时数组没有和索引值对应的元素，则得到的值是undefined
+
+### 数组长度
+数组名.length
+  ```js
+  var arrStus = [1,2,3];
+  alert(arrStus.length);  // 3
+  ```
+- 数组的长度 = 数组元素的个数 ，不要和数组的索引号混淆。
+- 当数组元素个数发生变化，length属性跟着一起变化
+  
+数组的length属性可以被修改：
+- 如果设置的length属性值大于数组的元素个数，则会在数组末尾出现白元素；
+- 如果设置的length属性值小于数组的元素个数，则会把超过该值的数元素删除
+
+
+
+## 数组方法目录
 1.判断数组
 - isArray
 - instanceof
@@ -28,8 +73,8 @@
 
 5.检测数组包含某一项，原数组不变
 - indexOf 
--  lastIndexOf 
--   includes
+- lastIndexOf 
+- includes
 
 6.排序or排列，原来数组改变
 - reverse
@@ -62,9 +107,9 @@ arr instanceof Array; // true
 数组[数组长度] = 要添加的内容
 
 ```js
-push : 向数组末尾增加内容 
-@params  多个任意类型 
-@return 新增后数组的长度 
+// push : 向数组末尾增加内容 
+// @params  多个任意类型 
+// @return 新增后数组的长度 
 
 let ary = [10, 20]; 
 let res = ary.push(30, 'AA'); // 基于原生JS操作键值对的方法，也可以向末尾追加 一项新的内容 
@@ -77,9 +122,9 @@ console.log(res, ary);
 返回新增后数组长度
 #### 4.扩展符"..."
 ```js
-unshift : 向数组开始位置增加内容  
-@params  多个任意类型  
-@return  新增后数组的长度
+// unshift : 向数组开始位置增加内容  
+// @params  多个任意类型  
+// @return  新增后数组的长度
 
 let ary = [10, 20]; 
 let res = ary.unshift(30, 'AA');
@@ -95,11 +140,11 @@ console.log(ary);
 
 #### 5.splice
 ```js
-splice : 实现数组的增加
+// splice : 实现数组的增加
 
-插入功能，第一个参数（插入位置），第二个参数（0），第三个参数（插入的项）。
+// 插入功能，第一个参数（插入位置），第二个参数（0），第三个参数（插入的项）。
 
-用法：array.splice(index,0,insertValue)，返回值为空数组，array值为最终结果值。
+// 用法：array.splice(index,0,insertValue)，返回值为空数组，array值为最终结果值。
 
 
 // 实现增加 
@@ -122,9 +167,9 @@ console.log(fruits) // returns  ["potato", "tomato", "orange", "watermelon
 ### 删
 #### 1. shift
 ```js
-shift : 删除数组中的第一项 && 提取开头第一项元素
-@params  
-@return  删除的那一项
+// shift : 删除数组中的第一项 && 提取开头第一项元素
+// @params  
+// @return  删除的那一项
 
 let ary = [10, 20, 30, 40]; 
 let res = ary.shift(); 
@@ -134,9 +179,9 @@ console.log(res, ary);
 
 #### 2.pop
 ```js
-pop : 删除数组中的最后一项&&从结尾提取元素
-@params
-@return 删除的那一项
+// pop : 删除数组中的最后一项&&从结尾提取元素
+// @params
+// @return 删除的那一项
 let ary = [10, 20, 30, 40]; 
 let res = ary.pop(); 
 console.log(res, ary); 
@@ -149,10 +194,10 @@ console.log(ary);
 
 #### 3. splice
 ```js
-splice : 实现数组的增加、删除、修改 
-@params  
-n,m 都是数字 从索引n开始删除m个元素（m 不写，是删除到末尾） 
-@return  把删除的部分用新数组存储起来返回
+// splice : 实现数组的增加、删除、修改 
+// @params  
+// n,m 都是数字 从索引n开始删除m个元素（m 不写，是删除到末尾） 
+// @return  把删除的部分用新数组存储起来返回
 
 let ary = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 let res = ary.splice(2, 4); 
@@ -176,7 +221,7 @@ console.log(ary);
 - 如果数组装的引用类型，那么返回的新数组中保存的是元素的地址
 - 如果数组装的值类型，那么返回的新数组中保存的是元素的副本
 ```js
-用filter删除数组中虚值
+// 用filter删除数组中虚值
 虚值：false, 0, "", null, NaN, undefined
 var mixedArr = [0, “blue”, “”, NaN, 9, true, undefined, “white”, false];  
 var trueArr = mixedArr.filter(Boolean);  
@@ -188,11 +233,11 @@ console.log(trueArr); // returns [“blue”, 9, true, “white”]
 用索引下标改
 #### 2. splice
 ```js
-splice : 实现数组的修改
-@params  
-n,m,x 从索引n开始删除m个元素，用x占用删 除的部分 
-n,0,x 从索引n开始，一个都不删，把x放到 索引n的前面 @return  
-把删除的部分用新数组存储起来返回
+// splice : 实现数组的修改
+// @params  
+// n,m,x 从索引n开始删除m个元素，用x占用删 除的部分 
+// n,0,x 从索引n开始，一个都不删，把x放到 索引n的前面 @return  
+// 把删除的部分用新数组存储起来返回
 
 let ary = [10, 20, 30, 40, 50]; 
 let res = ary.splice(1, 2, '啦啦啦' , '哈哈哈');
@@ -205,11 +250,11 @@ console.log(res, ary);
 ### 查询&拼接
 #### slice
 ```js
-slice : 实现数组的查询，截取一段元素
-@params  
-n,m 都是数字 从索引n开始，找到索引为m的地 方（不包含m这一项） 
-@return  
-把找到的内容以一个新数组的形式返回，原数组不变
+// slice : 实现数组的查询，截取一段元素
+// @params  
+// n,m 都是数字 从索引n开始，找到索引为m的地 方（不包含m这一项） 
+// @return  
+// 把找到的内容以一个新数组的形式返回，原数组不变
 
 let ary = [10, 20, 30, 40, 50]; 
 let res = ary.slice(1, 3); 
@@ -230,14 +275,15 @@ console.log(res);
 
 
 #### concat
+concat : 实现数组拼接
 ```js
-concat : 实现数组拼接  
-@params  多个任意类型值 
-@return  拼接后的新数组（原来数组不变）
+// concat : 实现数组拼接  
+// @params  多个任意类型值 
+// @return  拼接后的新数组（原来数组不变）
 
 let ary1 = [10, 20, 30]; 
 let ary2 = [40, 50, 60]; 
-let res = ary1.concat('珠峰培训' , ary2); console.log(res);
+let res = ary1.concat('莉安' , ary2); console.log(res);
 ```
 
 ```js
@@ -279,11 +325,11 @@ const boo = arr.includes(2); // true
 ### includes
 包含：如果存在返回的是TRUE
 ```js
-indexOf / lastIndexOf : 检测当前项在数组 中第一次或者最后一次出现位置的索引值（在IE6~8中 不兼容）
-@params 要检索的这一项内容 
-@return
-这一项出现的位置索引值（数字），如果数组中 没有这一项，返回的结果是-1 
-原来数组不变
+// indexOf / lastIndexOf : 检测当前项在数组 中第一次或者最后一次出现位置的索引值（在IE6~8中 不兼容）
+// @params 要检索的这一项内容 
+// @return
+// 这一项出现的位置索引值（数字），如果数组中 没有这一项，返回的结果是-1 
+// 原来数组不变
 
 let ary = [10, 20, 30, 10, 20, 30]; console.log(ary.indexOf(20)); //=>1 console.log(ary.lastIndexOf(20)); //=>4 
 
@@ -303,11 +349,11 @@ if (ary.includes('yaya')) {
 ### reverse
 原来数组改变
 ```js
-reverse : 把数组倒过来排列 
-@params 
-@return  
-排列后的新数组  
-原来数组改变
+// reverse : 把数组倒过来排列 
+// @params 
+// @return  
+// 排列后的新数组  
+// 原来数组改变
 
 let ary = [12, 15, 9, 28, 10, 22]; 
 ary.reverse(); 
@@ -321,9 +367,9 @@ console.log(ary);
 - SORT方法中如果不传递参数，是无法处理10以上
 - (a-b)升序排列，（b-a)降序排列
 ```js
-sort : 实现数组的排序 
-@params 可以没有，也可以是个函数 
-@return 排序后的新数组
+// sort : 实现数组的排序 
+// @params 可以没有，也可以是个函数 
+// @return 排序后的新数组
 
 let ary = [7, 8, 5, 2, 4, 6, 9]; 
 ary.sort(); 
@@ -362,27 +408,36 @@ Array.prototype.mass = function () {
  };
 ```
 
-::: 容器
+<!-- ::: 容器
 这是一个容器
-:::
+::: -->
 
 
 ## 遍历数组
-### foreach
-原数组不变
+### 原生
 ```js
-forEach：遍历数组中的每一项内容 
-@params  回调函数
-@return 原数组不变
 let ary = [12, 15, 9, 28, 10, 22]; 
-// 基于原生JS中的循环可以实现 
+// 基于原生JS中的循环实现 
 for (let i = 0; i < ary.length; i++) { 
 // i:当前循环这一项的索引 
 // ary[i]:根据索引获取循环的这一项 
 console.log('索引： ' + i + ' 内容： ' + ary[i]); 
-}
-*/
+} //->
+// 索引： 0 内容： 12
+// 索引： 1 内容： 15
+// 索引： 2 内容： 9
+// ...
+```
 
+
+
+### foreach
+原数组不变
+```js
+// forEach：遍历数组中的每一项内容 
+// @params  回调函数
+// @return 原数组不变
+let ary = [12, 15, 9, 28, 10, 22]; 
 ary.forEach((item, index) => { 
 // 数组中有多少项，函数就会被默认执行多少次 
 // 每一次执行函数：item是数组中当前要操作 的这一项，index是当前项的索引 

@@ -1,10 +1,3 @@
-<!--
- * @Description: 
- * @Author: Lillian
- * @Date: 2022-01-24 23:59:42
- * @LastEditTime: 2022-03-03 23:23:30
- * Copyright (c) 2022 by Lillian, All Rights Reserved. 
--->
 # obsidian常见问题 & 技巧
 ## 内容输入——Markdown
 [Markdown是什么&如何使用](./markdown.md)
@@ -118,3 +111,11 @@ origin：知乎_蚕子
 ## obsidian中pdf跳转到指定页
 v0.10.8版本Obsidian通过添加#page=number实现了调用指定页的PDF文件，如`[[My file.pdf#page=3]]`。
 
+
+<!--
+ * @Description: 
+ * @Author: Lillian
+ * @Date: 2022-01-24 23:59:42
+ * @LastEditTime: 2022-03-03 23:23:30
+ * Copyright (c) 2022 by Lillian, All Rights Reserved. 
+-->

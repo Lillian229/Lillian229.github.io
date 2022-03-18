@@ -1,12 +1,18 @@
 # Vue
-## Vue是什么
-Vue.js 是一门 MVVM 框架，框架的思路是数据映射视图；
-它由数据驱动的，有别于过往 DOM 操作的开发思想；
-从技术角度讲，Vue.js 专注于 MVVM 模型的 ViewModel 层,它通过双向数据绑定把View 层和 Model 层连接了起来，通过对数据的操作就可以完成对页面视图的渲染。
-(当然还有很多其他基于 MVVM 理念的框架如 Angular，React ，都大同小异 )
+## 一、Vue是什么
+- 渐进式javacript框架, 拥有一套自己规则的语法
+- 官网地址: https://cn.vuejs.org/ (作者: 尤雨溪)
+
+- Vue.js 是一门 MVVM 框架，框架的思路是数据映射视图；
+
+	它由数据驱动的，有别于过往 DOM 操作的开发思想；
+
+- 从技术角度讲，Vue.js 专注于 MVVM 模型的 ViewModel 层,它通过双向数据绑定把View 层和 Model 层连接了起来，通过对数据的操作就可以完成对页面视图的渲染。
+
+- (当然还有很多其他基于 MVVM 理念的框架如 Angular，React ，都大同小异 )
 然而 Vue 以他独特的优势简单，快速，组合，紧凑，强大而迅速崛起。
 
-## MVC 和 MVVM
+### MVC 和 MVVM
 
 MVC 和 MVVM 都是设计模式，是框架的开发理念；
 
@@ -18,10 +24,53 @@ MVC 和 MVVM 都是设计模式，是框架的开发理念；
 
 此外，Vue 是响应式的框架；此响应式不是 css 的响应式，而是通过修改数据，视图自动发生变化。当视图发生变化时，数据也会随着改变；这就是双向数据绑定；
 
+### 框架和库的区别
+库: 封装的属性或方法 (例jquery.js)
+
+框架: 拥有自己的规则和元素, 比库强大的多 (例vue.js)
+
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/image-20210111215624065.png)
 
 
-## vue基础
-### vue的使用
+
+### Vue和原生js的区别
+eg.将数组数据循环铺设到li中
+- 原生js
+```HTML
+<ul id="myUl"></ul>
+<script>
+    let arr = ["春天", "夏天", "秋天", "冬天"];
+    let myUl = document.getElementById("myUl");
+    for (let i = 0; i < arr.length; i++) {
+        let theLi = document.createElement("li");
+        theLi.innerHTML = arr[i];
+        myUl.appendChild(theLi);
+    }
+</script>
+```
+
+- Vue
+```html
+<li v-for="item in arr">{{item}}</li>
+<script>
+    new Vue({
+        // ...
+        data: {
+            arr: ["春天", "夏天", "秋天", "冬天"] 
+        }
+    })
+</script>
+```
+
+- Vue开发效率更高，简洁、易于维护，但vue的底层还是原生js，
+
+
+### vue开发方式
+- 传统开发：基于html/css/js文件开发vue
+- 工程化开发方式：在webpack环境中开发vue（推荐，企业常用）
+
+## 二、vue基础
+### 1.vue的使用
 - 插值表达式
 目的: 在dom标签中, 直接插入内容
 又叫: 声明式渲染/文本插值
@@ -89,7 +138,7 @@ let vm = new Vue({
 ```
 
 
-## 双向数据绑定
+### 2.双向数据绑定
 
 双向数据绑定：通过 Vue 模板语法，把 Vue 中 data 里面的数据绑定到页面中；如果我们修改这个数据，页面中绑定这个数据的地方的值都会跟着自动更新；
 - html代码
@@ -107,7 +156,7 @@ let vm = new Vue({
 </div>
 
 <script src="js/vue.js"></script>
-<script src="js/3-双向数据绑定.js"></script>
+<script src="js/双向数据绑定.js"></script>
 </body>
 </html>
 ```
@@ -123,7 +172,7 @@ let vm = new Vue({
 	}
 });
 ```
-## 双向数据绑定的原理
+### 3.双向数据绑定的原理
 
 Vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty()来劫持各个属性的 setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。
 
@@ -190,7 +239,7 @@ input.oninput = function () {
 };
 ```
 
-## 向 Vue 的 data 中新增属性
+### 向 Vue 的 data 中新增属性
 - HTML
 ```html
 <!DOCTYPE html>
@@ -201,11 +250,11 @@ input.oninput = function () {
 </head>
 <body>
 <div id="app">
-	{{user.school}} <br>
+	{{user.school}}
 	{{user.age}}
 </div>
 <script src="js/vue.js"></script>
-<script src="js/5-向vue中新增属性.js"></script>
+<script src="js/向vue中新增属性.js"></script>
 </body>
 </html>
 ```
@@ -216,7 +265,7 @@ let vm = new Vue({
 	el: '#app',
 	data: {
 		user: {
-			school: 'zf'
+			school: 'uestc'
 		}
 	}
 });
@@ -228,10 +277,10 @@ console.log(vm);
 // 修改这些属性的方式：
 
 // 1. 修改 vm 属性上的值
-// vm.user.school = 'zf';
+// vm.user.school = 'uestc';
 
 // 2. 使用 $set()
-// vm.$set(vm.user, 'school', 'ZF');
+// vm.$set(vm.user, 'school', 'UESTC');
 
 
 // 使用 $set 还可以向 data 对象中动态增加属性

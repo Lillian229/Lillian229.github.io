@@ -1,10 +1,17 @@
+/*
+ * @Description: 
+ * @Author: Lillian
+ * @Date: 2022-01-03 18:38:38
+ * @LastEditTime: 2022-03-15 17:08:18
+ * Copyright (c) 2022 by Lillian, All Rights Reserved. 
+ */
 let nav = [
     //跳转到外部网页，需http/https前缀
     {
         text: "参考手册",
         ariaLabel: '📘这里有参考手册哦',
         items: [
-            { text: "MDN", link: "https://developer.mozilla.org/zh-CN/docs/Web" },
+            { text: "MDN(新版本)", link: "https://developer.mozilla.org/zh-CN/docs/Web" },
             { text: "Express", link: "https://www.expressjs.com.cn/en/resources/middleware/session.html" },
 
             { text: "Vue.js", link: "https://cn.vuejs.org/", alt: '🎉渐进式JavaScript 框架✨' },
@@ -25,7 +32,7 @@ let nav = [
     },
 
     {
-        text: "前端基础",
+        text: "🧸前端基础",
         ariaLabel: '🎉前端基础相关知识在这里诶~✨',   //用于识别的label
         items: [
             { text: "HTML&CSS", link: "/frontEnd/00-HTML&CSS/" },
@@ -58,10 +65,6 @@ let nav = [
 
         ]
     },
-    {
-        text: "前端工程化", link: "/",
-        ariaLabel: '🎉前端工程化相关知识在这里诶~✨',
-    },
 
     {
         text: "✨精华文章", link: '/blog/',
@@ -74,6 +77,7 @@ let nav = [
         text: "计算机基础",
         ariaLabel: '🎉计算机基础相关知识在这里诶~✨',
         items: [
+            { text: "计算机基础", link: "/cs_basic/cs_basic/" },
             { text: "计算机网络", link: "/cs_basic/cs_network/" },
             { text: "数据结构&算法", link: "/cs_basic/data_construct/" },
 
@@ -81,15 +85,26 @@ let nav = [
     },
 
     {
-        text: "tools",
+        text: "⚙️tools",
         items: [
             { text: "git", link: "/tools/git/" },
             { text: "正则", link: "/tools/regexp/RegExp_class_notes/" },
-            { text: "常用工具", link: "/tools/common-tools/" },
-            { text: "obsidian", link: "/tools/obsidian/" },
+            { text: "🔧常用工具", link: "/tools/common-tools/" },
+            { text: "🔮obsidian", link: "/tools/obsidian/" },
 
         ]
     },
+
+    {
+        text: "Plan",
+        ariaLabel: '计划准备要做的事情',
+        items: [
+            { text: "前端工程化", link: "/" },
+            { text: "Vue3源码阅读和调试", link: "/" },
+            { text: "Rust", link: "/" },
+        ]
+    },
+
 
     {
         text: 'Github',
