@@ -1,7 +1,7 @@
 # 📖本站目录
 ## 🧸前端基础
-| [HTML&CSS](../frontEnd/00-HTML&CSS/README.md) | [JavaScript](../frontEnd/02-javascript/README.md) |[webAPI](../frontEnd/03-webAPI/README.md) |[jQurey](../frontEnd/04-jQuery/README.md) | [数据可视化——Echarts](../frontEnd/05-dataVisualization/README.md)   | [Ajax](../frontEnd/06-ajax/README.md)|
-| --- | --- | ---| --- | --- | ---|
+| [HTML&CSS](../frontEnd/00-HTML&CSS/README.md) | [JavaScript](../frontEnd/02-javascript/README.md) |  [ES6](../frontEnd/08-ES6/README.md)| [Ajax](../frontEnd/06-ajax/README.md)| [Webpack](../frontEnd/07-webpack/README.md)  | [数据可视化——Echarts](../frontEnd/05-dataVisualization/README.md)   |
+| --- | --- | ---| --- |  --- | ---|
 
 
 ## 🏛前端框架
@@ -13,10 +13,17 @@
 [前端面试准备_自己先过一遍](../interview/README.md)
 
 ## ⚙️常用工具
+[Git](../tools/git/README.md)
+
+[正则](../tools/regexp/README.md)
 
 [软件&工具分享](../tools/common-tools/01qualitySoftware&tools.md)
 
 [obsidian的使用](../tools/obsidian/README.md)
+
+## 精华文章
+完成中...
+
 
 
 <!--

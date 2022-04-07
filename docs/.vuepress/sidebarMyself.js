@@ -41,14 +41,57 @@ let sidebar = {
         '02-01-array',
         '02-02-string',
         '02-03-function',
+        '02-04-date',
         '03-operators&process',
         '04-scope',
-        '04-array&function',
+        '05-jsstack',
+        '06-closure',
+        '07-this',
+        'DOM'
+    ],
+
+    // '/frontEnd/03-webAPI/': [
+    //     '',
+    // ],
+    
+    // '/frontEnd/04-jQuery/': [
+    //     '',
+    // ],
+    
+    '/frontEnd/05-dataVisualization/': [
+        '',
+    ],
+    
+    
+    '/frontEnd/06-ajax/': [
+        '',
+    ],
+    
+    
+    '/frontEnd/07-webpack/': [
+        '',
+        'wpissue'
+    ],
+
+    '/frontEnd/08-ES6/':[
+        '',
+        '01-let&const',
+        '02-destructuring&assignment',
+        '03-arrow',
+        '04-object',
+        '05-Set&Map',
+        '07-Symbol',
+        '08-ESModule',
+        'clone',
+        'class',
+        'Generatoe&Iterator',
+        'Proxy&Reflect',
+        'compose',
     ],
 
     '/interview/': [
         '',
-
+        'basic',
         {
             title: 'HTML&CSS',
             // path: '/cs_basic/data_construct/',
@@ -57,18 +100,32 @@ let sidebar = {
             // initialOpenGroupIndex: -1,
             // initialOpenGroupIndex: 0,
             children: [
-                'html&css',
+                'html',
+                'css'
+            ]
+        },
+        {
+            title: 'JavaScript',
+            // path: '/cs_basic/data_construct/',
+            collapsable: true, // 可选的, 默认值是 true,
+            sidebarDepth: 1,    // 可选的, 默认值是 1
+            // initialOpenGroupIndex: -1,
+            // initialOpenGroupIndex: 0,
+            children: [
+                'JavaScript_basic',
+                'JavaScript_pro',
             ]
         },
 
  
         // 'html&css',
-        'JavaScript_basic',
-        'JavaScript_pro',
+        // 'JavaScript_basic',
+        // 'JavaScript_pro',
         'Vue',
         'ES6',
         'Ajax',
-        'Webpack'
+        'Webpack',
+        'http'
 
 
     ],
@@ -206,25 +263,29 @@ let sidebar = {
         '',
         'performance_optimization',
         'HTTP1.0 VS HTTP1.1 VS HTTP2.0',
+        'SEO'
         // 'performance'
     ],
 
 
 
     '/cs_basic/cs_basic/': [
-        'cs_basic',
+        '',
         'Aliyun',
 
     ],
 
     '/cs_basic/cs_network/': [
         '',
+        'network',
+        'Nginx',
+        'JWT'
     ],
 
 
     '/cs_basic/data_construct/': [
         {
-            title: '时间复杂度',
+            title: '数据结构和算法',
             path: '/cs_basic/data_construct/',
             collapsable: true, // 可选的, 默认值是 true,
             sidebarDepth: 2,    // 可选的, 默认值是 1
@@ -243,7 +304,8 @@ let sidebar = {
         '',
         'git',
         'git-intro',
-        'git-team'
+        'git-team',
+        'git-issue'
     ],
 
     '/tools/regexp/': [

@@ -35,9 +35,66 @@
 -   保存在`堆内存`中的对象，不能直接访问操作对象的内存空间
 
 
-## 新的数据结构，而不是数据类型
+## 新的数据（存储）结构，而不是数据类型
 JSON、 Set 、 Map.....
+eg. 在使用时，`let a = new Set/Map();`, `a.`就会出现一些Set/Map的方法
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220325161619.png)
 
+### Set
+```js
+   let s = new Set([1,2,3,4,5,4,3,2,1])
+    console.log(typeof s); //->object
+    // interator 有迭代器接口
+    console.log([...s]);    //->[1, 2, 3, 4, 5]
+```
+
+- 集合：交集、并集、差集
+```js
+    let a1 =[1,2,3,4,5];
+    let a2 =[34,45,1,1,2,4,4]
+// 并集
+    function union() {
+        let s1 = new Set(a1);
+        let s2 = new Set(a2);
+        console.log([...new Set([...s1,...s2])]);
+    }
+    union();
+
+
+//交集
+    function intersection(){
+        return [...new Set(a1)].filter(function(item){
+            return new Set(a2).has(item);
+        })
+    }
+    console.log(intersection());//-> [1，2，4]
+
+//差集 -> 在a1中a2没有的东西,相比于交集取个反
+    
+    function diff() {
+        // 返回为true的留下
+        return [...new Set(a1)].filter(function (item) {
+            return !new Set(a2).has(item);
+        })
+    }
+    console.log(diff());  
+```
+- 集合：交集、并集、差集(箭头函数简化写法)
+```js
+ let a = new Set([1, 2, 3]);
+ let b = new Set([2, 3, 4]);
+
+ // 并集
+ let union = new Set([...a, ...b]);
+
+ // 交集
+ let intersect = new Set([...a].filter(x => b.has(x)));
+
+ // 差集
+ let difference = new Set([...a].filter(x => !b.has(x)));
+```
+
+### Map
 
 
 ## 💡JS新增的两个原始数据类型
@@ -327,6 +384,7 @@ console.log(true + variable);   //  NaN
 
 
 ### 6.Symbol唯一值
+[⭐️⭐️⭐️Symbol详解](../08-ES6/Symbol.md)
 - 给对象设置唯一的属性
 - 在vuex/redux中做行为派发的时候，统一管理派发的行为标识，标识的值可以是唯一
 .....
@@ -365,8 +423,7 @@ console.log(9007199254740992 + 3); //9007199254740996
 
 
 ## 二、引用数据类型
-
-### object对象类型
+ 
 - 普通对象{key:value,...}	 {xxx:'xxx'}
 - 数组对象Array [value1,...]	[10,20]
 - 正则对象RegExp /^\d+$/
@@ -377,7 +434,7 @@ console.log(9007199254740992 + 3); //9007199254740996
 - ...
  
 
-#### object普通对象
+### 1.object普通对象
 JS中的普通对象：无序的键值对集合。
 
 - 由大括号包裹起来的{key: value}
@@ -516,7 +573,7 @@ console.log(name);
 	
 
 
-#### ⭐️Array数组对象
+### 2.⭐️Array数组对象
 ⭐️⭐️⭐️[内容详见-数组](./02-01-array.md)
 - 中括号包起来，逗号分隔数组中每一项的值（每一项的值可以是任意类型）
 - 由零到多组键值对组成（也是对象）
@@ -559,8 +616,7 @@ console.log(document.querySelectorAll('*'));
 ```
 
 
-
-#### ⭐️function函数
+### 3.⭐️function函数
 函数：封装可用来复用的代码块
 就是封装了一段可被重复调用执行的代码块。通过此代码块可以实现大量代码的重复使用
 
@@ -590,20 +646,25 @@ function 函数名 (arg1,arg2) {
 ```
 
 
-#### ES6中的 Arrow Function 箭头函数
+### ES6中的 Arrow Function 箭头函数
 `let fn = () => {
 };`
 
 
-#### RegExp正则对象
+### 4.Date类型
+[⭐️Date类型详解](./02-04-date.md)
+
+
+
+### 5.RegExp正则对象
 两个斜杠包起来一大堆你看不懂的符号就是正则 
 `let reg = /$[+-]?(\d|([0-9]\d+))(\.\d+)?^/;`
 
 ⭐️[内容详见-正则表达式](../../tools/regexp/RegExp_class_notes.md)
 
 
-### 三、类型转换
-####  转换为数字类型
+## 三、类型转换
+###  转换为数字类型
 1. Number([value]) 把其他数据类型转换为number数字类型
 
    + 字符串转换为数字 ：空字符串是0  如果字符串中出现任意一个非有效数字字符，结果都是NaN
@@ -625,7 +686,7 @@ function 函数名 (arg1,arg2) {
    + 从字符串左侧第一个字符开始向右查找，把找到的有效数字字符，最后转换为数字（遇到一个非有效数字字符则停止查找，不论后面是否还有有效数字字符，都不再找了）
    + 如果一个有效数字字符都没有找到，结果是NaN
 
-#### 转换为字符串类型
+### 转换为字符串类型
 
 * 把其它数据类型转换为字符串类型
   String([value])
@@ -634,7 +695,7 @@ function 函数名 (arg1,arg2) {
 * 普通对象转换为字符串都是 "[object Object]"，数组对象转换为字符串是 "第一项,第二项..."（逗号分隔数组中的每一项）
 
 
-#### 转换为bool数据类型
+### 转换为bool数据类型
 **规则：只有 “0/NaN/null/undefined/空字符串” 最后是false，其余的都是true**
 
 * 如何把其它数据类型转换为布尔类型
@@ -663,21 +724,56 @@ if (3 + '3px') {} //=>3 + '3px' =>'33px' 拼接字符串————真
 if (3 - '3px') {} //=>3 - '3px' =>NaN 假
 ```
 
-### 四、数据类型检测
-基于一些方法检测当前值的类型
+## 四、数据类型检测
+### 检测当前值的类型的方法
 + tyepof [value] 检测数据类型的运算符
 + [example] instanceof [class] 检测某一个实例是否属于这个类
 + [example].constructor === [class] 检测实例和类关系的，而检测数据类型
 + Object.prototype.toString.call([value]) 检测数据类型
 
-#### 基于typeof检测数据类型
+### ⭐️检测数据类型的方法封装
+```js
+(function () {
+    var class2type = {};
+    var toString = class2type.toString;
+
+    [
+        "Boolean",
+        "Number",
+        "String",
+        "Symbol",
+        "Function",
+        "Array",
+        "Date",
+        "RegExp",
+        "Object",
+        "Error"
+    ].forEach(function (name) {
+        class2type["[object " + name + "]"] = name.toLowerCase();
+    });
+
+    function toType(obj) {
+        if (obj == null) {
+            return obj + "";
+        }
+        return typeof obj === "object" || typeof obj === "function" ?
+            class2type[toString.call(obj)] || "object" :
+            typeof obj;
+    }
+    window.toType = toType;
+})();
+```
+
+
+
+### 基于typeof检测数据类型
 typeof的原理 : 
 + 所有的数据类型值在计算机中存储的都是按照“二进制”存储的
 + null -> 000000
 + 只要是对象都是以 000 开始的
 + typeof检测的时候，是按照计算机存储的二进制的值来检测的
 
-#### typeof的细节点
+### typeof的细节点
 
 - typeof 检测的结果首先是一个字符串，字符串中包含了对应的数据类型（例如："number"、"string"、"boolean"、"undefined"、"object"、"function"、"symbol"、"bigint"）
 
@@ -712,7 +808,7 @@ typeof的原理 :
     console.log(result); //=>"string" 
     ```
 
-#### instanceof(非万能)
+### instanceof(非万能)
 通过 `instanceof` 操作符也可以对对象类型进行判定，其原理就是测试构造函数的 `prototype` 是否出现在被检测对象的原型链上。
 ```js
 [] instanceof Array            // true

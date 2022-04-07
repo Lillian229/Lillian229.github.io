@@ -36,11 +36,13 @@ let nav = [
         ariaLabel: '🎉前端基础相关知识在这里诶~✨',   //用于识别的label
         items: [
             { text: "HTML&CSS", link: "/frontEnd/00-HTML&CSS/" },
-            { text: "javascript", link: "/frontEnd/02-javascript/" },
-            { text: "webAPI", link: "/frontEnd/03-webAPI/" },
-            { text: "jQuery", link: "/frontEnd/04-jQuery/" },
+            { text: "JavaScript", link: "/frontEnd/02-javascript/" },
+            // { text: "webAPI", link: "/frontEnd/03-webAPI/" },
+            // { text: "jQuery", link: "/frontEnd/04-jQuery/" },
             { text: "数据可视化", link: "/frontEnd/05-dataVisualization/" },
             { text: "ajax", link: "/frontEnd/06-ajax/" },
+            { text: "webpack", link: "/frontEnd/07-webpack/" },
+            { text: "ES6", link: "/frontEnd/08-ES6/"}
 
         ]
     },
@@ -58,9 +60,9 @@ let nav = [
         text: "前端框架",
         ariaLabel: '🎉前端框架相关知识在这里诶~✨',
         items: [
-            { text: "vue", link: "/frame/vue/" },
-            { text: "react", link: "/frame/react/" },
-            { text: "uniapp", link: "/frame/uniapp/" },
+            { text: "Vue", link: "/frame/vue/" },
+            { text: "React", link: "/frame/react/" },
+            { text: "Uniapp", link: "/frame/uniapp/" },
 
 
         ]
@@ -87,8 +89,8 @@ let nav = [
     {
         text: "⚙️tools",
         items: [
-            { text: "git", link: "/tools/git/" },
-            { text: "正则", link: "/tools/regexp/RegExp_class_notes/" },
+            { text: "🗃Git", link: "/tools/git/" },
+            { text: "📏正则", link: "/tools/regexp/RegExp_class_notes/" },
             { text: "🔧常用工具", link: "/tools/common-tools/" },
             { text: "🔮obsidian", link: "/tools/obsidian/" },
 
@@ -101,16 +103,17 @@ let nav = [
         items: [
             { text: "前端工程化", link: "/" },
             { text: "Vue3源码阅读和调试", link: "/" },
+            { text: "React的学习",link: "/"},
             { text: "Rust", link: "/" },
         ]
     },
 
 
-    {
-        text: 'Github',
-        ariaLabel: '👧lillian\'github',   //用于识别的label
-        link: 'https://github.com/Lillian229'
-    }
+    // {
+    //     text: 'Github',
+    //     ariaLabel: '👧lillian\'github',   //用于识别的label
+    //     link: 'https://github.com/Lillian229'
+    // }
 ]
 
 module.exports = nav;

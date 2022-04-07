@@ -19,7 +19,7 @@
 
 
 
-## 常用的版本控制系统：SVN(集中式) / GIT(分布式)
+## SVN(集中式)&GIT(分布式)
 - SVN：基于差异的版本控制，存储的是一组基本文件和每个文件随时间逐步积累的差异
 优：节省磁盘空间
 缺：耗时、效率低
@@ -30,5 +30,27 @@
 
 
 
+## 设置忽略文件
+在本地工程常会修改一些配置文件，这些文件不需要被提交， 而又不想每次执行 git status 时都让这些文件显示出来
+- 利用命令`touch .gitignore`新建文件 
+- 然后往文件中添加需要忽略哪些文件夹下的什么类型的文件 
+    - `$ vim .gitignore `
+    - `$ cat .gitignore` 
+    - 在.gitignore写入忽略文件名称or类型
+    ```
+    eg.
+    /target/class 
+    .settings 
+    .imp 
+    *.ini 
+    注意：忽略/target/class 文件夹下所有后缀名为.settings，.imp 的文件，忽略所有后缀名为.ini 的文件。
+    ```
+
+## git fetch 和 git merge 和 git pull 的区别
+区别如下 git pull 相当于 git fetch 和 git merge，即更新远程仓库的代码到本地仓库，然后将内容合 并到当前分支。 
+- git merge: 将内容合并到当前分支 
+- git pull 相当于是从远程获取最新版本并 merge 到本地 命令从中央存储库中提取特定分支的新更改或提交，并更新本地存储库中的目标分支。 
+- git fetch 相当于是从远程获取最新版本到本地，不会自动 merge 
+- git pull = git fetch + git merge
 
 

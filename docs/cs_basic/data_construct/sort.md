@@ -1,0 +1,96 @@
+# 数组排序算法
+## 1.冒泡排序
+冒泡排序原理：数组相邻两项直接互相比较，如果前一项比后一项大，就交换两项的位置，否则什么也不做；这样比较一轮过后，可以得出本轮的最大值。
+```js
+var ary = [8, 94, 15, 6, 3, 2];
+//轮数 i                  每一轮比较次数 j
+// 0 [8, 15, 6, 3, 2, 94]  5
+// 1 [8, 6, 3, 2, 15, 94]  4
+// 2 [6, 3, 2, 8, 15, 94]  3
+// 3 [3, 2, 6, 8, 15, 94]  2
+// 4 [2, 3, 6, 8, 15, 94]  1
+
+// ?比较轮数: ary.length - 1 轮
+// ? 每一轮两两比较的次数 ary.length - 1 - i
+for (var i = 0; i < ary.length - 1; i++) {
+
+  for (var j = 0; j < ary.length - 1 - i; j++) {
+    if (ary[j] > ary[j + 1]) {
+      var temp = ary[j];
+      ary[j] = ary[j + 1];
+      ary[j + 1] = temp;
+    }
+  }
+}
+
+console.log(ary);
+```
+
+## 2.快速排序
+快速排序的原理：声明两个新数组，分别叫做left(左)和right(右)，获取当前数组的中间相，比中间项小的放在left中，比中间项大的放在right。然后对left和right进行同样的操作，直到当前数组只有一项或者为空时，终止这个过程，然后把所有的left和right以及中间相拼接起来。
+```js
+var ary = [12,8,88,97,67,56,78,86,85];
+// left [12, 8, 56] |67| right [88, 97, 78, 86, 85]
+// left [] |8| right [12, 56] |67| left [] |78| right [88, 97, 86, 85]
+// left [] |8| left [] |12| right [56] |67|78| left [] |left [85] |86| right [88, 97]
+// left [] |8| left [] |12| right [56] |67|78| left [] |left [85] |86| left [] |88| right [97]
+// 拼接 [8, 12, 56, 67, 78, 85, 86, 88, 97]
+
+
+function quickSort(ary) {
+
+  // !!!! 使用递归要注意递归终止的条件：当前数组ary只要一项或者为空
+  if (ary.length <= 1) {
+    return ary;
+  }
+
+  // 1. 计算中间相索引
+  var middleIndex = Math.floor(ary.length / 2);
+  // 2. 获取中间项
+  var middleVal = ary.splice(middleIndex, 1)[0];
+  // 3. 声明left和right
+  var left = [];
+  var right = [];
+
+  // 4. 循环比较数组项和中间项的大小
+  for (var i = 0; i < ary.length; i++) {
+    var cur = ary[i];
+
+    // 用当前项和中间项比较，如果大就push到right，left
+    if (cur > middleVal) {
+      right.push(cur);
+    } else {
+      left.push(cur);
+    }
+  }
+
+  return quickSort(left).concat(middleVal, quickSort(right));
+}
+
+var sortedAry = quickSort(ary);
+console.log(sortedAry);
+```
+
+
+## 3.插入排序
+插入排序原理：
+1. 假定第一项是最小值；
+2. 从第二项开始，从该项开始和前面的项进行比较
+3. 如果前面一项比后一项大，则交换位置
+```js
+var ary = [5, 4, 3, 2, 1];
+
+function insertSort(ary) {
+  for (var i = 1; i < ary.length; i++) {
+    for (var j = i; j > 0; j--) {
+      if ( ary[j - 1] > ary[j]) {
+        var temp = ary[j];
+        ary[j] = ary[j - 1];
+        ary[j - 1] = temp;
+      }
+    }
+  }
+  return ary;
+}
+console.log(insertSort(ary));
+```

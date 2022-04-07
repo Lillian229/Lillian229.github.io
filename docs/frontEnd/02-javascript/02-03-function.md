@@ -1,6 +1,6 @@
 # 2.2.3.函数
 ## 函数底层运行机制
-[⭐️函数运行机制](./00-basicconcepts.md#函数执行步骤垃圾回收机制)
+[⭐️函数运行机制](./00-basicconcepts.md#函数执行步骤-垃圾回收机制)
 
 [⭐️函数闭包](./00-basicconcepts.md#函数执行例子闭包)
 ## 一、函数
@@ -11,7 +11,8 @@
 函数： 在计算机语言中，函数是拥有固定功能和逻辑的代码块。它只需要声明一次，然后就可以无限次执行。在面向对象（OOP，Object-Oriented-Programming）的语言也叫做方法。
 
 就是**封装了一段可被重复调用执行的代码块**。通过此代码块可以**实现大量代码的重复使用**。  
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/函数（描述详细）.png)
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/函数（描述详细）.png) -->
+![](../../pic/function(detail).png)
 
 ## 二、函数的使用
 标准函数语法：
@@ -38,6 +39,36 @@ function 函数名() {
 ```js
 // 调用函数
 函数名();  // 通过调用函数名来执行函数体代码
+```
+```js
+/* 1. 普通函数 */
+function fn() {
+console.log('yaya');
+}
+fn();
+
+/* 2. 对象的方法 */
+var o = {
+sayHi: function() {
+console.log('yaya');
+}
+}
+o.sayHi();
+
+/* 3. 构造函数*/
+function Star() {};
+new Star();
+
+/* 4. 绑定事件函数*/
+btn.onclick = function() {}; // 点击了按钮就可以调用这个函数
+/* 5. 定时器函数*/
+setInterval(function() {}, 1000); //这个函数是定时器自动1秒钟调用一次
+
+
+/* 6. 立即执行函数(自调用函数)*/
+(function() {
+console.log('yaya');
+})();
 ```
 
 - 函数执行就是函数名后面紧跟着一个小括号，形如 fn()；
@@ -121,7 +152,12 @@ function 函数名() {
   3. 实参和形参的多个参数之间用逗号（,）分隔
 
 ### 函数形参和实参数量不匹配时
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/23-4.png)
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/23-4.png) -->
+| 参数个数 | 说明 |
+| --- | ----|
+| 实参个等于形参个数 | 输出正确结果 |
+| 实参个数多于形参个数| 只取到形参的个数 |
+| 实参个数小于形参个数| 多的形参定义为undefined,结果为NaN|
 
 注意：在JavaScript中，形参的默认值是undefined。
 
@@ -169,7 +205,7 @@ console.log(result); // 3
 console.log(sum(1, 2));
 ```
 
-### return 语句
+### return语句
 
 返回值：函数调用整体代表的数据；函数执行完成后可以通过return语句将指定数据返回 。
 
@@ -198,7 +234,7 @@ function 函数名（）{
 - return ：不仅可以退出循环，还能够返回 return 语句中的值，同时还可以结束当前的函数体内的代码
 
 ## 五、arguments_实参集合
-eg.写一个方法，求10数的和
+- 需求一：eg.写一个方法，求10数的和
 ```js
 function sum(a, b, c, d, e, f, g, h, i, j) {
   var total = a + b + c + d + e + f + g + h + i + j;
@@ -207,6 +243,17 @@ function sum(a, b, c, d, e, f, g, h, i, j) {
 
 sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 ```
+### 函数形参的局限性
+1. 因为形参和实参是一一对应的，如果想要多少传递多少实参，就要设置多少形参，这很不方便，现在是10个，如果是100个，就要设置100个形参。
+2. 如果实参个数不固定，可能10个可能2个，还可能100个，所以此时形参无法设置。
+
+- 需求2：需要写一个方法，实现可以求任意多个数字之和；
+
+任意多个实参，此时形参不固定了。怎么办？
+
+> 为了解决上面的形参的种种限制，浏览器为函数内置一个 arguments 对象；
+> arguments：arguments 叫做内置的实参集合，这个对象里面包含了函数执行时传递进来的所有实参（内置：函数天生自带的机制，不管是否设置了形参，也不管你是否传递了实参，arguments 一直都存在）。
+
 ### arguments对象中存储了传递的所有实参
 
 当不确定有多少个参数传递的时候，可以用 arguments 来获取。在 JavaScript 中，arguments实际上它是当前函数的一个内置对象。所有函数都内置了一个 arguments 对象，arguments 对象中存储了传递的所有实参。
@@ -224,11 +271,44 @@ arguments展示形式是一个伪数组，因此可以进行遍历。伪数组�
 只有函数才有arguments对象，而且每个函数都内置好了arguments
   
 什么时候用？当不知道有几个参数时，有了arguments可以不用写形参
+```js
+function sum2(n, m) {
+  console.log(n, m);
+  console.log(arguments);
+  
+   arguments 它是一个类数组（不是数组，不能直接使用数组中的方法）
+   即使设置形参变量，形参该是什么还是什么，但是 arguments 存储的是所有传进来的实参，所以 arguments 被称为 实参集合
+  它有索引，有 length，可以用 for 循环遍历
+   {
+     0: 1,
+     1: 2,
+     2: 5,
+     3: 7,
+     4: 8
+     length: 5,
+     callee: arguments.callee == sum2 -> true   //存储的当前函数本身 
+    }
+}
+
+sum2(1, 2, 5, 7, 8);
+```
+### ES6不定参数
+- ES6中提供了一个功能和 arguments 的功能相似的功能———— 不定参数
+```js
+function sum(...arg) {
+  // ...叫做展开运算符
+  // arg 是一个形参变量
+  console.log(arg);  arg 是一个数组
+}
+sum(1, 2, 4, 5, 7);
+```
+
+
 
 ## 六、函数案例
 函数内部可以调用另一个函数，在同一作用域代码中，函数名即代表封装的操作，使用函数名加括号即可以将封装的操作执行。
 
-## 七、函数的两种声明方式
+## 七、函数的三种声明方式
 
 1. 自定义函数方式(命名函数)
 
@@ -262,6 +342,218 @@ arguments展示形式是一个伪数组，因此可以进行遍历。伪数组�
 
 
 
+3. new Function()
+```js
+var f = new Function('a', 'b', 'console.log(a + b)');
+f(1, 2);
+var fn = new Function('参数1','参数2'..., '函数体')
+注意
+/*Function 里面参数都必须是字符串格式
+第三种方式执行效率低，也不方便书写，因此较少使用
+所有函数都是 Function 的实例(对象)
+函数也属于对象
+*/
+```
+
+## 七、Function类：函数类
+所有的函数（类、普通函数）都是 Function 的一个实例
+### 内置类
+```js
+// Array Number String Boolean Object Date Function 等
+
+console.log(typeof Array);  // function
+console.log(typeof Number);  // function
+```
+
+### 内置类和Function类
+内置类都是 Function 类实例，而实例都有一个 `__proto__` 指向所属类的原型对象
+
+js 中所有的函数都是 Function 的实例，那么内置类，如 Array 是函数，所以 Array 也是 Function 的实例；
+```js
+console.log(Array instanceof Function);
+```
+
+既然是实例，那么一定也会有原型关系
+```js
+console.dir(Array); // 通过打印发现 Array 也是一个对象，它也有 __proto__，根据原型关系，Array 的 __proto__ 应该指向的是 Function 的 prototype
+
+Array.__proto__ === Function.prototype;  true
+
+console.log(Date instanceof Function);  true
+console.log(Date.__proto__ === Function.prototype);  true
+console.log(RegExp instanceof Function);  true
+console.log(RegExp.__proto__ === Function.prototype);  true
+console.log(Object instanceof Function);  true
+console.log(Object.__proto__ === Function.prototype);  true
+
+console.log(Function.prototype.__proto__ === Object.prototype);  true
+```
+- 因为 Object 也是一个类，所以也是一个函数，所以也是 Function 的实例.所以 `Object.__proto__` 指向Function.prototype
+
+- 而 Function 本身也是一个类，也是一个函数，所以 Function 也有 prototype，而 prototype 也是一个对象，所以 `Function.prototype.__proto__ `又指向了 Object.prototype
+
+
+### Function和Object的关系
+1. `Object.__proto__ `指向 Function.prototype
+```js
+console.log(Object.__proto__ === Function.prototype);
+```
+
+2. `Function.prototype.__proto__` 指向 Object.prototype
+```js
+console.log(Function.prototype.__proto__ === Object.prototype);
+```
+
+3. 所有的函数都是 Function 的实例
+```js
+console.log(Array instanceof Function);
+```
+
+
+4. 所有的引用数类型（普通对象、实例对象、函数、类、数组、Date）的都是 Object 这个基类的实例，所以函数也是对象；
+```js
+console.log(Function instanceof Object);
+console.log(Array instanceof Object);
+console.log(Date instanceof Object);
+let obj = {
+	id: 1
+};
+console.log(obj instanceof Object);
+
+function fn() {
+	console.log('fn')
+}
+fn.name = 'yaya';
+fn.age = 10;
+console.log(fn.age);
+console.log(fn.age);
+```
+
+### 总结
+- 所有的函数数据类型都是 Function 的实例
+```js
+function Fn() {}
+console.log(Fn instanceof Function); // true
+```
+
+
+- Function 函数类 本身也是一个函数
+```js
+console.log(typeof Function); // function
+console.log(Function instanceof Function); // true 所以 Function 也是自己的的一个实例
+```
+
+
+- 因为 Function 是自己的实例，所以 `Function.__proto__ `指向自己的 prototype
+```js
+console.log(Function.__proto__ === Function.prototype);
+```
+
+
+- Function 也是 Object 基类的实例：所以函数也是对象，可以有自己的私有属性
+```js
+console.log(Function instanceof Object); // true
+```
+
+- js 的内置引用类型都是 Function 的实例
+```js
+console.log(Object instanceof Function);
+console.log(Object.__proto__ === Function.prototype)
+```
+
+## 八、函数的三种角色
+函数的三种角色：
+
+1. 作为一个普通函数执行（形参、实参、返回值）
+2. 作为一个类（new Fn 构造函数执行）
+3. 函数也是一个普通对象（通过 .属性名 或者 ['属性名'] 获取私有属性）；
+### 1.普通函数
+#### 普通函数的执行过程
+
+1. 开辟一个新的作用域
+2. 形参赋值
+3. 变量提升
+4. 函数体从上到下执行
+5. 销毁作用域
+
+```js
+function sum(a, b) {
+	var x = 1;
+	var y = 12;
+	var z = 123;
+	return a + b + x + y + z;
+}
+var result = sum(1, 3);
+console.log(result);
+```
+
+### 2.构造函数(类)
+- 每个构造函数都有一个 prototype 属性，它的值是一个对象，用来存放当前类型的公有的属性和方法
+- 必须通过 new 操作符调用函数才能返回一个实例对象；
+```js
+function Teacher(n, a, s, f) {
+	// 通过 this.xxx = xxx 给实例对象添加私有属性
+	this.name = n;
+	this.age = a;
+	this.subject = s;
+	this.from = f;
+}
+```
+- 在原型上增加的方法都是这个类型公有的属性和方法
+```js
+Teacher.prototype.teach = function () {
+	console.log(`${this.name} 老师讲 ${this.subject} 课程`)
+};
+let t = new Teacher('hx', 18, '操作系统', 'UESTC');
+```
+
+#### new执行构造函数
+
+1. 新开辟一个作用域
+2. 形参赋值
+3. 变量提升
+4. 隐式创建一个当前类的实例对象，并且把构造函数中的 this 指向当前实例
+5. 执行构造函数中的代码
+6. 隐式返回实例对象，相当于 return this
+7. 销毁作用域
+
+```js
+console.log(t.name);
+console.log(t.age);
+t.teach(); // 调用 Teacher 的公有方法
+```
+
+### 作为一个普通对象（所有引用数据类型的都是 Object 的一个实例）
+```js
+function ll(a, b) {
+	console.log('yaya fighting everyday');
+}
+ll(1, 2);
+
+console.dir(ll); //  ƒ ll(a, b)
+
+console.log(ll.length); // 2 形参个数
+console.log(ll.name); // 函数名ll
+```
+
+- 把函数当做普通对象使用，就像操作普通对象一样操作对象；通过这样的方式添加给函数（普通函数、构造函数）的属性或者方法称为静态属性或方法
+```js
+ll.age = 10;
+ll.title = 'hello';
+ll.greeting = function () {
+	console.log('hello world')
+};
+console.log(ll.age); //10
+console.log(ll.title); //hello
+
+let f1 = new ll();
+console.log(f1.age); // undefined
+console.log(f1.title); // undefined
+console.log(f1);  //ll {}
+console.log(ll.prototype);  //{constructor: ƒ}
+console.dir(ll);  //ƒ ll(a, b)
+```
+- 注意：通过 函数名.xxx = xxx 添加的属性都是这个函数的私有属性。如果这个函数被当做构造函数使用（用 new 调用）时，这些属性既不是实例的属性也不是实例的公有属性，只能通过 函数名.xxx 的方式获取；
 
 
 <!--

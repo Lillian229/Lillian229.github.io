@@ -289,6 +289,7 @@ overflow:hidden | auto | scroll;
 
 **定位模式** 用于指定一个元素在文档中的定位方式。**边偏移**则决定了该元素的最终位置。
 
+![](https://gitee.com/leelillian/picgorepo/raw/master/images/26定位的概念.png)
 
 
 #### 边偏移（方位名词）
@@ -324,7 +325,6 @@ overflow:hidden | auto | scroll;
 | `absolute` | **绝对**定位 |
 | `fixed`    | **固定**定位 |
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/26定位的概念.png)
 
 ### 定位模式介绍
 

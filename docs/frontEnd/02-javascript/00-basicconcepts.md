@@ -1,4 +1,7 @@
 # 一些基础概念和底层机制
+
+## JavaScript的底层运行机制
+
 ## 一些简写
 - EC —— Execution Context：执行上下文
 - ECstack 执行环境栈
@@ -27,7 +30,7 @@
 - 私有和全局没有必然联系，可能有一些间接关系
 
 ## 堆栈内存
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/堆栈内存例子.png)
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/堆栈内存例子.png) -->
 
 ## 关于函数和对象的堆栈问题
 - 对象不能重复
@@ -48,16 +51,17 @@
 
 
 ### 浏览器底层运行机制——基本类型
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——基本类型.png)
-
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——基本类型.png) -->
+<!-- ![](../../pic/浏览器底层运行机制——基本类型.png) -->
 ### 浏览器底层运行机制——引用数据类型
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——引用数据类型.png)
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——引用数据类型.png) -->
+<!-- ![](../../pic/浏览器底层运行机制——引用数据类型.png) -->
 
 
 ### 浏览器底层运行机制——全局对象
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——全局对象.png)
-
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——全局对象.png) -->
+<!-- ![](../../pic/浏览器底层运行机制——全局对象.png) -->
 
 ### 堆栈内存例子
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/堆栈内存例子.png)
@@ -74,7 +78,8 @@
     + 变量提升
 3. 代码执行
 4. 出栈释放
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/⭐️函数执行步骤.png)
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/⭐️函数执行步骤.png) -->
+![](../../pic/function_step.png)
 
 堆内存00：(2处，见图)，fn(y)中第一步执行的是将堆内存00中下标为0的12改为100
 
@@ -82,7 +87,9 @@
 
 
 ## 函数执行例子——闭包
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220315183027.png)
+<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220315183027.png) -->
+![](../../pic/20220315183027.png)
+
 
 ## this的指向问题
 [如何确定this的指向](https://juejin.cn/post/7010262564068130853)
@@ -99,6 +106,7 @@
     + 有“点”，“点”前面是谁this就是谁
     + 匿名函数(自执行函数/回调函数)如果没有经过特殊的处理，则this一般都是window/undefined，但是如果经过一些特殊处理，一切都以处理后的结果为主
     + 全局上下文中的this是window；块级上下文中没有自己的this，所用到的this都是所处上级上下文中的this;
+
 
 ### 一些举例
 

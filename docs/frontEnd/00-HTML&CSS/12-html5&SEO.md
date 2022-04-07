@@ -140,7 +140,13 @@
 
 #### audio 常用属性
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/audio常用属性.png)
+| 属性  |  值 |  描述 |
+|---|---|---|
+| autoplay  |  autoplay |  如果出现该属性,则音频在就绪后马.上播放。 |
+|  controls |  controls |  如果出现该属性，则向用户显示控件，比如播放按钮。 |
+| loop  |  loop |  如果出现该属性，则每当音频结束时重新开始播放。 |
+|  src |  url |  要播放的音频的URL。 |
+
 
 **示例代码：**
 
@@ -189,6 +195,19 @@
 
 email, url, data, time, month, week, number, tel, search, color
 ![](https://gitee.com/leelillian/picgorepo/raw/master/images/新增input表单.png)
+
+|  属性 |  值 |
+|---|---|
+|  type="email"  |  限制用户输入必须为Email类型 |
+|  type="url"  |  限制用户输入必须为URL类型 |
+|  type="date"  |  限制用户输入必须为日期类型 |
+|  type="time" |  限制用户输入必须为时间类型 |
+|  type="month" | 限制用户输入必须为月类型  |
+|  type="week" |  限制用户输入必须为周类型 |
+|  type="number" | 限制用户输入必须为数字类型  |
+|  type="tel" |   手机号码 |
+|  type="search" | 搜索框  |
+|  type="color" | 生成一个颜色选择表单  |
 
 **案例：新增表单的用法**
 

@@ -17,53 +17,152 @@ Vue 作为一款轻量级框架、简单易学、数据绑定、组件化、数�
 
 ## Vue 数据双向绑定的原理是什么?
 [Vue 数据双向绑定的原理](../../frame/vue/#双向数据绑定的原理)
+双向数据绑定：通过 Vue 模板语法，把 Vue 中 data 里面的数据绑定到页面中；如果我们修改这个数据，页面中绑定这个数据的地方的值都会跟着自动更新；
 
+原理：Vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty()来劫持各个属性的 setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。
+
+第一步：需要 observe 的数据对象进行递归遍历，包括子属性对象的属性，都加上 setter 和 getter,这样的话，给这个对象的某个值赋值，就会触发 setter，那么就能监听到了数据变化
+
+第二步：compile 解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图，并将每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一旦数据有变动，收到通知，更新视图
+
+第三步：Watcher 订阅者是 Observer 和 Compile 之间通信的桥梁，主要做的事情是:
+1. 在自身实例化时往属性订阅器(dep)里面添加自己 
+2. 自身必须有一个 update()方法
+3. 待属性变动 dep.notice()通知时，能调用自身的 update()方法，并触发 Compile中绑定的回调，则功成身退。
+
+第四步：MVVM 作为数据绑定的入口，整合 Observer、Compile 和 Watcher
+三者，通过 Observer 来监听自己的 model 数据变化，通过 Compile 来解析编译模
+板指令，最终利用 Watcher 搭起 Observer 和 Compile 之间的通信桥梁，达到数据变化 -> 视图更新；视图交互变化(input) -> 数据 model 变更的双向绑定效果。
+
+
+defineProperty 是一个函数，用来定义对象属性的特性；是 Object 的静态方法
+
+vue 使用的是发布订阅模式，vue 会收集页面中所有绑定数据的元素，这些相当于订阅了 data 里面的数据变更的事件，当数据发生变更时，会触发 set 方法，在 set 方法中会把所有的使用这个属性的元素的值更新成最新的值（发布事件）；
+
+v-model 的原理也是利用了 DOM 事件，当表单元素的值发生变化时，设置对象的属性，然后设置对象的属性的时候，会触发 set 方法，在 set 方法中，会去修改所有依赖这些值的地方
+
+## 深入响应式原理——如何追踪变化
+
+- 当你把一个普通的 JavaScript 对象传给 Vue 实例的 data 选项，Vue 将遍历此对象所有的属性，并使用 Object.defineProperty 把这些属性全部转 getter/setter。
+- Object.defineProperty 是 ES5 中一个无法 shim 的特性，这也就是为什么 Vue 不支持 IE8 以及更低版本浏览器的原因。
+- 这些 getter/setter 对用户来说是不可见的，但是在内部它们让 Vue 追踪依赖，在属性被访问和修改时通知变化。这里需要注意的问题是浏览器控制台在打印数据对象时 getter/setter 的格式化并不同，所以你可能需要安装 vue-devtools 来获取更加友好的检查接口。
+- 每个组件实例都有相应的 watcher 实例对象，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的 setter 被调用时，会通知 watcher 重新计算，从而致使它关联的组件得以更新。
+- 观察者订阅了可观察对象，当可观察对象发布事件，则就直接调度观察者的行为，所以这里观察者和可观察对象其实就产生了一个依赖的关系。
+
+## 对 Virtual DOM算法的理解
+
+包括几个步骤：
+
+- 1、用 JavaScript 对象结构表示 DOM 树的结构，然后用这个树构建一个真正的 DOM 树，插到文档当中；
+- 2、当状态变更的时候，重新构造一棵新的对象树，然后用新的树和旧的树进行比较，记录两棵树差异；
+- 3、把 2 所记录的差异应用到步骤 1 所构建的真正的 DOM 树上，视图就更新了。
+
+Virtual DOM 本质上就是在 JS 和 DOM 之间做了一个缓存。可以类比 CPU 和硬盘，既然硬盘这么慢，我们就在它们之间加个缓存：既然 DOM 这么慢，我们就在它们 JS 和 DOM 之间加个缓存。CPU（JS）只操作内存（Virtual DOM），最后的时候再把变更写入硬盘（DOM）。
+
+## 比较两棵虚拟 DOM 树的差异
+
+比较两棵 DOM 树的差异是 Virtual DOM 算法最核心的部分，这也是所谓的 Virtual DOM 的 diff 算法。
+两个树的完全的 diff 算法是一个时间复杂度为 O(n^3) 的问题。但是在前端当中，你很少会跨越层级地移动 DOM 元素。
+
+所以 Virtual DOM 只会对同一个层级的元素进行对比：
+![](../pic/domtreediff.png)
+
+上面的 div 只会和同一层级的 div 对比，第二层级的只会跟第二层级对比。这样算法复杂度就可以达到 O(n)。
+
+深度优先遍历，记录差异
+
+在实际的代码中，会对新旧两棵树进行一个深度优先的遍历，这样每个节点都会有一个唯一的标记：
+![](../pic/domtreediff2.png)
+在深度优先遍历的时候，每遍历到一个节点就把该节点和新的的树进行对比。如果有差异的话就记录到一个对象里面。
+
+Virtual DOM 算法主要是实现上面步骤的三个函数：element，diff，patch。然后就可以实际的进行使用：
+
+```javascript
+// 1. 构建虚拟 DOM
+var tree = el('div', {'id': 'container'}, [
+    el('h1', {style: 'color: blue'}, ['simple virtal dom']),
+    el('p', ['Hello, virtual-dom']),
+    el('ul', [el('li')])
+])
+// 2. 通过虚拟 DOM 构建真正的 DOM
+var root = tree.render()
+document.body.appendChild(root)
+// 3. 生成新的虚拟 DOM
+var newTree = el('div', {'id': 'container'}, [
+    el('h1', {style: 'color: red'}, ['simple virtal dom']),
+    el('p', ['Hello, virtual-dom']),
+    el('ul', [el('li'), el('li')])
+])
+// 4. 比较两棵虚拟 DOM 树的不同
+var patches = diff(tree, newTree)
+// 5. 在真正的 DOM 元素上应用变更
+patch(root, patches)
+```
+
+当然这是非常粗糙的实践，实际中还需要处理事件监听等；生成虚拟 DOM 的时候也可以加入 JSX 语法。这些事情都做了的话，就可以构造一个简单的 ReactJS 了。
+
+
+- [深度剖析：如何实现一个 Virtual DOM 算法](https://segmentfault.com/a/1190000004029168)
+- [virtual-dom(Vue实现)简析](https://segmentfault.com/a/1190000010090659)
 
 ## Object.defineProperty 和 Proxy 的区别
-1）	Proxy 的优势如下:
-Proxy 可以直接监听对象而非属性；
-Proxy 可以直接监听数组的变化；
-Proxy 有多达 13 种拦截方法,不限于 apply、ownKeys、deleteProperty、has 等等是 Object.defineProperty  不具备的；
-Proxy 返回的是一个新对象, 我们可以只操作新的对象达到目的, 而Object.defineProperty 只能遍历对象属性直接修改；
-Proxy 作为新标准将受到浏览器厂商重点持续的性能优化，也就是传说中的新标准的性能红利；
-2）	Object.defineProperty 的优势如下:
+1.	Proxy 的优势如下:
+
+- Proxy 可以直接监听对象而非属性；
+- Proxy 可以直接监听数组的变化；
+- Proxy 有多达 13 种拦截方法,不限于 apply、ownKeys、deleteProperty、has 等等是 Object.defineProperty  不具备的；
+- Proxy 返回的是一个新对象, 我们可以只操作新的对象达到目的, 而Object.defineProperty 只能遍历对象属性直接修改；
+- Proxy 作为新标准将受到浏览器厂商重点持续的性能优化，也就是传说中的新标准的性能红利；
+
+
+2. Object.defineProperty 的优势如下:
+
 兼容性好，支持 IE9，而 Proxy 的存在浏览器兼容性问题,而且无法用 polyfill磨平
 
+## key的作用
+在v-for的情况下加key，理想的key应该是唯一id
+
+1. 对于vue来说是一个身份ID
+2. 防止元素复用
+3. 提升diff算法
+
+## index作为key的危害
+用index作为key，索引永远是从0到length，假如删除了某一项，删除的那一项还它的下一项key会重合，会造成元素复用和一些bug，
 
 ## Vue 生命周期总共分为几个阶段？
 Vue 实例从创建到销毁的过程，就是生命周期。也就是从开始创建、初始化数据、编译模板、挂载 Dom→渲染、更新→渲染、卸载等一系列过程，我们称这是 Vue 的生命周期。
-1）beforeCreate
+1. beforeCreate
 在实例初始化之后，数据观测 (data observer) 和 event/watcher 事件配置之前被调用。
 
-2）created
+2. created
 在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测 (data observer)， 属性和方法的运算，watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。
 
-3）beforeMount
+3. beforeMount
 在挂载开始之前被调用：相关的 render 函数首次被调用。
-4）mounted
+4. mounted
 el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。如果 root
 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。
 
-5）beforeUpdate
+5. beforeUpdate
 数据更新时调用，发生在虚拟 DOM 打补丁之前。这里适合在更新之前访问
 现有的 DOM，比如手动移除已添加的事件监听器。该钩子在服务器端渲染期间不被调用，因为只有初次渲染会在服务端进行。
 
-6）updated
+6. updated
 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。
 
-7）activated
+7. activated
 keep-alive 组件激活时调用。该钩子在服务器端渲染期间不被调用。
 
-8）deactivated
+8. deactivated
 keep-alive 组件停用时调用。该钩子在服务器端渲染期间不被调用。
 
-9）beforeDestroy
+9. beforeDestroy
 实例销毁之前调用。在这一步，实例仍然完全可用。该钩子在服务器端渲染期间不被调用。
 
-10）destroyed
+10. destroyed
 Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。该钩子在服务器端渲染期间不被调用。
 
-11）errorCaptured（2.5.0+ 新增）
+11. errorCaptured（2.5.0+ 新增）
 当捕获一个来自子孙组件的错误时被调用。此钩子会收到三个参数：错误对象、发生错误的组件实例以及一个包含错误来源信息的字符串。此钩子可以返回false 以阻止该错误继续向上传播。
 
 
@@ -74,24 +173,28 @@ Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解
 
 ## 封装 Vue 组件的过程？
 首先，组件可以提升整个项目的开发效率。能够把页面抽象成多个相对独立的模块，解决了我们传统项目开发：效率低、难维护、复用性等问题。
+
 1）	分析需求：确定业务需求，把页面中可以服用的结构，样式以及功能，单独抽离成一个文件，实现复用
-2）	具体步骤：
-    1.	使用 Vue.component 方法注册组件，子组件需要数据，可以在 props 中接
-    受定义，而子组件修改好数据后，想把数据传递给父组件。可以采用$emit 方法向外抛数据
-    2.	如果需要给组件传入模板，则定义为插槽 slot
-    3.	如果需要 父组件主动调用子组件的方法 可以在 methods 选项中开放方法
+
+2）具体步骤：
+1.	使用 Vue.component 方法注册组件，子组件需要数据，可以在 props 中接受定义，而子组件修改好数据后，想把数据传递给父组件。可以采用$emit 方法向外抛数据
+2. 如果需要给组件传入模板，则定义为插槽 slot
+3. 如果需要 父组件主动调用子组件的方法 可以在 methods 选项中开放方法
 
 
 ## Vue 组件如何进行传值的? 
 1. 父组件向子组件传递数据
+
 父组件内设置要传的数据，在父组件中引用的子组件上绑定一个自定义属
 性并把数据绑定在自定义属性上，在子组件添加参数 props 接收即可
 
 2. 子组件向父组件传递数据
+
 子组件通过 Vue 实例方法$emit 进行触发并且可以携带参数，父组件监听使
 用@（v-on）进行监听，然后进行方法处理
 
 3. 非父子组件之间传递数据
+
 1、引入第三方 new Vue 定义为 eventBus
 2、在组件中 created 中订阅方法 eventBus.$on("自定义事件名",methods 中的方法名)
 3、在另一个兄弟组件中的 methods 中写函数，在函数中发布 eventBus 订阅的方法 eventBus.$emit("自定义事件名”)
@@ -112,8 +215,8 @@ Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解
 ## 组件的命名规范
 给组件命名有两种方式，一种是使用链式命名 my-component，一种是使用大
 驼峰命名 MyComponent,
-在字符串模板中\<my-component>\</my-component>和\<MyComponent>\</MyComponent>都可以使用，
-在非字符串模板中最好使用\<MyComponent>\</MyComponent>，因为要遵循 W3C规范中的自定义组件名 (字母全小写且必须包含一个连字符)，避免和当前以及未
+在字符串模板中`<my-component></my-component>`和`<MyComponent></MyComponent>`都可以使用，
+在非字符串模板中最好使用`<MyComponent></MyComponent>`，因为要遵循 W3C规范中的自定义组件名 (字母全小写且必须包含一个连字符)，避免和当前以及未
 来的 HTML 元素相冲突
 
 
@@ -178,3 +281,25 @@ clearInterval(timer);
 2、Activated 钩子调用时机： 第一次进入缓存路由/组件，在 mounted 后面，beforeRouteEnter 守卫传给 next 的回调函数之前调用，并且给因为组件被缓存了，再次进入缓存路由、组件时，不会触发这些钩子函数，beforeCreate created ，beforeMount mounted 都不会触发
 1、deactivated 钩子：组件被停用（离开路由）时调用。
 2、deactivated 钩子调用时机：使用 keep-alive 就不会调用 beforeDestroy(组件销毁前钩子)和 destroyed(组件销毁)，因为组件没被销毁，被缓存起来了，这个钩子可以看作 beforeDestroy 的替代，如果你缓存了组件，要在组件销毁的的时候做一些事情，可以放在这个钩子里，组件内的离开当前路由钩子 beforeRouteLeave => 路由前置守卫 beforeEach =>全局后置钩子 afterEach => deactivated 离开缓存组件 => activated 进入缓存组件(如果你进入的也是缓存路由)
+
+
+
+
+## 如何理解 Vue 是异步执行 DOM 更新的 ？
+
+- Vue 是异步执行 DOM 更新。
+- 只要观察到数据变化，Vue 将开启一个队列，并缓冲在同一事件循环中发生的所有数据改变。
+- 如果同一个 watcher 被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和 DOM 操作上非常重要。
+- 然后，在下一个的事件循环 `tick` 中，Vue 刷新队列并执行实际 (已去重的) 工作。Vue 在内部尝试对异步队列使用原生的 Promise.then 和 MessageChannel，如果执行环境不支持，会采用 setTimeout(fn, 0) 代替。
+
+例如，当你设置 vm.someData = 'new value' ，该组件不会立即重新渲染。
+
+- 当刷新队列时，组件会在事件循环队列清空时的下一个 `tick` 更新。
+- 多数情况我们不需要关心这个过程，但是如果你想在 DOM 状态更新后做点什么，这就可能会有些棘手。
+- 虽然 Vue.js 通常鼓励开发人员沿着 “数据驱动” 的方式思考，避免直接接触 DOM，但是有时我们确实要这么做。为了在数据变化之后等待 Vue 完成更新 DOM ，可以在数据变化之后立即使用 Vue.nextTick(callback) 。这样回调函数在 DOM 更新完成后就会调用。
+
+## 什么情况下应该使用Vuex
+
+- 虽然 Vuex 可以帮助我们管理共享状态，但也附带了更多的概念和框架。这需要对短期和长期效益进行权衡。
+- 如果您不打算开发大型单页应用，使用 Vuex 可能是繁琐冗余的。确实是如此，如果您的应用够简单，您最好不要使用 Vuex。一个简单的 [global event bus](https://cn.vuejs.org/v2/guide/components.html#%E7%9B%91%E5%90%AC%E5%AD%90%E7%BB%84%E4%BB%B6%E4%BA%8B%E4%BB%B6) 就足够您所需了。
+- 但是，如果您需要构建一个中大型单页应用，您很可能会考虑如何更好地在组件外部管理状态，Vuex 将会成为自然而然的选择。
