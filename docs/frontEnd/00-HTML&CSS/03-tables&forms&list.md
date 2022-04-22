@@ -42,7 +42,7 @@
 
 ### 表格属性
 align, border, cellpadding, cellspacing, width
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/表格属性.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表格属性.png)
 
 ### 合并单元格方式
 
@@ -113,7 +113,7 @@ align, border, cellpadding, cellspacing, width
  </dl>
 ```
 ### 列表总结
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/列表总结.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/列表总结.png)
 
 ## 三、表单
 使用表单目的：**收集用户信息**。
@@ -131,7 +131,7 @@ align, border, cellpadding, cellspacing, width
     <form action="url地址" method="提交方式" name="表单域名称">各种表单元素控件</form>
 ```
 表单域常用属性：action、method、name
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/表单常用属性.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表单常用属性.png)
 
 ###  表单控件(表单元素)
 `<input>` 表单元素，单标签，用于收集用户信息，效果：<input>
@@ -144,12 +144,12 @@ align, border, cellpadding, cellspacing, width
 type 属性的属性值及其描述如下：
 
 ( button、checkbox、image、hidden、password....)
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/表单标签.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表单标签.png)
 
 
 除 type 属性外，`<input>`标签还有其他很多属性，其常用属性如下：
 (name、value、checked、maxlength)
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/表单其他属性.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表单其他属性.png)
 
 1. name和value是每个表单元素都有的属性值，主要给后台人员使用
 2. name表单元素的名字，要求单选按钮和复选框要有相同的name值

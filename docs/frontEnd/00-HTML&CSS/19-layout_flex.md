@@ -26,7 +26,7 @@
 + 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex
 item），简称"项目"。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220306193651.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220306193651.png)
 **总结**：就是**通过给父盒子添加flex属性，来控制子盒子的位置和排列方式**
 
 ## 三、父项常见属性
@@ -44,7 +44,7 @@ item），简称"项目"。
 + 默认主轴方向就是 x 轴方向，水平向右
 + 默认侧轴方向就是 y 轴方向，水平向下
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1.jpg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1.jpg)
 
 
 （2）属性值
@@ -115,7 +115,7 @@ ps: space-evenly平分多余的间隙
 + align-content适应于换行（多行）的情况下（单行情况下无效）， 可以设置 上对齐、下对齐、居中、拉伸以及平均分配剩余空间等属性值。 
 + 总结就是单行找align-items  多行找 align-content
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220306195032.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220306195032.png)
 
 ### 3.7 flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性
 
@@ -227,7 +227,7 @@ body {
 ```
 
 5.模块名字划分
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/6.jpg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/6.jpg)
 
 
  -->

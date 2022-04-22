@@ -30,7 +30,7 @@
 - 私有和全局没有必然联系，可能有一些间接关系
 
 ## 堆栈内存
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/堆栈内存例子.png) -->
+<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/堆栈内存例子.png) -->
 
 ## 关于函数和对象的堆栈问题
 - 对象不能重复
@@ -51,20 +51,18 @@
 
 
 ### 浏览器底层运行机制——基本类型
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——基本类型.png) -->
-<!-- ![](../../pic/浏览器底层运行机制——基本类型.png) -->
-### 浏览器底层运行机制——引用数据类型
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——引用数据类型.png) -->
-<!-- ![](../../pic/浏览器底层运行机制——引用数据类型.png) -->
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/浏览器底层运行机制——基本类型.png)
 
+### 浏览器底层运行机制——引用数据类型
+
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/浏览器底层运行机制——引用数据类型.png)
 
 ### 浏览器底层运行机制——全局对象
 
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/浏览器底层运行机制——全局对象.png) -->
-<!-- ![](../../pic/浏览器底层运行机制——全局对象.png) -->
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/浏览器底层运行机制——全局对象.png)
 
 ### 堆栈内存例子
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/堆栈内存例子.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/堆栈内存例子.png)
 
 
 ## 函数执行步骤&垃圾回收机制
@@ -78,8 +76,8 @@
     + 变量提升
 3. 代码执行
 4. 出栈释放
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/⭐️函数执行步骤.png) -->
-![](../../pic/function_step.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/⭐️函数执行步骤.png)
+<!-- ![](../../pic/function_step.png) -->
 
 堆内存00：(2处，见图)，fn(y)中第一步执行的是将堆内存00中下标为0的12改为100
 
@@ -87,9 +85,9 @@
 
 
 ## 函数执行例子——闭包
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220315183027.png) -->
-![](../../pic/20220315183027.png)
-
+<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220315183027.png) -->
+<!-- ![](../../pic/20220315183027.png) -->
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/闭包.png)
 
 ## this的指向问题
 [如何确定this的指向](https://juejin.cn/post/7010262564068130853)

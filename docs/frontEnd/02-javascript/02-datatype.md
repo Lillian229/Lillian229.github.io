@@ -38,7 +38,7 @@
 ## 新的数据（存储）结构，而不是数据类型
 JSON、 Set 、 Map.....
 eg. 在使用时，`let a = new Set/Map();`, `a.`就会出现一些Set/Map的方法
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220325161619.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220325161619.png)
 
 ### Set
 ```js

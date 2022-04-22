@@ -52,7 +52,7 @@
 
 > 配合后面js做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/29none.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/29none.png)
 
 ### visibility 可见性 （了解）
 
@@ -71,7 +71,7 @@
 
 - 如果隐藏元素不想要原来位置， 就用 display：none  (用处更多 重点）
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/30visibility.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/30visibility.png)
 
 ### overflow 溢出（重点）
 
@@ -87,7 +87,7 @@
 -  一般情况下，我们都不想让溢出的内容显示出来，因为溢出的部分会影响布局。
 - 但是如果有定位的盒子， 请慎用overflow:hidden  因为它会隐藏多余的部分。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/33overflow.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/33overflow.png)
 
 
 - 实际开发场景：

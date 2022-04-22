@@ -19,15 +19,42 @@ Mac: 下载`.dmg`文件，或者执行`brew install picgo --cask`<br>
 
     注：由于 PicGo 要使用 npm 来安装插件，所以用户必须先安装 Node.js
 
-- eg.具体使用方法，以gitee为例（国内免费，且速度较快）
-    1. 下载PicGo
-    2. 在PicGo`插件设置`中搜索`gitee`，点击安装
-    3. 在gitee中新建仓库，输入仓库名称，设置为公开，勾选使用Readme文件初始化这个仓库
-    4. 创建私人令牌，点击头像进入设置 -> 私人令牌 -> 生成新令牌，权限勾选project，点击提交，输入gitee登陆密码验证，获得私人令牌（只会出现一次，可以复制在别处保存）
-    5. 在PicGo中配置gitee图床，Gitee图床 -> owner(gitee用户名) -> repo(刚刚创建的仓库名称) -> path(保存图片的文件夹名称) -> token(私人令牌) -> message(提交信息，可随意填写)<br>
-  通过以上方法，一个简单的图床就配置好了
-   
-### PicGo + obsidian
+
+### Gitee+PicGo
+eg.具体使用方法，以gitee为例（个人本地使用，国内免费，且速度较快）
+
+Gitee缺点：无法阻止防盗，无法管理（原目的就不是作为图床，无流量统计等功能）
+1. 下载PicGo
+2. 在PicGo`插件设置`中搜索`gitee`，点击安装
+3. 在gitee中新建仓库，输入仓库名称，设置为公开，勾选使用Readme文件初始化这个仓库
+4. 创建私人令牌，点击头像进入设置 -> 私人令牌 -> 生成新令牌，权限勾选project，点击提交，输入gitee登陆密码验证，获得私人令牌（只会出现一次，可以复制在别处保存）
+5. 在PicGo中配置gitee图床，Gitee图床 -> owner(gitee用户名) -> repo(刚刚创建的仓库名称) -> path(保存图片的文件夹名称) -> token(私人令牌) -> message(提交信息，可随意填写)<br>
+
+通过以上方法，一个简单的图床就配置好了
+
+❗️❗️❗️2022三月下旬，gitee增添了防盗链，在外部网站图片不显示，慎用
+
+gitee作为图床本身就会对gitee造成一定负担，可选择各大云服务平台（阿里云OSS、华为云、腾讯云...）的对象存储功能。
+
+
+### 阿里云OSS+PicGo
+1. 开通阿里云OSS服务
+2. 购买资源包（标准储存包，40G，9元/年）
+3. 在右上角用户头像 -> Accessskey管理 -> 创建新的AccessKey -> 生成AccessKeyID和AccessKeySecret(AccessKeySecret无法找回，请妥善保存)
+4. 创建一个Bucket桶，在Bucket桶里创建一个列表，存放照片
+
+	<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220423020123.png" height="50%" width="50%">
+	<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220423022837.png" height="50%" width="50%">
+	<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220423023931.png" height="50%" width="50%">
+	
+	<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220423023255.png" height="50%" width="50%">
+
+5. 到PicGo中填入刚才获取的AccessKeyID和AccessKeySecret等各项参数即可上传图片进行使用
+
+	<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220423023507.png" height="50%" width="50%">
+
+
+### obsidian+PicGo
 1. 完成[上面](#图片处理——picGo图床)的简单配置
 2. 在obsidian安装Image auto Upload插件，打开`pasted auto upload Switch`，picGo server填写`http://127.0.0.1:36677/upload`
 3. 将图片放到obsidian中，图片即会自动上传到刚才新建的gitee仓库，图片链接自动转换为图床链接。跨平台图片也可见。

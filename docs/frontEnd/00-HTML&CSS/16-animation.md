@@ -69,7 +69,7 @@
 ## 二、常见属性
 
 1. 常见的属性
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/animationcanshu.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/animationcanshu.png)
 
    
 
@@ -128,7 +128,7 @@
 
 1. 速度曲线细节
 - `animation-timing-function`: 规定动画的速度曲线，默认是`ease`
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/steps.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/steps.png)
 
 
 

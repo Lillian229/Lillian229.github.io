@@ -6,6 +6,9 @@
  * Copyright (c) 2022 by Lillian, All Rights Reserved. 
  */
 let nav = [
+    {
+        text: "📖本站目录", link: '/list/',
+    },
     //跳转到外部网页，需http/https前缀
     {
         text: "参考手册",

@@ -2,7 +2,7 @@
 ## 一、盒子模型
 ### 1、网页布局的本质
 网页布局的核心本质： 就是利用 CSS 摆盒子。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571492334739.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571492334739.png)
 
 网页布局过程：
 
@@ -15,7 +15,7 @@
 ​盒子模型：把 HTML 页面中的布局元素看作是一个矩形的盒子，也就是一个盛装内容的容器。
 
 ​CSS 盒子模型本质上是一个盒子，封装周围的 HTML 元素，它包括：**边框**、**外边距**、**内边距**、和 **实际内容**
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571492536942.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571492536942.png)
 
 
 ### 3、边框（border）
@@ -26,7 +26,7 @@
 ```css
  border : border-width || border-style || border-color;   
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571492659260.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571492659260.png)
 
 边框样式 border-style 可以设置如下值：
 
@@ -79,11 +79,11 @@ border-collapse: collapse; 表示相邻边框合并在一起
 2、语法：
 
 合写属性：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571493298248.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571493298248.png)
 
 
 分写属性：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571493260536.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571493260536.png)
 
 #### 4.2、内边距会影响盒子实际大小
 
@@ -106,7 +106,7 @@ border-collapse: collapse; 表示相邻边框合并在一起
 #### 5.1、外边距的使用方式
 
 margin 属性用于设置外边距，即控制盒子和盒子之间的距离。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571493741272.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571493741272.png)
 
 
 #### 5.2、外边距典型应用
@@ -138,7 +138,7 @@ margin: 0 auto;
 
 ​当上下相邻的两个块元素（兄弟关系）相遇时，如果上面的元素有下外边距 margin-bottom，下面的元素有上外边距 margin-top ，则他们之间的垂直间距不是 margin-bottom 与 margin-top 之和。取两个值中的较大者这种现象被称为相邻块元素垂直外边距的合并。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571494239103.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571494239103.png)
 
 解决方案：
 		尽量只给一个盒子添加 margin 值。
@@ -147,7 +147,7 @@ margin: 0 auto;
 
 ​		对于两个嵌套关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571494373778.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571494373778.png)
 
 
 解决方案：
@@ -199,7 +199,7 @@ CSS3 中新增了盒子阴影，可以使用 box-shadow 属性为盒子添加阴
 ```css
  box-shadow: h-shadow v-shadow blur spread color inset; 
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571541874805.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571541874805.png)
 
 ### 3、文字阴影
 
@@ -209,7 +209,7 @@ CSS3 中新增了盒子阴影，可以使用 box-shadow 属性为盒子添加阴
 ```css
  text-shadow: h-shadow v-shadow blur color;
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571541954222.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571541954222.png)
 
 
 ## 三、PS 基本操作
@@ -225,7 +225,7 @@ CSS3 中新增了盒子阴影，可以使用 box-shadow 属性为盒子添加阴
 - 用选区拖动  可以测量大小
 - Ctrl+ D 可以取消选区，或者在旁边空白处点击一下也可以取消选区
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571494543539.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571494543539.png)
 
 ## 四、PS 切图
 

@@ -21,6 +21,10 @@
 
 [obsidian的使用](../tools/obsidian/README.md)
 
+[Markdown的书写](../tools/obsidian/markdown)
+
+[PicGo+图床处理](../tools/obsidian/FAQ#图片处理-picgo图床)
+
 ## 精华文章
 完成中...
 

@@ -37,7 +37,7 @@ eg. <p>这是一个段落</p>
 
 ## 基本结构标签
 HTML、head、title、body
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/基本结构.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/基本结构.png)
 
 ## DOCTYPE
 
@@ -98,7 +98,7 @@ en定义语言为英语(网页), zh-CN定义语言为中文（网页）
 
 ### 文本格式化标签
 为文字设置粗体、斜体 或下划线等效果
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/格式化标签.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/格式化标签.png)
 
 ### div和span标签
 `<div>` 和 `<span>` 是没有语义的，就是用来装内容的盒子。
@@ -124,7 +124,7 @@ en定义语言为英语(网页), zh-CN定义语言为中文（网页）
   属性：简单理解就是属于这个图像标签的特性。
 
 图像标签的其他属性：alt, title, width, height, border
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/图片属性.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/图片属性.png)
 
 图像标签注意点
 1.图像标签可以拥有多个属性，必须写在标签名的后面。
@@ -136,7 +136,7 @@ en定义语言为英语(网页), zh-CN定义语言为中文（网页）
 分为相对路径和绝对路径。
 
 **相对路径**：以引用文件所在位置为参考基础，而建立出的目录路径。 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/路径.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/路径.png)
 
 特点：相对路径是从代码所在的这个文件出发，去寻找目标文件的，而我们这里所说的上一级 、下一级和同一级就是图片相对于 HTML 页面的位置。
 
@@ -184,7 +184,7 @@ Mac: command + /
 ### 特殊字符
 
 在 HTML 页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/特殊字符.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/特殊字符.png)
 重点记住：空格 、大于号、 小于号 这三个， 其余的使用很少，如果需要回头查阅即可。
 
 <!--

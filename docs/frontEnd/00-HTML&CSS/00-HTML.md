@@ -33,7 +33,7 @@ Web 标准提出的最佳体验方案：结构、样式、行为相分离。<br>
 结构写到 HTML 文件中，<br>
 表现写到 CSS 文件中，<br> 
 行为写到 JavaScript 文件中<br>
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/鸟.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/鸟.png)
 
 <!--
  * @Description: HTML

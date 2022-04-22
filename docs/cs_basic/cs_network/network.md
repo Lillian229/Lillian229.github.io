@@ -1,6 +1,6 @@
 # 网络通信
 ## TCP和UDP
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220318142803.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220318142803.png)
 
 - TCP(Transmission Control Protocol 传输控制协议)是一种面向连接(连接导向)的、可靠的、 基于IP的传输层协议。
 - UDP是User Datagram Protocol的简称，中文名是用户数据报协议，是OSI参考模型中的传输层协议，它是一种无连接的传输层协议，提供面向事务的简单不可靠信息传送服务。 
@@ -8,7 +8,7 @@
 
 ### 区别
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220318143123.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220318143123.png)
 
 1. TCP基于连接UDP无连接
 2. TCP要求系统资源较多，UDP较少 
@@ -48,7 +48,7 @@
 
 ### ⭐三次握手为什么不用两次，或者四次?
 TCP作为一种可靠传输控制协议，其核心思想：既要保证数据可靠传输，又要提高传输的效率！
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220318143827.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220318143827.png)
 
 ### ⭐为什么连接的时候是三次握手，关闭的时候却是四次握手？
 

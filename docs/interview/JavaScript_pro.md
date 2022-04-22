@@ -228,3 +228,12 @@ Function.prototype.myCall = function (context, ...args) {
 - [call、apply、bind 的区别](https://www.jianshu.com/p/bbeadae6127e)
 - [聊一聊 call、apply、bind 的区别](https://segmentfault.com/a/1190000012772040)
 
+
+## JS引擎如何管理内存
+1. 内存生命周期
+- 分配小内存空间，得到它的使用权
+- 存储数据，可以反复进行操作
+- 释放小内存空间
+2. 释放内存
+- 局部变量:函数执行完自动释放
+- 对象:成为垃圾对象==>垃圾回收器回收

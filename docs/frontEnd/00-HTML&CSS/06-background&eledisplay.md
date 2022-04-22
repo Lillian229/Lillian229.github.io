@@ -67,7 +67,7 @@
 - 高度，行高、外边距以及内边距都可以控制（块级元素特点）。
 
 #### 2.4、元素显示模式总结
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570870718415.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570870718415.png)
 学习元素显示模式的主要目的: 分清它们各自的特点，当网页布局的时候，在合适的地方用合适的标签元素。
 
 ### 3、元素显示模式的转换
@@ -85,9 +85,9 @@
 ​让文字的行高等于盒子的高度  就可以让文字在当前盒子内垂直居中
 
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570870368253.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570870368253.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570870387089.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570870387089.png)
 
 **简单理解**: 
 
@@ -182,7 +182,7 @@ background-repeat: repeat / no-repeat / repeat-x / repeat-y
 ```
 
 **参数值&作用：**
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570886688306.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570886688306.png)
 
 ### 4、背景图片位置
 
@@ -196,7 +196,7 @@ background-repeat: repeat / no-repeat / repeat-x / repeat-y
 ```
 
 ​参数代表的意思是：x 坐标和 y 坐标。 可以使用 方位名词 或者 精确单位
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570887034135.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570887034135.png)
 
 **其他说明：**
 
@@ -261,7 +261,7 @@ background: rgba(0, 0, 0, 0.3)
 
 ### 8、背景总结
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570888283511.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570888283511.png)
 
 
 <!--

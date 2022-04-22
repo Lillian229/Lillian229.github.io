@@ -26,7 +26,7 @@ Markdown 是一种轻量级的标记语言，可用于在纯文本文档中添�
 Markdown 应用程序使用一种称为 Markdown 处理器（也通常称为“解析器”或“实现”）的东西将获取到的 Markdown 格式的文本输出为 HTML 格式。此时，可以在 Web 浏览器中查看你的文档，或者将其与样式表组合并打印。你可以在下图看到此过程的直观表示。
 
 注意： Markdown 应用程序和处理器是两个单独的组件。为了简洁起见，在下图中，我将它们组合为一个元素（即 “Markdown应用程序”）。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220225230627.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220225230627.png)
 总而言之，这是一个四步的过程：
 1. 使用文本编辑器或 Markdown 专用的应用程序创建 Markdown 文件。该文件应带有 `.md` 或 `.markdown` 扩展名。
 2. 在 Markdown 应用程序中打开 Markdown 文件。

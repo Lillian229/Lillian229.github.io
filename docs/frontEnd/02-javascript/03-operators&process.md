@@ -79,10 +79,10 @@ JavaScript中常用的运算符有：
 
   	概念：比较运算符（关系运算符）是两个数据进行比较时所使用的运算符，比较运算后，会返回一个布尔值（true / false）作为比较运算的结果。
 
-    ![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-2.png)
+    ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-2.png)
 
 - 等号比较**(以后比较两个数值用=== ， 如果==会进行隐式类型转换)**
-    ![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-3.png)
+    ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-3.png)
 
   ```js
   console.log(18 == '18');//true
@@ -96,7 +96,7 @@ JavaScript中常用的运算符有：
 
   	概念：逻辑运算符是用来进行布尔值运算的运算符，其返回值也是布尔值。后面开发中经常用于多个条件的判断
 
-    ![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-4.png)
+    ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-4.png)
     
 - 逻辑与&&
 
@@ -152,7 +152,7 @@ JavaScript中常用的运算符有：
 ### 1.6 赋值运算符
 
 概念：用来把数据赋值给变量的运算符。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-9.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-9.png)
 
 ```js
 var age = 10;
@@ -165,7 +165,7 @@ age *= 10; // 相当于 age = age * 10;
 
 - 一元运算符里面的逻辑非优先级很高
 - 逻辑与比逻辑或优先级高
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-10.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-10.png)
 
 ## 二、流程控制
 
@@ -177,7 +177,7 @@ age *= 10; // 相当于 age = age * 10;
 	
 流程控制主要有三种结构，分别是**顺序结构**、**分支结构**和**循环结构**，代表三种代码执行的顺序。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-11.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-11.png)
 
 
 ### 2.2.顺序流程控制
@@ -204,7 +204,7 @@ JS 语言提供了两种分支结构语句：`if 语句`、`switch 语句`
 
   - 执行流程
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-14.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-14.png)
 
 - if else语句（双分支语句）
 
@@ -222,7 +222,7 @@ JS 语言提供了两种分支结构语句：`if 语句`、`switch 语句`
 
   - 执行流程
 
-    ![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-15.png)
+    ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-15.png)
 
 - if else if 语句(多分支语句)
 
@@ -245,7 +245,7 @@ JS 语言提供了两种分支结构语句：`if 语句`、`switch 语句`
 
   - 执行逻辑
 
-    ![](https://gitee.com/leelillian/picgorepo/raw/master/images/21-16.png)
+    ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/21-16.png)
 
 
 ### 2.4.三元表达式
@@ -619,7 +619,7 @@ for (var i = 1; i <= 5; i++) {
 
  关键词、操作符之间后加空格
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/22-03.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/22-03.png)
 
 
 

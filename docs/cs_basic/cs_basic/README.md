@@ -45,9 +45,9 @@
 
 ## 计算机组成
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20-4.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20-4.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20-5.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20-5.png)
 
 
 ## 数据存储

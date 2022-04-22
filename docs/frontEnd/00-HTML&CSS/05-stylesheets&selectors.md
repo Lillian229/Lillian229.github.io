@@ -1,7 +1,7 @@
 # 1.5.CSS样式表、复合选择器、三大特性、emmet语法
 ## 一、CSS样式表
 ​按照 CSS 样式书写的位置（或者引入的方式），CSS 样式表可以分为行内、内部、外部样式表
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/css引入方式总结.png) -->
+<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/css引入方式总结.png) -->
 ![](../../pic/css.png)
 
 ### 行内样式表（行内式）
@@ -225,8 +225,10 @@ input:focus {
 
 
 ### 复合选择器总结
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/1570868930472.png) -->
-![](../../pic/1570868930472.png)
+<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570868930472.png) -->
+<!-- ![](../../pic/1570868930472.png) -->
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/选择器.png)
+
 
 ## 三、CSS三大特性
 
@@ -238,12 +240,12 @@ input:focus {
 - 样式冲突，遵循的原则是就近原则，哪个样式离结构近，就执行哪个样式
 - 样式不冲突，不会层叠
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571490015544.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571490015544.png)
 
 
 ### 2、继承性
 CSS中的继承: 子标签会继承父标签的某些样式，如文本颜色和字号。恰当地使用继承可以简化代码，降低 CSS 样式的复杂性。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571490049279.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571490049279.png)
 
 #### 子元素可以继承父元素的样式
 text-，font-，line-这些元素开头的可以继承，以及color属性

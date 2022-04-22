@@ -84,14 +84,14 @@
 1. 标准盒模型中 width和height都是指内容的高度
 
 标准盒模型下盒子的大小 = content + border + padding + margin
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220309213839.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220309213839.png)
 
 
 2. 怪异盒模型中的 width和height指的是内容、边框、内边距总的宽度（content + border + padding）
 
 怪异盒模型下盒子的大小=width（content + border + padding） + margin
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220309213910.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220309213910.png)
 
 除此之外，还可以通过属性 box-sizing 来设置盒子模型的解析模式可以为 box-sizing 赋两个值：
 

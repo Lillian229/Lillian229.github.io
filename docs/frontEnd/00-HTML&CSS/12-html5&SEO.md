@@ -48,7 +48,7 @@
 - `<aside>` 侧边栏标签
 - `<footer>` 尾部标签
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/语义化标签.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/语义化标签.png)
 
 
 ### 语义化标签需要注意的点
@@ -75,8 +75,8 @@
 ```html
  <video src="media/mi.mp4"></video>
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/vedio.png)
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/video支持格式.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/vedio.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/video支持格式.png)
 
 #### 兼容写法
 
@@ -93,7 +93,7 @@
 
 #### video 常用属性
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/video常用属性.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/video常用属性.png)
 
 **属性很多，有一些属性需要重点掌握：**
 
@@ -122,7 +122,7 @@
 ```html
 <audio src="media/music.mp3"></audio>
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/audio支持格式.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/audio支持格式.png)
 
 #### 兼容写法
 
@@ -194,7 +194,7 @@
 **新的输入类型**
 
 email, url, data, time, month, week, number, tel, search, color
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/新增input表单.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/新增input表单.png)
 
 |  属性 |  值 |
 |---|---|
@@ -211,7 +211,7 @@ email, url, data, time, month, week, number, tel, search, color
 
 **案例：新增表单的用法**
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/input案例.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/input案例.png)
 
 **案例代码：**
 ```html
@@ -234,7 +234,7 @@ email, url, data, time, month, week, number, tel, search, color
 
 ## 五、新增表单属性
 required, placeholder， autofocus， autocomplete， multiple
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/newinput.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/newinput.png)
 
 ## 六、广义H5说法 了解
 

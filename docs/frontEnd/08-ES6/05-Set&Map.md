@@ -15,7 +15,7 @@ const set = new Set([1, 2, 3, 4, 4]);//{1, 2, 3, 4}
 
 eg. 在使用时，`let a = new Set/Map();`, `a.`就会出现一些Set/Map的方法
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220325161633.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220325161633.png)
 
 ### 实例方法
 - add(value)：添加某个值，返回 Set 结构本身

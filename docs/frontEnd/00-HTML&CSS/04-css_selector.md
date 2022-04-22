@@ -5,7 +5,7 @@
 - CSS 主要用于设置 HTML 页面中的文本内容（字体、大小、对齐方式等）、图片的外形（宽高、边框样式、边距等）以及版面的布局和外观显示样式。
 ## 二、CSS语法规范
 CSS语法规范构成：选择器以及一条或多条声明。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/css属性规则.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/css属性规则.png)
 
 1. CSS选择器的作用: 选择器(选择符)就是根据不同需求,把不同的标签选出来
 2. 属性和属性值以“键值对”的形式出现
@@ -64,7 +64,7 @@ CSS语法规范构成：选择器以及一条或多条声明。
 
 ## 四、CSS基础选择器
 基础选择器：**[标签选择器](#标签选择器)、[类选择器](#类选择器)、[id 选择器](#id选择器)和[通配符选择器](#通配符选择器)**
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/基础选择器总结.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/基础选择器总结.png)
 
 ### 标签选择器
 ​标签选择器（元素选择器）是指用 HTML 标签名称作为选择器，按标签名称分类，为页面中某一类标签指定统一的 CSS 样式。

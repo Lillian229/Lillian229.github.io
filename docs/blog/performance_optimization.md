@@ -10,14 +10,12 @@ CRP（Critical Rendering Path）关键渲染路径
 
 ## 从输入URL地址到看到页面，中间都经历了啥
 ### 全过程概览
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/Inkedurl_whole_process_LI.jpg)
- -->
-![](../pic/Inkedurl_whole_process_LI.jpeg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/Inkedurl_whole_process_LI.jpg)
+
 
 ### 第一步：URL解析
 - 地址解析
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/url_rses.png) -->
-![](../pic/url_parses.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/url_parses.png)
 
 - 编码
 
@@ -39,24 +37,25 @@ CRP（Critical Rendering Path）关键渲染路径
 - 两者同时存在的话，Cache-Control优先级高于Expires
 
 
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/cache01.png) -->
-![](../pic/cache01.png)
+<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/cache01.png) -->
+<!-- ![](../pic/cache01.png) -->
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/cache01.png" height="70%" width="70%">
+
 
 #### 协商缓存 Last-Modified / ETag
 协商缓存就是强制缓存失效后，浏览器携带缓存标识向服务器发起请求，由服务器根据缓存标识决定是否使用缓存的过程
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/cache02.png) -->
 
-![](../pic/cache02.png)
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/cache02.png" height="70%" width="70%">
 
 #### 数据缓存
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/cache03.png) -->
-![](../pic/cache03.png)
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/cache03.png" height="70%" width="70%">
+
 
 ### 第三步：DNS解析
 - 递归查询
 - 迭代查询
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/dns_parses.png) -->
-![](../pic/dns_parses.png)
+
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/dns_parses.png" height="70%" width="70%">
 
 每一次DNS解析时间预计在20~120毫秒
 - 减少DNS请求次数
@@ -68,8 +67,9 @@ CRP（Critical Rendering Path）关键渲染路径
 - 抗压能力加强
 - 提高HTTP并发、
 - ……
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/serve_split.png) -->
-![](../pic/serve_split.png)
+
+
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/serve_split.png" height="70%" width="70%">
 
 
 ### 第四步：TCP三次握手
@@ -94,8 +94,9 @@ CRP（Critical Rendering Path）关键渲染路径
 
 #### ⭐三次握手为什么不用两次，或者四次?
 TCP作为一种可靠传输控制协议，其核心思想：既要保证数据可靠传输，又要提高传输的效率！
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220318143827.png) -->
-![](../pic/20220318143827.png)
+
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/三次握手.png" height="70%" width="70%">
+
 
 ### 第五步：数据传输
 - HTTP报文
@@ -121,8 +122,9 @@ TCP作为一种可靠传输控制协议，其核心思想：既要保证数据�
   - ……
 
 ### 第六步：TCP四次挥手
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/TCPfour.png) -->
-![](../pic/TCPfour.png)
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/TCPfour.png" height="70%" width="70%">
+
+
 
 #### ⭐为什么连接的时候是三次握手，关闭的时候却是四次握手？
 

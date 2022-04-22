@@ -70,6 +70,11 @@ let sidebar = {
     
     '/frontEnd/07-webpack/': [
         '',
+        '00-module',
+        '01-concept',
+        '02-use',
+        '03-configuration',
+        '04-server',
         'wpissue'
     ],
 

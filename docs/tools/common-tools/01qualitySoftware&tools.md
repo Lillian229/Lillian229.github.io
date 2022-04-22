@@ -2,9 +2,9 @@
 ## 1.1.效率类
 ### 1.1.1.Quicker
 🔧 [Quicker](https://getquicker.net/)指尖工具箱，用鼠标中键完成超多操作，效率++，非常强大（仅限windows平台）<br>
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220224231039.png)<br>
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220224231039.png)<br>
 可用软件参考：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220224231107.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220224231107.png)
 使用方法：
 
 ### 1.1.2.插件&脚本使用
@@ -41,9 +41,9 @@
 
 我使用过一段时间百词斩（较多）和墨墨，感觉还是不错的，单词书重复的次数比较多，也潜移默化记住了很多单词（有些人说只能记住图片，因人而异选择适合自己的就好啦～）
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220307210121.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220307210121.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220307210048.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220307210048.png)
 
 
 ### 1.3.2.Quizlet_单词闪卡
@@ -69,9 +69,9 @@
 ### 1.3.4.摸鱼单词_桌面单词
 - [Mac下载地址](https://apps.apple.com/cn/app/id1488909953?mt=12)
 - 使用：可使用快捷键打开应用，在需要进行单词记忆的时候或零散时间在桌面背单词
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220307210854.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220307210854.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220307210956.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220307210956.png)
 
 ### 1.3.5.Win_ToastFish_通知栏背单词
 [下载地址](https://github.com/Uahh/ToastFish)

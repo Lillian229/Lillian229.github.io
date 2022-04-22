@@ -997,7 +997,7 @@ body {
 
 
 8. 效果图
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220307150508.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220307150508.png)
 
 ### 4.2.rem适配方案2_flexble.js
 
@@ -1041,9 +1041,9 @@ cssrem 插件默认的 html 文字大小（cssroot）为 16px，即：16px = 1re
 3. 修改值
 4. 重启 VSCode
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/18-6.jpg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/18-6.jpg)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/18-7.jpg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/18-7.jpg)
 
 #### eg.苏宁移动端首页
 1. 技术选型
@@ -1268,7 +1268,7 @@ img {
 ```
 
 (8)效果图
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220307160742.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220307160742.png)
 
 <!--
  * @Description: 

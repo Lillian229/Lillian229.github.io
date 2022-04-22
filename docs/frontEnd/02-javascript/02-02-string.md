@@ -298,9 +298,9 @@ console.log(time); //->2020年05月21日 21时41分
 </body>
 
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220310153929.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220310153929.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220310153859.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220310153859.png)
 
 
 ##  JS常用的数学运算

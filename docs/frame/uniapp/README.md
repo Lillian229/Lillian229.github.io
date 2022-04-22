@@ -46,7 +46,7 @@ DCloud持续在业内普及小程序理念，推进各大流量巨头，包括�
 
 
 ## uniapp的功能
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/uniapp_function.jpg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/uniapp_function.jpg)
 
 ## 参考文档
 [官方文档](https://uniapp.dcloud.io/)

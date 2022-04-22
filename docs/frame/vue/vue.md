@@ -29,7 +29,7 @@ MVC 和 MVVM 都是设计模式，是框架的开发理念；
 
 框架: 拥有自己的规则和元素, 比库强大的多 (例vue.js)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/image-20210111215624065.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/image-20210111215624065.png)
 
 
 

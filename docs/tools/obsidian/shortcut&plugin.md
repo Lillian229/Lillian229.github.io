@@ -46,4 +46,4 @@ obsidian快捷键都可自行设置，（设置 -> 快捷键）推荐：
 
 ## obsidian_Quicker指令推荐
 [网址](https://getquicker.net/Share/Actions?exe=obsidian.exe)
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220228160718.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220228160718.png)

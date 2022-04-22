@@ -18,7 +18,7 @@
 ```
 
 **设置或检索在对象上移动的鼠标指针采用何种系统预定义的光标形状。**
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571521805183.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571521805183.png)
 
 ### 1.2.轮廓线 outline
 给表单添加 outline: 0;   或者  outline: none; 样式之后，就可以去掉默认的蓝色边框。
@@ -52,14 +52,14 @@ CSS 的 属性使用场景： 经常用于设置图片或者表单(行内块元�
 ```css
 vertical-align : baseline | top | middle | bottom 
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522023413.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522023413.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522040645.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522040645.png)
 
 ### 2.1.图片、表单和文字对齐
 
 图片、表单都属于行内块元素，默认的 vertical-align 是基线对齐。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522093729.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522093729.png)
 
 此时可以给图片、表单这些行内块元素的 **vertical-align 属性设置为 middle** 就可以让文字和图片垂直居中对齐了。
 
@@ -77,7 +77,7 @@ bug：图片底侧会有一个空白缝隙，原因是行内块元素会和文�
 ## 三、溢出的文字省略号显示
 
 ### 3.1.单行文本溢出显示省略号
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522317809.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522317809.png)
 
 单行文本溢出显示省略号--必须满足三个条件：
 
@@ -128,9 +128,9 @@ display: -webkit-box;
 4. CSS三角强化
 
 ### 4.1.margin负值运用
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522666082.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522666082.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522683897.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522683897.png)
 
 1.让每个盒子margin 往左侧移动 -1px 正好压住相邻盒子边框
 
@@ -139,34 +139,34 @@ display: -webkit-box;
 ### 4.2.文字围绕浮动元素
 
 **效果**
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522777745.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522777745.png)
 
 **布局示意图**
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522761996.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522761996.png)
 
 **巧妙运用浮动元素不会压住文字的特性**
 
 ### 4.3.行内块巧妙运用
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522898744.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522898744.png)
 
 页码在页面中间显示:
 
 1. 把这些链接盒子转换为行内块， 之后给父级指定  text-align:center;
 2. 利用行内块元素中间有缝隙，并且给父级添加 text-align:center; 行内块元素会水平会居中
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571522910580.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571522910580.png)
 
 ### 4.4CSS三角强化 
 
 #### 原理
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571550959181.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571550959181.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571551000391.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571551000391.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571548058053.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571548058053.png)
 
 代码部分：
 ```html
@@ -199,7 +199,7 @@ display: -webkit-box;
 
 #### 秒杀价格-案例效果
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571548099631.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571548099631.png)
 
 #### 代码参考
 

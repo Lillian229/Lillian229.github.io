@@ -11,7 +11,7 @@
 函数： 在计算机语言中，函数是拥有固定功能和逻辑的代码块。它只需要声明一次，然后就可以无限次执行。在面向对象（OOP，Object-Oriented-Programming）的语言也叫做方法。
 
 就是**封装了一段可被重复调用执行的代码块**。通过此代码块可以**实现大量代码的重复使用**。  
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/函数（描述详细）.png) -->
+<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/函数（描述详细）.png) -->
 ![](../../pic/function(detail).png)
 
 ## 二、函数的使用
@@ -85,7 +85,7 @@ console.log('yaya');
 - 函数的封装是把一个或者多个功能通过函数的方式封装起来，对外只提供一个简单的函数接口
 
 - 简单理解：封装类似于将电脑配件整合组装到机箱中 ( 类似快递打包）  
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/23-2.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/23-2.png)
 
 例子：封装计算1-100累加和
 
@@ -116,7 +116,7 @@ console.log('yaya');
 
 - 函数执行阶段：实参，实参是给形参赋值的具体值。就是说函数执行时，形参所代表的具体的值。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/23-3.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/23-3.png)
 
 - 参数的作用 : 在函数内部某些值不能固定，我们可以通过参数在调用函数时传递不同的值进去。
 
@@ -152,7 +152,7 @@ console.log('yaya');
   3. 实参和形参的多个参数之间用逗号（,）分隔
 
 ### 函数形参和实参数量不匹配时
-<!-- ![](https://gitee.com/leelillian/picgorepo/raw/master/images/23-4.png) -->
+<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/23-4.png) -->
 | 参数个数 | 说明 |
 | --- | ----|
 | 实参个等于形参个数 | 输出正确结果 |

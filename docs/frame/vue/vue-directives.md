@@ -251,7 +251,7 @@ export default {
 
 旧 - 虚拟DOM结构  和  新 - 虚拟DOM结构 对比过程
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/image-20210414215502653.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/image-20210414215502653.png)
 
 
 

@@ -159,7 +159,7 @@ Mac的终端就相当于win的git bash
 使用此工具可以在鼠标经过缺口的时候补充内容,不遗漏重要信息.<br>
 只有鼠标经过缺口,才会补充内容,占用极低的系统资源.<br>
 应用：[刘海儿补全计划](https://macosgame.com/shownotchcontent/shownotchcontent)<br> 效果如下
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220223161901.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220223161901.png)
 
 ### 2.2.4.Mac新建文件夹、txt文件、其他格式文件
 先cd到指定的文件路径下：
@@ -177,7 +177,7 @@ Mac的终端就相当于win的git bash
 
 ### 2.2.5.批量删除文件名空格
 法一： 在“访达”选中多个文件，右键重新命名 -> “替换文本” -> "查找中"输入空格 -> "替换成"不填 -> 右下角重新命名
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220228162752.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220228162752.png)
 
 法二：在文件夹位置打开终端，输入以下代码：
 ```
@@ -196,7 +196,7 @@ done
 
 3. VSCode快捷键：（左下角）设置 -> 键盘快捷方式
 4. by:yulilong: [Mac快捷键](http://yu66.vip)
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220223162208.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220223162208.png)
 
 
 ## 个人常用快捷键

@@ -2,7 +2,7 @@
 home: true
 heroImage: /star_byya.png
 heroText: 莉安的前端学习
-tagline: 博客中图片未显示！！！（近日Gitee图床添加了防盗链，正在调整中...）本blog完成进度（50%）～
+tagline: 人生必有痴，而后有成
 actionText: 马上进入 →
 actionLink: /list/
 features:

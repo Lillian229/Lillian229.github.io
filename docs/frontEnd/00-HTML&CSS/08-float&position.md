@@ -43,7 +43,7 @@
 ```css
  选择器 { float: 属性值; }
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571543209934.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571543209934.png)
 
 <!-- <cp by csdn> -->
 
@@ -72,11 +72,11 @@ eg.针对于一个花店的导航页，存在许多的图片显示，而有效�
 
 1、浮动元素会脱离标准流(脱标：浮动的盒子不再保留原先的位置)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571544664994.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571544664994.png)
 
 2、浮动的元素会一行内显示并且元素顶部对齐
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571544725757.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571544725757.png)
 
 注意： 
 
@@ -94,7 +94,7 @@ eg.针对于一个花店的导航页，存在许多的图片显示，而有效�
 
 ​先用标准流父元素排列上下位置, 之后内部子元素采取浮动排列左右位置.  符合网页布局第一准则
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571544991989.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571544991989.png)
 
 
 ## 二、常见网页布局
@@ -119,7 +119,7 @@ eg.针对于一个花店的导航页，存在许多的图片显示，而有效�
 
 ​由于父级盒子很多情况下，不方便给高度，但是子盒子浮动又不占有位置，最后父级盒子高度为 0 时，就会影响下面的标准流盒子。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571555883628.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571555883628.png)
 
 
 浮动导致元素已不在普通流中，所以在排列布局的时候文档中的普通流表现的和浮动元素不存在一样，当浮动元素的高度超出包含框的时候，会出现包含框不会自动撑高来包裹浮动元素，即所谓的“高度塌陷”。
@@ -143,7 +143,7 @@ eg.针对于一个花店的导航页，存在许多的图片显示，而有效�
 ```css
  选择器{clear:属性值;} 
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571555980419.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571555980419.png)
 
 我们实际工作中， 几乎只用 clear: both;
 
@@ -255,7 +255,7 @@ overflow:hidden | auto | scroll;
 2. 子盒子浮动了。
 3. 影响下面布局了，就应该清除浮动了。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571556500074.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571556500074.png)
 
 ## 四、定位(position)
 
@@ -267,7 +267,7 @@ overflow:hidden | auto | scroll;
 
 
 **场景2**：当我们滚动窗口的时候，盒子是固定屏幕某个位置的。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/ding.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/ding.png)
 
 > 结论**：要实现以上效果，**标准流 或 浮动都无法快速实现
 
@@ -289,7 +289,7 @@ overflow:hidden | auto | scroll;
 
 **定位模式** 用于指定一个元素在文档中的定位方式。**边偏移**则决定了该元素的最终位置。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/26定位的概念.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/26定位的概念.png)
 
 
 #### 边偏移（方位名词）
@@ -365,7 +365,7 @@ overflow:hidden | auto | scroll;
 
 - 效果图：
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/04_相对定位案例.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/04_相对定位案例.png)
 
 
 
@@ -386,13 +386,13 @@ overflow:hidden | auto | scroll;
 1. **完全脱标** —— 完全不占位置；  
 
 2. **父元素没有定位**，则以**浏览器**为准定位（Document 文档）。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/05_绝对定位_父级无定位.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/05_绝对定位_父级无定位.png)
 
 
 3. **父元素要有定位**
 
    * 元素将依据最近的已经定位（绝对、固定或相对定位）的父元素（祖先）进行定位。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/06_绝对定位_父级有定位.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/06_绝对定位_父级有定位.png)
 
 
 
@@ -438,7 +438,7 @@ overflow:hidden | auto | scroll;
 **疑问**：为什么在布局时，**子级元素**使用**绝对定位**时，**父级元素**就要用**相对定位**呢？
 
 观察下图，思考一下在布局时，**左右两个方向的箭头图片**以及**父级盒子**的定位方式。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301184713.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301184713.png)
 
 **分析**：
 
@@ -478,7 +478,7 @@ overflow:hidden | auto | scroll;
 
 > 固定定位举例：
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/08_固定定位案例.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/08_固定定位案例.png)
 
 **提示**：IE 6 等低版本浏览器不支持固定定位。
 
@@ -542,14 +542,14 @@ overflow:hidden | auto | scroll;
 2.让固定定位的盒子 margin-left: 版心宽度的一半距离。  多走 版心宽度的一半位置
 
 就可以让固定定位的盒子**贴着版心右侧对齐**了。
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571388901848.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571388901848.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571389108805.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571389108805.png)
 
 
 
 案例效果：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571389241926.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571389241926.png)
 
 ```html
 <style>
@@ -603,7 +603,7 @@ overflow:hidden | auto | scroll;
 
 
 - 应用 `z-index` 层叠等级属性可以**调整盒子的堆叠顺序**。如下图所示：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/12_zindex示意图.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/12_zindex示意图.png)
 
 
 
@@ -617,14 +617,14 @@ overflow:hidden | auto | scroll;
 > 相对定位可以auto
 >
 > 但是可以通过以下计算方法实现水平和垂直居中，可以按照下图的方法：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/10_绝对定位水平居中.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/10_绝对定位水平居中.png)
 
 
 1. `left: 50%;`：让**盒子的左侧**移动到**父级元素的水平中心位置**；
 2. `margin-left: -100px;`：让盒子**向左**移动**自身宽度的一半**。
 
 **盒子居中定位示意图**
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/11_绝对定位居中示意图.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/11_绝对定位居中示意图.png)
 
 ### 定位特殊特性
 

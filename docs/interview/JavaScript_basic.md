@@ -164,6 +164,51 @@ Cat.sayHello();  //调用对象的（方法）函数
     var camry = new Car("凯美瑞", 27); camry.sell();
 ```
 
+## JS给对象赋值的两种方式_`.`和`[]`
+实际开发尽量使用`.`，见名知意
+1. `.`赋值方式
+```js
+var obj = {
+  name: 'yaya',
+  age: 22
+}
+obj.name = "lillian"
+```
+此方法常用，但这种方式在特殊时候不能使用。
+
+比如说从后台传来一个response对象，对象的头部会有一个content-type： 'text/json'属性，用来标明这个数据是以json格式传来的。这个时候这种使用`.`获取属性的方式就不起作用了.
+
+`.`赋值只能适用于字段名没有特殊符号如：`-`、`空格`等
+
+2. `[]`赋值方式
+```js
+var obj = {
+  name: 'yaya',
+  age: 22
+}
+obj.name = "lillian"
+```
+- 此种赋值适用于所有场景，包括不能使用`.`号赋值的情况，eg.
+
+```js
+let response = {
+  'content-type': 'text/json',
+  body: {
+    data: {
+     	obj: {name: 'yaya', age: 22}
+    }
+  }
+}
+obj['content-type'] = 'text/txt'
+```
+- []还可以用于字段名是一个变量的情况
+```js
+var obj = {}
+var var1 = 'gender'
+var val = '女'
+obj[var1] = val
+```
+
 ## JavaScript宿主对象和原生对象的区别
 - 原生对象
 

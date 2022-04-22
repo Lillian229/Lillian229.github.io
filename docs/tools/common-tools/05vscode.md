@@ -8,7 +8,7 @@ VSCode快捷键：（左下角）设置 -> 键盘快捷方式
 "editor.formatOnType": true,
 "editor.formatOnSave": true
 ```
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301013123.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301013123.png)
 
 
 ## VScode自动生成文件头部注释
@@ -52,13 +52,13 @@ VSCode快捷键：（左下角）设置 -> 键盘快捷方式
 1. 简单的输入命令
 打开VSCode命令面板: mac: `command + p` window: `ctrl + p`
 输入`> Open Settings`(注意>后面有一个空格)
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301162025.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301162025.png)
 
 2. 从设置中打开
 首选项 > 设置 > 搜索fileheader > 在右侧中贴上配置 > 做简单的更改
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301162123.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301162123.png)
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301162941.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301162941.png)
 
 **快捷键使用**
 **文件头部注释快捷键**
@@ -224,4 +224,4 @@ window: win+y, mac: cmd+y, linux: meta+y
 
 注释放在头部，识别不到一级标题，会导致标题缺乏，侧边栏显示为文件路径。
 如下图：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301200942.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301200942.png)

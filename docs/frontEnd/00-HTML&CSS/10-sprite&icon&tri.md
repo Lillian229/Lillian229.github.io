@@ -30,7 +30,7 @@ CSS Sprites 的优点：
 ​将网页中的一些小背景图像整合到一张大图中 ，这样服务器只需要一次请求就可以了。
 
 **精灵图举例**:
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571519067073.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571519067073.png)
 
 
 ### 1.2 精灵图（sprites）的使用
@@ -159,7 +159,7 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 ```
 
 注意：务必保证 这个字体和上面@font-face里面的字体保持一致 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571520485350.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571520485350.png)
 
 ### 2.5 字体图标的追加
 
@@ -228,7 +228,7 @@ eg. 示例一：
 </html>
 ```
 显示效果：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301204715.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301204715.png)
 
 eg. 示例二：
 ```html
@@ -292,7 +292,7 @@ eg. 示例二：
 </html>
 ```
 效果图：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220301205035.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220301205035.png)
 
 ### 如何在html标签内添加小图标
 
@@ -321,7 +321,7 @@ eg. 示例二：
 网页中常见一些三角形，使用 CSS 直接画出来就可以，不必做成图片或者字体图标。
 
 一张图， 你就知道 CSS 三角是怎么来的了, 做法如下：
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571520965966.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571520965966.png)
 
 ```css
  div {
@@ -342,7 +342,7 @@ eg. 示例二：
 ### 3.2 案例：京东三角
 
 #### 3.2.1效果图
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/1571521183026.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1571521183026.png)
 
 #### 3.2.2 代码参考
 ```html

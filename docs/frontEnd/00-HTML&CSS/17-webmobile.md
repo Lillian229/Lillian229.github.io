@@ -20,7 +20,7 @@
 + 作为开发者无需关注这些分辨率，因为我们常用的尺寸单位是 px 。
 
 ### 1.3常见移动端屏幕尺寸
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/16-1(1).png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/16-1(1).png)
 
 
 ### 1.4移动端调试方法
@@ -39,7 +39,7 @@
 
 iOS, Android基本都将这个视口分辨率设置为 980px，所以PC上的网页大多都能在手机上呈现，只不过元素看上去很小，一般默认可以通过手动缩放网页。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/16-2.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/16-2.png)
 
 
 ### 2.2视觉视口 visual viewport
@@ -48,7 +48,7 @@ iOS, Android基本都将这个视口分辨率设置为 980px，所以PC上的网
 
 我们可以通过缩放去操作视觉视口，但不会影响布局视口，布局视口仍保持原来的宽度。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/16-3.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/16-3.png)
 
 
 ### 2.3理想视口 ideal viewport
@@ -65,7 +65,7 @@ meta视口标签的主要目的：布局视口的宽度应该与理想视口的�
 
 ### 2.4meta标签
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/16-4.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/16-4.png)
 
 最标准的viewport设置
 
@@ -94,7 +94,7 @@ meta视口标签的主要目的：布局视口的宽度应该与理想视口的�
 - 在早期，PC及移动端都是：1CSS像素 = 1物理像素
 - 随着Retina（视网膜屏幕）显示技术的普及，可以将更多的物理像素点压缩至一块屏幕里，从而达到更高的分辨率，并提高屏幕显示的细腻程度。
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220306185053.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220306185053.png)
 
 
 ### 3.2 多倍图
@@ -152,7 +152,7 @@ meta视口标签的主要目的：布局视口的宽度应该与理想视口的�
 
 模拟效果：
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/20220306185313.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220306185313.png)
 
 ### 二倍精灵图做法
 - 在PS中将精灵图等比例缩放为原来的一半
@@ -194,17 +194,17 @@ background-size: 背景图片宽度 背景图片高度;
 
 京东pc端：
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/16-4.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/16-4.png)
 
 
 京东移动端：
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/16-6.jpg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/16-6.jpg)
 
 
 2.响应式页面兼容移动端（其次）
 
-![](https://gitee.com/leelillian/picgorepo/raw/master/images/16-7.jpg)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/16-7.jpg)
 
 响应式网站：即pc和移动端共用一套网站，只不过在不同屏幕下，样式会自动适配
 
