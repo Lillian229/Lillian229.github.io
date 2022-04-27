@@ -23,8 +23,8 @@ DOM树中概念
 - 文档：一个页面就是一个文档，DOM中使用document表示
 - 节点：网页中的所有内容，在文档树中都是节点（标签、属性、文本、注释等），使用node表示
 - 标签节点：网页中的所有标签，通常称为元素节点，又简称为“元素”，使用element表示
-![](../../pic/domtree.png)
 
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/domtree.png)
 
 ## 获取元素
 ### Why

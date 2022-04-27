@@ -1,7 +1,8 @@
 # git团队协作开发
 
 ## git开发流程图
-![](../../pic/git_dev_process.jpeg)
+
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/git_dev_process.jpeg)
 
 
 ## git在开发中的作用

@@ -94,9 +94,9 @@ let nav = [
         items: [
             { text: "🗃Git", link: "/tools/git/" },
             { text: "📏正则", link: "/tools/regexp/RegExp_class_notes/" },
-            { text: "🔧常用工具", link: "/tools/common-tools/" },
+            { text: "Linux", link: "/tools/Linux/" },
+            { text: "🔧常用工具&快捷键", link: "/tools/common-tools/" },
             { text: "🔮obsidian", link: "/tools/obsidian/" },
-
         ]
     },
 

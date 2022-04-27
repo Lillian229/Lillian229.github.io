@@ -1,8 +1,7 @@
 # 1.5.CSS样式表、复合选择器、三大特性、emmet语法
 ## 一、CSS样式表
 ​按照 CSS 样式书写的位置（或者引入的方式），CSS 样式表可以分为行内、内部、外部样式表
-<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/css引入方式总结.png) -->
-![](../../pic/css.png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/css引入方式总结.png)
 
 ### 行内样式表（行内式）
 行内样式表（内联样式表）是在元素标签内部的 style 属性中设定 CSS 样式。适合于修改简单样式.
@@ -225,8 +224,6 @@ input:focus {
 
 
 ### 复合选择器总结
-<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/1570868930472.png) -->
-<!-- ![](../../pic/1570868930472.png) -->
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/选择器.png)
 
 

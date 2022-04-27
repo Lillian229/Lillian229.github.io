@@ -115,6 +115,7 @@ JS 引擎执行代码时逐行解释每一句源码（转换为机器语言）�
         alert([10,20,30]);  //-> 数组转化为字符串，输出”10，20，30“
         alert({name:'lillian'}); //-> 普通对象转化为字符串，输出"[object Object]"
     ```
+
     ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220308180045.png)
 
 2. `confirm`
@@ -124,6 +125,7 @@ JS 引擎执行代码时逐行解释每一句源码（转换为机器语言）�
      let flag = confirm('今天你学习强国了吗？')
      console.log(flag) //-> true确定  false取消
     ```
+
     ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220308180201.png)
 
 3. `prompt`
@@ -134,7 +136,9 @@ JS 引擎执行代码时逐行解释每一句源码（转换为机器语言）�
     let reason = prompt('确定要删除此信息吗？')
     console.log(reason);
     ```
+
     ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220308180538.png)
+    
     ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220308180609.png)
 
 - 都是要把输出的内容先转换为字符串，然后再输出

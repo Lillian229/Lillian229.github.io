@@ -81,14 +81,17 @@ Virtual DOM 本质上就是在 JS 和 DOM 之间做了一个缓存。可以类�
 两个树的完全的 diff 算法是一个时间复杂度为 O(n^3) 的问题。但是在前端当中，你很少会跨越层级地移动 DOM 元素。
 
 所以 Virtual DOM 只会对同一个层级的元素进行对比：
-![](../pic/domtreediff.png)
+
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/domtreediff.png)
 
 上面的 div 只会和同一层级的 div 对比，第二层级的只会跟第二层级对比。这样算法复杂度就可以达到 O(n)。
 
 深度优先遍历，记录差异
 
 在实际的代码中，会对新旧两棵树进行一个深度优先的遍历，这样每个节点都会有一个唯一的标记：
-![](../pic/domtreediff2.png)
+
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/domtreediff2.png)
+
 在深度优先遍历的时候，每遍历到一个节点就把该节点和新的的树进行对比。如果有差异的话就记录到一个对象里面。
 
 Virtual DOM 算法主要是实现上面步骤的三个函数：element，diff，patch。然后就可以实际的进行使用：
@@ -200,6 +203,7 @@ Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解
 
 ## Vue生命周期渲染过程
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/vueprocess.png)
+
 各个阶段-数字-解释：
 1. var vm = new Vue({}) 表示开始创建一个Vue的实例对象
 

@@ -42,7 +42,8 @@
 
 ### 表格属性
 align, border, cellpadding, cellspacing, width
-![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表格属性.png)
+
+<img src="https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表格属性.png" height="70%" width="70%">
 
 ### 合并单元格方式
 
@@ -82,7 +83,7 @@ align, border, cellpadding, cellspacing, width
 2. `<li>` 与 `</li>` 之间相当于一个容器，可以容纳所有元素。
 3. 无序列表会带有自己的样式属性，但在实际会使用 CSS 设置。
 
-### 有序列表
+### 有序列表  
 有序列表: 有排列顺序的列表, 列表排序以数字来显示.
 
 `<ol>` 定义有序列表，`<li>` 定义列表项。
@@ -131,24 +132,24 @@ align, border, cellpadding, cellspacing, width
     <form action="url地址" method="提交方式" name="表单域名称">各种表单元素控件</form>
 ```
 表单域常用属性：action、method、name
+
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表单常用属性.png)
 
 ###  表单控件(表单元素)
 `<input>` 表单元素，单标签，用于收集用户信息，效果：<input>
-
-
-
 
 `<input type="属性值">`，type 属性设置不同的属性值用来指定不同的控件类型。
 
 type 属性的属性值及其描述如下：
 
 ( button、checkbox、image、hidden、password....)
+
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表单标签.png)
 
 
 除 type 属性外，`<input>`标签还有其他很多属性，其常用属性如下：
 (name、value、checked、maxlength)
+
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/表单其他属性.png)
 
 1. name和value是每个表单元素都有的属性值，主要给后台人员使用

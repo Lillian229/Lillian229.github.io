@@ -1,11 +1,11 @@
- // 写法一：
+// 写法一：
 let sidebar = {
     // '/frontEnd/':[
     //     ''
     // ],
-    // '/list/':[
-    //     'LIST'
-    // ],
+    '/list/': [
+        ''
+    ],
     '/frontEnd/00-HTML&CSS/': [
         '',
         '01-browser&variable',
@@ -37,8 +37,33 @@ let sidebar = {
         '',
         '00-basicconcepts',
         '01-js&variable&datatype',
-        '02-datatype.md',
-        '02-01-array',
+        // '02-datatype.md',
+        {
+            title: '2.2.数据类型',
+            collapsable: true, // 可选的, 默认值是 true,
+            sidebarDepth: 1,    // 可选的, 默认值是 1
+            children: [
+                '02-00-00-concept',
+                '02-00-01-basictype',
+                '02-00-02-reference',
+                '02-00-03-transfer',
+                '02-00-04-detection',
+            ]
+        },
+        {
+            title: '2.2.1.数组中的常用方法',
+            collapsable: true, // 可选的, 默认值是 true,
+            sidebarDepth: 2,    // 可选的, 默认值是 1
+            children: [
+                '02-01-00-array',
+                '02-01-01-method',
+                '02-01-02-traverse',
+                '02-01-03-transfer',
+                '02-01-04-deduplication',
+                '02-01-05-sort',
+                '02-01-06-other'
+            ]
+        },
         '02-02-string',
         '02-03-function',
         '02-04-date',
@@ -47,27 +72,41 @@ let sidebar = {
         '05-jsstack',
         '06-closure',
         '07-this',
+        {
+            title: '2.8.JavaScript面向对象',
+            // path: '/cs_basic/data_construct/',
+            collapsable: true, // 可选的, 默认值是 true,
+            sidebarDepth: 1,    // 可选的, 默认值是 1
+            // initialOpenGroupIndex: -1,
+            // initialOpenGroupIndex: 0,
+            children: [
+                '08-00-js-oo',
+                '08-01',
+                '08-inherit'
+            ]
+        },
+        '09-sync&async.md',
         'DOM'
     ],
 
     // '/frontEnd/03-webAPI/': [
     //     '',
     // ],
-    
+
     // '/frontEnd/04-jQuery/': [
     //     '',
     // ],
-    
+
     '/frontEnd/05-dataVisualization/': [
         '',
     ],
-    
-    
+
+
     '/frontEnd/06-ajax/': [
         '',
     ],
-    
-    
+
+
     '/frontEnd/07-webpack/': [
         '',
         '00-module',
@@ -78,7 +117,7 @@ let sidebar = {
         'wpissue'
     ],
 
-    '/frontEnd/08-ES6/':[
+    '/frontEnd/08-ES6/': [
         '',
         '01-let&const',
         '02-destructuring&assignment',
@@ -96,6 +135,7 @@ let sidebar = {
 
     '/interview/': [
         '',
+        'daily',
         'basic',
         {
             title: 'HTML&CSS',
@@ -122,7 +162,7 @@ let sidebar = {
             ]
         },
 
- 
+
         // 'html&css',
         // 'JavaScript_basic',
         // 'JavaScript_pro',
@@ -134,127 +174,22 @@ let sidebar = {
 
 
     ],
-        // {
-        //     // title: '时间复杂度',
-        //     // path: '/cs_basic/data_construct/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 1,    // 可选的, 默认值是 1
-        //     // initialOpenGroupIndex: -1,
-        //     // initialOpenGroupIndex: 0,
-        //     children: [
-        //         '',
-        //         'html&css',
-        //         'JavaScript_basic',
-        //         'JavaScript_pro',
-        //         'Vue',
-        //         'ES6',
-        //         'Ajax',
-        //         'Webpack'
-        //     ]
-        // },
-
-        // {
-        //     title: 'interview_review',
-        //     path: '/interview/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 2,    // 可选的, 默认值是 1
-        //     // initialOpenGroupIndex: -1,
-        //     // initialOpenGroupIndex: 0,
-        //     children: [
-        //         '',
-        //         // 'JavaScript_basic',
-        //         // 'JavaScript_pro',
-        //         // 'Vue',
-        //         // 'ES6',
-        //         // 'Ajax',
-        //         // ''
-        //         // 'Vue1',
-        //     ]
-        // },
-        // {
-        //     title: 'JavaScript基础',
-        //     path: '/interview/JavaScript_basic/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 2,    // 可选的, 默认值是 1
-        //     // initialOpenGroupIndex: -1,
-        //     // initialOpenGroupIndex: 0,
-        //     children: [
-        //         '',
-        //         'JavaScript_basic',
-        //         //     // 'Vue1',
-        //     ]
-        // },
-        // {
-        //     title: 'JavaScript高级',
-        //     path: '/interview/JavaScript_pro/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 2,    // 可选的, 默认值是 1
-        //     // initialOpenGroupIndex: -1,
-        //     // initialOpenGroupIndex: 0,
-        //     children: [
-        //         '',
-        //         'JavaScript_pro',
-        //         // 'Vue1',
-        //     ]
-        // },
 
 
-        // {
-        //     title: 'vue',
-        //     path: '/interview/Vue/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 2,    // 可选的, 默认值是 1
-        //     // initialOpenGroupIndex: -1,
-        //     // initialOpenGroupIndex: 0,
-        //     children: [
-        //         '',
-        //         'Vue',
-        //         // 'Vue1',
-        //     ]
-        // },
-        // {
-        //     title: 'ES6',
-        //     path: '/interview/ES6/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 2,    // 可选的, 默认值是 1
-        //     // initialOpenGroupIndex: -1,
-        //     // initialOpenGroupIndex: 0,
-        //     children: [
-        //         '',
-        //         'ES6',
-        //     ]
-        // },
-        // {
-        //     title: 'Ajax',
-        //     path: '/interview/Ajax/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 2,    // 可选的, 默认值是 1
-        //     // initialOpenGroupIndex: -1,
-        //     // initialOpenGroupIndex: 0,
-        //     children: [
-        //         '',
-        //         'Ajax',
-        //     ]
-        // },
-        // {
-        //     title: 'Webpack',
-        //     path: '/interview/Webpack/',
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 2,    // 可选的, 默认值是 1
-        //     children: [
-        //         '',
-        //         'Webpack',
-        //     ]
-        // },
 
 
     '/frame/vue/': [
         '',
         'vue',
         'vue-directives'
-
-
     ],
+
+    '/frame/react/': [
+        '',
+        'react_basic',
+        'JSX_basic'
+    ],
+
     '/frame/uniapp/': [
         '',
         'uniapp',
@@ -319,6 +254,10 @@ let sidebar = {
         'RegExp_class_notes'
     ],
 
+    '/tools/Linux/': [
+        '',
+    ],
+
     '/tools/common-tools/': [
         '',
         '01qualitySoftware&tools',
@@ -328,14 +267,28 @@ let sidebar = {
         '05vscode',
         'common-code-blocks'
     ],
-    
+
     '/tools/obsidian/': [
         '',
         'FAQ',
         'shortcut&plugin',
         'qualityAbstracts',
         'markdown'
-    ], 
+    ],
+
+    '/plan/study_everyweek/': [
+        '',
+        '2022',
+    ],
+
+    '/plan/ngineering/': [
+        '',
+        'engineering'
+
+
+    ]
+
+
 
 }
 

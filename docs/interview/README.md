@@ -1,8 +1,10 @@
 # 目录
 
 目前暂未撰写完成（进度：30%），敬请期待～
+## 日常疑问&解决
+[日常疑问&解决](daily.md)
 
-## [HTML&CSS](./html&css.md)
+## HTML&CSS
 [HTML](./html.md)
 
 [CSS](./css.md)
@@ -16,7 +18,6 @@
 
 ## JavaScript
 [JavaScript基础](./JavaScript_basic.md)
-<!-- [JavaScript基础](./) -->
 
 [JavaScript高级](./JavaScript_pro)
 
