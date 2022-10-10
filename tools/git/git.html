@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git常用命令 | 莉安&#39;blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/star_byya.png">
+    <meta name="description" content="莉安的前端学习之路">
+    
+    <link rel="preload" href="/assets/css/0.styles.c33d3a11.css" as="style"><link rel="preload" href="/assets/js/app.1ba2affc.js" as="script"><link rel="preload" href="/assets/js/2.3d4592cd.js" as="script"><link rel="preload" href="/assets/js/144.19efdec0.js" as="script"><link rel="prefetch" href="/assets/js/10.790569e4.js"><link rel="prefetch" href="/assets/js/100.16f0bdaa.js"><link rel="prefetch" href="/assets/js/101.8010ece7.js"><link rel="prefetch" href="/assets/js/102.7581adaf.js"><link rel="prefetch" href="/assets/js/103.1eb9dc97.js"><link rel="prefetch" href="/assets/js/104.414034a6.js"><link rel="prefetch" href="/assets/js/105.29ecc7b1.js"><link rel="prefetch" href="/assets/js/106.318a59a4.js"><link rel="prefetch" href="/assets/js/107.04189fde.js"><link rel="prefetch" href="/assets/js/108.b4043be7.js"><link rel="prefetch" href="/assets/js/109.e14fca04.js"><link rel="prefetch" href="/assets/js/11.a722df79.js"><link rel="prefetch" href="/assets/js/110.aafc04f3.js"><link rel="prefetch" href="/assets/js/111.22d08087.js"><link rel="prefetch" href="/assets/js/112.9ac062ea.js"><link rel="prefetch" href="/assets/js/113.3d88703c.js"><link rel="prefetch" href="/assets/js/114.d379a5b6.js"><link rel="prefetch" href="/assets/js/115.b60f17c3.js"><link rel="prefetch" href="/assets/js/116.7304d982.js"><link rel="prefetch" href="/assets/js/117.b21eb5bb.js"><link rel="prefetch" href="/assets/js/118.91478630.js"><link rel="prefetch" href="/assets/js/119.a9e3ea0f.js"><link rel="prefetch" href="/assets/js/12.cc3c4eb9.js"><link rel="prefetch" href="/assets/js/120.811e0379.js"><link rel="prefetch" href="/assets/js/121.630eae11.js"><link rel="prefetch" href="/assets/js/122.a1bec06d.js"><link rel="prefetch" href="/assets/js/123.4204199f.js"><link rel="prefetch" href="/assets/js/124.78cf47e3.js"><link rel="prefetch" href="/assets/js/125.76364e3c.js"><link rel="prefetch" href="/assets/js/126.0305dac0.js"><link rel="prefetch" href="/assets/js/127.8edda73d.js"><link rel="prefetch" href="/assets/js/128.604a0f00.js"><link rel="prefetch" href="/assets/js/129.a387ae71.js"><link rel="prefetch" href="/assets/js/13.8b729fed.js"><link rel="prefetch" href="/assets/js/130.c968f973.js"><link rel="prefetch" href="/assets/js/131.f637843c.js"><link rel="prefetch" href="/assets/js/132.d0b6e21a.js"><link rel="prefetch" href="/assets/js/133.0726cf0a.js"><link rel="prefetch" href="/assets/js/134.e8729ce4.js"><link rel="prefetch" href="/assets/js/135.929083ba.js"><link rel="prefetch" href="/assets/js/136.dd7742c0.js"><link rel="prefetch" href="/assets/js/137.4edc2a75.js"><link rel="prefetch" href="/assets/js/138.e2a5f62f.js"><link rel="prefetch" href="/assets/js/139.aa2363bd.js"><link rel="prefetch" href="/assets/js/14.1e7ba3d9.js"><link rel="prefetch" href="/assets/js/140.0417b81e.js"><link rel="prefetch" href="/assets/js/141.360c5bcb.js"><link rel="prefetch" href="/assets/js/142.f9a6fc81.js"><link rel="prefetch" href="/assets/js/143.da78300c.js"><link rel="prefetch" href="/assets/js/145.185fc953.js"><link rel="prefetch" href="/assets/js/146.77e27b6e.js"><link rel="prefetch" href="/assets/js/147.8c17ceca.js"><link rel="prefetch" href="/assets/js/148.061ca343.js"><link rel="prefetch" href="/assets/js/149.f936c766.js"><link rel="prefetch" href="/assets/js/15.eb80bfc9.js"><link rel="prefetch" href="/assets/js/150.c57d6546.js"><link rel="prefetch" href="/assets/js/151.eb306a71.js"><link rel="prefetch" href="/assets/js/16.b67aeefb.js"><link rel="prefetch" href="/assets/js/17.44509f88.js"><link rel="prefetch" href="/assets/js/18.b5dc1183.js"><link rel="prefetch" href="/assets/js/19.af35304a.js"><link rel="prefetch" href="/assets/js/20.6e65e5ff.js"><link rel="prefetch" href="/assets/js/21.9bbd4878.js"><link rel="prefetch" href="/assets/js/22.6116a7f6.js"><link rel="prefetch" href="/assets/js/23.5d1d087a.js"><link rel="prefetch" href="/assets/js/24.87029ea1.js"><link rel="prefetch" href="/assets/js/25.535ef963.js"><link rel="prefetch" href="/assets/js/26.dec71e2e.js"><link rel="prefetch" href="/assets/js/27.f13f5539.js"><link rel="prefetch" href="/assets/js/28.13bba050.js"><link rel="prefetch" href="/assets/js/29.45b40353.js"><link rel="prefetch" href="/assets/js/3.90fae896.js"><link rel="prefetch" href="/assets/js/30.42e74622.js"><link rel="prefetch" href="/assets/js/31.6c98eb25.js"><link rel="prefetch" href="/assets/js/32.4e17e2dc.js"><link rel="prefetch" href="/assets/js/33.9f27a139.js"><link rel="prefetch" href="/assets/js/34.8450a10c.js"><link rel="prefetch" href="/assets/js/35.1d74554e.js"><link rel="prefetch" href="/assets/js/36.9266a700.js"><link rel="prefetch" href="/assets/js/37.70c62a1e.js"><link rel="prefetch" href="/assets/js/38.f6420694.js"><link rel="prefetch" href="/assets/js/39.d29467b6.js"><link rel="prefetch" href="/assets/js/4.977a0ab5.js"><link rel="prefetch" href="/assets/js/40.c580e84a.js"><link rel="prefetch" href="/assets/js/41.09a717c2.js"><link rel="prefetch" href="/assets/js/42.29fc1b93.js"><link rel="prefetch" href="/assets/js/43.8598bc8d.js"><link rel="prefetch" href="/assets/js/44.ee4312bf.js"><link rel="prefetch" href="/assets/js/45.743ffd71.js"><link rel="prefetch" href="/assets/js/46.c398666d.js"><link rel="prefetch" href="/assets/js/47.c5c75efd.js"><link rel="prefetch" href="/assets/js/48.ce7a73d2.js"><link rel="prefetch" href="/assets/js/49.5a0411e6.js"><link rel="prefetch" href="/assets/js/5.a1697db2.js"><link rel="prefetch" href="/assets/js/50.b0c42f9e.js"><link rel="prefetch" href="/assets/js/51.af492704.js"><link rel="prefetch" href="/assets/js/52.73ec8bf8.js"><link rel="prefetch" href="/assets/js/53.350bdf9b.js"><link rel="prefetch" href="/assets/js/54.e99d0f4d.js"><link rel="prefetch" href="/assets/js/55.1560c873.js"><link rel="prefetch" href="/assets/js/56.cdd00427.js"><link rel="prefetch" href="/assets/js/57.5410f8f7.js"><link rel="prefetch" href="/assets/js/58.60271938.js"><link rel="prefetch" href="/assets/js/59.7298bcf7.js"><link rel="prefetch" href="/assets/js/6.9537891b.js"><link rel="prefetch" href="/assets/js/60.a99d05c2.js"><link rel="prefetch" href="/assets/js/61.9ce1e53f.js"><link rel="prefetch" href="/assets/js/62.b63d991c.js"><link rel="prefetch" href="/assets/js/63.f3e8b3db.js"><link rel="prefetch" href="/assets/js/64.bbc99680.js"><link rel="prefetch" href="/assets/js/65.5694b6a8.js"><link rel="prefetch" href="/assets/js/66.e13bf320.js"><link rel="prefetch" href="/assets/js/67.9b60ec5a.js"><link rel="prefetch" href="/assets/js/68.6f1c7c44.js"><link rel="prefetch" href="/assets/js/69.9ca75742.js"><link rel="prefetch" href="/assets/js/7.204d85f0.js"><link rel="prefetch" href="/assets/js/70.941c3c5a.js"><link rel="prefetch" href="/assets/js/71.651d0b58.js"><link rel="prefetch" href="/assets/js/72.1fc23c63.js"><link rel="prefetch" href="/assets/js/73.4e6e5d70.js"><link rel="prefetch" href="/assets/js/74.e818d536.js"><link rel="prefetch" href="/assets/js/75.b40257b5.js"><link rel="prefetch" href="/assets/js/76.2f8b0f13.js"><link rel="prefetch" href="/assets/js/77.9a7a45b2.js"><link rel="prefetch" href="/assets/js/78.41b60e0e.js"><link rel="prefetch" href="/assets/js/79.db913e25.js"><link rel="prefetch" href="/assets/js/8.e655be19.js"><link rel="prefetch" href="/assets/js/80.f050acd4.js"><link rel="prefetch" href="/assets/js/81.8b2e9dc2.js"><link rel="prefetch" href="/assets/js/82.b8e152d8.js"><link rel="prefetch" href="/assets/js/83.2a7653ec.js"><link rel="prefetch" href="/assets/js/84.4c69da34.js"><link rel="prefetch" href="/assets/js/85.e8159c3a.js"><link rel="prefetch" href="/assets/js/86.370c05bb.js"><link rel="prefetch" href="/assets/js/87.474d5376.js"><link rel="prefetch" href="/assets/js/88.b5058161.js"><link rel="prefetch" href="/assets/js/89.9d1d12b0.js"><link rel="prefetch" href="/assets/js/9.15d14901.js"><link rel="prefetch" href="/assets/js/90.d4119f14.js"><link rel="prefetch" href="/assets/js/91.55418b72.js"><link rel="prefetch" href="/assets/js/92.4b2c29b0.js"><link rel="prefetch" href="/assets/js/93.7bd75885.js"><link rel="prefetch" href="/assets/js/94.677aaaa8.js"><link rel="prefetch" href="/assets/js/95.8d51a7cf.js"><link rel="prefetch" href="/assets/js/96.dfede739.js"><link rel="prefetch" href="/assets/js/97.d1492508.js"><link rel="prefetch" href="/assets/js/98.cdde04c9.js"><link rel="prefetch" href="/assets/js/99.5594bf91.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c33d3a11.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/star_byya.png" alt="莉安'blog" class="logo"> <span class="site-name can-hide">莉安'blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/list/" class="nav-link">
+  📖本站目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="📘这里有参考手册哦" class="dropdown-title"><span class="title">参考手册</span> <span class="arrow down"></span></button> <button type="button" aria-label="📘这里有参考手册哦" class="mobile-dropdown-title"><span class="title">参考手册</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/zh-CN/docs/Web" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN(新版本)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.expressjs.com.cn/en/resources/middleware/session.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Express
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue.js
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://webpack.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  webpack
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  elementUI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eslint.bootcss.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ESlint
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uniapp
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信小程序
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎉前端基础相关知识在这里诶~✨" class="dropdown-title"><span class="title">🧸前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎉前端基础相关知识在这里诶~✨" class="mobile-dropdown-title"><span class="title">🧸前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontEnd/00-HTML&amp;CSS/" class="nav-link">
+  HTML&amp;CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/02-javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/05-dataVisualization/" class="nav-link">
+  数据可视化
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/06-ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/07-webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/08-ES6/" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  interview
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎉前端框架相关知识在这里诶~✨" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎉前端框架相关知识在这里诶~✨" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frame/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frame/uniapp/" class="nav-link">
+  Uniapp
+</a></li></ul></div></div><div class="nav-item"><a href="/FEDeploy/" class="nav-link">
+  前端部署
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  ✨精华文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎉计算机基础相关知识在这里诶~✨" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎉计算机基础相关知识在这里诶~✨" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cs_basic/cs_basic/" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/cs_basic/cs_network/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/cs_basic/data_construct/" class="nav-link">
+  数据结构&amp;算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="⚙️tools" class="dropdown-title"><span class="title">⚙️tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="⚙️tools" class="mobile-dropdown-title"><span class="title">⚙️tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git/" class="nav-link router-link-active">
+  🗃Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/regexp/RegExp_class_notes/" class="nav-link">
+  📏正则
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/tools/common-tools/" class="nav-link">
+  🔧常用工具&amp;快捷键
+</a></li><li class="dropdown-item"><!----> <a href="/tools/obsidian/" class="nav-link">
+  🔮obsidian
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计划准备要做的事情" class="dropdown-title"><span class="title">Plan</span> <span class="arrow down"></span></button> <button type="button" aria-label="计划准备要做的事情" class="mobile-dropdown-title"><span class="title">Plan</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  Vue3源码阅读和调试
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  React的学习
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  Rust
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/list/" class="nav-link">
+  📖本站目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="📘这里有参考手册哦" class="dropdown-title"><span class="title">参考手册</span> <span class="arrow down"></span></button> <button type="button" aria-label="📘这里有参考手册哦" class="mobile-dropdown-title"><span class="title">参考手册</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://developer.mozilla.org/zh-CN/docs/Web" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MDN(新版本)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.expressjs.com.cn/en/resources/middleware/session.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Express
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue.js
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://webpack.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  webpack
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  elementUI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eslint.bootcss.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ESlint
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uniapp
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信小程序
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎉前端基础相关知识在这里诶~✨" class="dropdown-title"><span class="title">🧸前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎉前端基础相关知识在这里诶~✨" class="mobile-dropdown-title"><span class="title">🧸前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontEnd/00-HTML&amp;CSS/" class="nav-link">
+  HTML&amp;CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/02-javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/05-dataVisualization/" class="nav-link">
+  数据可视化
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/06-ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/07-webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontEnd/08-ES6/" class="nav-link">
+  ES6
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  interview
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎉前端框架相关知识在这里诶~✨" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎉前端框架相关知识在这里诶~✨" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frame/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frame/uniapp/" class="nav-link">
+  Uniapp
+</a></li></ul></div></div><div class="nav-item"><a href="/FEDeploy/" class="nav-link">
+  前端部署
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  ✨精华文章
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎉计算机基础相关知识在这里诶~✨" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎉计算机基础相关知识在这里诶~✨" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cs_basic/cs_basic/" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/cs_basic/cs_network/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/cs_basic/data_construct/" class="nav-link">
+  数据结构&amp;算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="⚙️tools" class="dropdown-title"><span class="title">⚙️tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="⚙️tools" class="mobile-dropdown-title"><span class="title">⚙️tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git/" class="nav-link router-link-active">
+  🗃Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/regexp/RegExp_class_notes/" class="nav-link">
+  📏正则
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/tools/common-tools/" class="nav-link">
+  🔧常用工具&amp;快捷键
+</a></li><li class="dropdown-item"><!----> <a href="/tools/obsidian/" class="nav-link">
+  🔮obsidian
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计划准备要做的事情" class="dropdown-title"><span class="title">Plan</span> <span class="arrow down"></span></button> <button type="button" aria-label="计划准备要做的事情" class="mobile-dropdown-title"><span class="title">Plan</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  Vue3源码阅读和调试
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  React的学习
+</a></li><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  Rust
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/tools/git/" aria-current="page" class="sidebar-link">git</a></li><li><a href="/tools/git/git.html" aria-current="page" class="active sidebar-link">git常用命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tools/git/git.html#日常新建仓库" class="sidebar-link">日常新建仓库</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#git常用命令大全" class="sidebar-link">GIT常用命令大全</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tools/git/git.html#初始化配置" class="sidebar-link">初始化配置</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#查看、添加、提交、删除、找回-重置修改文件" class="sidebar-link">查看、添加、提交、删除、找回，重置修改文件</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#查看文件diff" class="sidebar-link">查看文件diff</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#查看提交记录" class="sidebar-link">查看提交记录</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#取得git仓库" class="sidebar-link">取得Git仓库</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#提交你的修改" class="sidebar-link">提交你的修改</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#查看、切换、创建和删除分支" class="sidebar-link">查看、切换、创建和删除分支</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#分支合并和rebase" class="sidebar-link">分支合并和rebase</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#git补丁管理-方便在多台机器上开发同步时用" class="sidebar-link">Git补丁管理(方便在多台机器上开发同步时用)</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#git暂存管理" class="sidebar-link">Git暂存管理</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#git远程分支管理" class="sidebar-link">Git远程分支管理</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#基本的分支管理" class="sidebar-link">基本的分支管理</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#git远程仓库管理" class="sidebar-link">Git远程仓库管理</a></li><li class="sidebar-sub-header"><a href="/tools/git/git.html#创建远程仓库" class="sidebar-link">创建远程仓库</a></li></ul></li></ul></li><li><a href="/tools/git/git-intro.html" class="sidebar-link">Git基础概念</a></li><li><a href="/tools/git/git-team.html" class="sidebar-link">git团队协作开发</a></li><li><a href="/tools/git/git-issue.html" class="sidebar-link">git常见问题</a></li><li><a href="/tools/git/git-webstorm.html" class="sidebar-link">Webstorm中Git的使用</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git常用命令"><a href="#git常用命令" class="header-anchor">#</a> git常用命令</h1> <h2 id="日常新建仓库"><a href="#日常新建仓库" class="header-anchor">#</a> 日常新建仓库</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>//创建本地仓库，生成 .git 文件，没有 .git 文件都不能叫做仓库
+git init
+
+// 添加README文件
+git add README.md
+
+// 提交
+git commit -m &quot;first commit&quot;
+
+// 切换到main分支
+git branch -M main
+
+// 让本地仓库和远程仓库保持连接
+git remote add origin 远程仓库地址
+
+//把本地仓库的文件推送到远程仓库
+git push -u origin main
+// 查看状态
+$ git status
+
+// 版本回退/代码回滚（开发过程尽量少用）
+git reset --hard &lt;commit_id&gt;
+git push origin HEAD --force
+
+// 可获得commit_id
+git log
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h2 id="git常用命令大全"><a href="#git常用命令大全" class="header-anchor">#</a> GIT常用命令大全</h2> <h3 id="初始化配置"><a href="#初始化配置" class="header-anchor">#</a> 初始化配置</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>#配置使用 git 仓库的人员姓名
+git config --global user.name &quot;Your Name Comes Here&quot;
+
+#配置使用 git 仓库的人员 email
+git config --global user.email you@yourdomain.example.com
+#配置到缓存 默认 15 分钟
+git config --global credential.helper cache
+#修改缓存时间
+git config --global credential.helper 'cache --timeout=3600'
+git config --global color.ui true
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global core.editor &quot;mate -w&quot; # 设置 Editor 使用 textmate
+git config -1 #列举所有配置
+#用户的 git 配置文件~/.gitconfig
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="查看、添加、提交、删除、找回-重置修改文件"><a href="#查看、添加、提交、删除、找回-重置修改文件" class="header-anchor">#</a> 查看、添加、提交、删除、找回，重置修改文件</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git help &lt;command&gt;          # 显示 command 的 help
+git show                    # 显示某次提交的内容
+git show $id           
+git co -- &lt;file&gt;            # 抛弃工作区修改
+git co .                    # 抛弃工作区修改
+git add &lt;file&gt;              # 将工作文件修改提交到本地暂存区
+git add .                   # 将所有修改过的工作文件提交暂存区
+git rm &lt;file&gt;               # 从版本库中删除文件
+git rm &lt;file&gt; --cached      # 从版本库中删除文件，但不删除文件
+git reset &lt;file&gt;            # 从暂存区恢复到工作文件
+git reset -- .              # 从暂存区恢复到工作文件
+git reset --hard            # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改
+git ci &lt;file&gt;
+git ci .
+git ci -a                   # 将 git add, git rm 和 git ci 等操作都合并在一起做
+git ci -am &quot;some comments&quot;
+git ci --amend              # 修改最后一次提交记录
+git revert &lt;$id&gt;            # 恢复某次提交的状态，恢复动作本身也创建了一次提交对象
+git revert HEAD             # 恢复最后一次提交的状态
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="查看文件diff"><a href="#查看文件diff" class="header-anchor">#</a> 查看文件diff</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> git diff &lt;file&gt;            # 比较当前文件和暂存区文件差异
+ git diff
+ git diff &lt;$id1&gt; &lt;$id2&gt;     # 比较两次提交之间的差异
+ git diff &lt;branch1&gt;..&lt;branch2&gt; # 在两个分支之间比较
+ git diff --staged          # 比较暂存区和版本库差异
+ git diff --cached          # 比较暂存区和版本库差异
+ git diff --stat            # 仅仅比较统计信息
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="查看提交记录"><a href="#查看提交记录" class="header-anchor">#</a> 查看提交记录</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> git log
+ git log &lt;file&gt;             # 查看该文件每次提交记录
+ git log -p &lt;file&gt;          # 查看每次详细修改内容的 diff
+ git log -p -2              # 查看最近两次详细修改内容的 diff
+ git log --stat             #查看提交统计信息
+
+tips:Mac 上可以使用 tig 代替 diff 和 log，brew install tig
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="取得git仓库"><a href="#取得git仓库" class="header-anchor">#</a> 取得Git仓库</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> #初始化一个版本仓库
+ git init
+
+ #Clone 远程版本库
+ git clone git仓库地址(git@xxx.xx.xxxxx.git)
+
+ #添加远程版本库 origin，语法为 git remote add [shortname] [url]
+ git remote add origin git仓库地址(git@xxx.xx.xxxxx.git)
+
+ #查看远程仓库
+ git remote -v
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="提交你的修改"><a href="#提交你的修改" class="header-anchor">#</a> 提交你的修改</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> #添加当前修改的文件到暂存区
+ git add .
+
+ #如果你自动追踪文件，包括你已经手动删除的，状态为 Deleted 的文件
+ git add -u
+
+ #提交你的修改
+ git commit –m &quot;你的注释&quot;
+
+ #推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]
+ git push origin master
+
+ #查看文件状态
+ git status
+
+ #跟踪新文件
+ git add readme.txt
+
+ #从当前跟踪列表移除文件，并完全删除
+ git rm readme.txt
+
+ #仅在暂存区删除，保留文件在当前目录，不再跟踪
+ git rm –cached readme.txt
+
+ #重命名文件
+ git mv reademe.txt readme
+
+ #查看提交的历史记录
+ git log
+
+ #修改最后一次提交注释的，利用–amend 参数
+ git commit --amend
+
+ #忘记提交某些修改，下面的三条命令只会得到一个提交。
+ git commit –m &amp;quot;add readme.txt&amp;quot;
+ git add readme_forgotten
+ git commit –amend
+
+ #假设你已经使用 git add .，将修改过的文件 a、b 加到暂存区
+ #现在你只想提交 a 文件，不想提交 b 文件，应该这样
+ git reset HEAD b
+
+ #取消对文件的修改
+ git checkout –- readme.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><h3 id="查看、切换、创建和删除分支"><a href="#查看、切换、创建和删除分支" class="header-anchor">#</a> 查看、切换、创建和删除分支</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> git br -r                  # 查看远程分支
+ git br &lt;new_branch&gt;        # 创建新的分支
+ git br -v                  # 查看各个分支最后提交信息
+ git br --merged            # 查看已经被合并到当前分支的分支
+ git br --no-merged         # 查看尚未被合并到当前分支的分支
+ git co &lt;branch&gt;            # 切换到某个分支
+ git co -b &lt;new_branch&gt;     # 创建新的分支，并且切换过去
+ git co -b &lt;new_branch&gt; &lt;branch&gt; # 基于 branch 创建新的 new_branch
+ git co $id                 # 把某次历史提交记录 checkout 出来，但无分支信息，切换到其他分支会自动删除
+ git co $id -b &lt;new_branch&gt; # 把某次历史提交记录 checkout 出来，创建成一个分支
+ git br -d &lt;branch&gt;         # 删除某个分支
+ git br -D &lt;branch&gt;         # 强制删除某个分支 (未被合并的分支被删除的时候需要强制)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="分支合并和rebase"><a href="#分支合并和rebase" class="header-anchor">#</a> 分支合并和rebase</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code># 将 branch 分支合并到当前分支
+ git merge &lt;branch&gt; 
+
+ # 不要 Fast-Foward 合并，这样可以生成 merge 提交
+ git merge origin/master --no-ff
+
+ # 将 master rebase 到 branch，相当于：
+ git rebase master &lt;branch&gt; 
+ git co &lt;branch&gt; &amp;&amp; git rebase master &amp;&amp; git co master &amp;&amp; git merge &lt;branch&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="git补丁管理-方便在多台机器上开发同步时用"><a href="#git补丁管理-方便在多台机器上开发同步时用" class="header-anchor">#</a> Git补丁管理(方便在多台机器上开发同步时用)</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code># 生成补丁
+ git diff &gt; ../sync.patch
+
+# 打补丁
+ git apply ../sync.patch
+
+# 测试补丁能否成功
+ git apply --check ../sync.patch 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="git暂存管理"><a href="#git暂存管理" class="header-anchor">#</a> Git暂存管理</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> git stash              # 暂存
+ git stash list         # 列所有 stash
+ git stash apply        # 恢复暂存的内容
+ git stash drop         # 删除暂存区
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="git远程分支管理"><a href="#git远程分支管理" class="header-anchor">#</a> Git远程分支管理</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> git pull                       # 抓取远程仓库所有分支更新并合并到本地
+ git pull --no-ff               # 抓取远程仓库所有分支更新并合并到本地，不要快进合并
+ git fetch origin               # 抓取远程仓库更新
+ git merge origin/master 	    # 将远程主分支合并到本地当前分支
+ git co --track origin/branch   # 跟踪某个远程分支创建相应的本地分支
+ git co -b &lt;local_branch&gt; origin/&lt;remote_branch&gt; # 基于远程分支创建本地分支，功能同上
+ git push                       # push 所有分支
+ git push origin master         # 将本地主分支推到远程主分支
+ git push -u origin master # 将本地主分支推到远程(如无远程主分支则创建，用于初始化远程仓库)
+ git push origin &lt;local_branch&gt; # 创建远程分支， origin 是远程仓库名
+ git push origin &lt;local_branch&gt;:&lt;remote_branch&gt; # 创建远程分支
+ git push origin :&lt;remote_branch&gt; #先删除本地分支(git br -d &lt;branch&gt;)，然后再 push 删除远程分支
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="基本的分支管理"><a href="#基本的分支管理" class="header-anchor">#</a> 基本的分支管理</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> #创建一个分支
+ git branch dev
+
+ #切换工作目录到 dev
+ git chekcout dev
+
+ #将上面的命令合在一起，创建 dev 分支并切换到 dev
+ git chekcout –b dev
+
+ #合并 dev 分支，当前工作目录为 master
+ git merge dev
+
+ #合并完成后，没有出现冲突，删除 dev 分支
+ git branch –d dev
+
+ #拉去远程仓库的数据，语法为 git fetch [remote-name]
+ git fetch
+
+ #fetch 会拉去最新的远程仓库数据，但不会自动到当前目录下，要自动合并
+ git pull
+
+ #查看远程仓库的信息
+ git remote show origin
+
+ #建立本地的 dev 分支追踪远程仓库的 develop 分支
+ git checkout –b dev origin/develop
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h3 id="git远程仓库管理"><a href="#git远程仓库管理" class="header-anchor">#</a> Git远程仓库管理</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> git remote -v                  # 查看远程服务器地址和仓库名称
+ git remote show origin         # 查看远程服务器仓库状态
+ git remote add origin git@ github:robbin/robbin_site.git # 添加远程仓库地址
+ git remote set-url origin git@ github.com:robbin/robbin_site.git # 设置远程仓库地址(用于修改远程仓库地
+址)
+ git remote rm &lt;repository&gt;     # 删除远程仓库
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="创建远程仓库"><a href="#创建远程仓库" class="header-anchor">#</a> 创建远程仓库</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> # 用带版本的项目创建纯版本仓库
+ git clone --bare robbin_site robbin_site.git 
+
+ # 将纯仓库上传到服务器上
+ scp -r my_project.git git@ git.csdn.net:~ 
+
+ # 在服务器创建纯仓库
+ mkdir robbin_site.git &amp;&amp; cd robbin_site.git &amp;&amp; git --bare init 
+
+ # 设置远程仓库地址
+ git remote add origin git@ github.com:robbin/robbin_site.git 
+
+ # 客户端首次提交
+ git push -u origin master 
+
+ # 首次将本地 develop 分支提交到远程 develop 分支，并且 track
+ git push -u origin develop 
+
+ # 设置远程仓库的 HEAD 指向 master 分支
+ git remote set-head origin master 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>也可以命令设置跟踪远程库和本地库</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> git branch --set-upstream master origin/master
+
+ git branch --set-upstream develop origin/develop
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tools/git/" class="prev router-link-active">
+        git
+      </a></span> <span class="next"><a href="/tools/git/git-intro.html">
+        Git基础概念
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.1ba2affc.js" defer></script><script src="/assets/js/2.3d4592cd.js" defer></script><script src="/assets/js/144.19efdec0.js" defer></script>
+  </body>
+</html>
