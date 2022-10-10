@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "53b8b2bbb999439d",
+        "id": "5ca7f240fbc54a3d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/frontEnd/02-javascript/README.md",
+            "file": "docs/tools/common-tools/02mac_shortcut.md",
             "mode": "preview",
             "backlinks": true,
             "source": true
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "70%",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 219
   },
   "right": {
     "id": "b3b31da532cd0220",
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/frontEnd/02-javascript/README.md",
+                "file": "docs/tools/common-tools/02mac_shortcut.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/frontEnd/02-javascript/README.md",
+                "file": "docs/tools/common-tools/02mac_shortcut.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/frontEnd/02-javascript/README.md"
+                "file": "docs/tools/common-tools/02mac_shortcut.md"
               }
             }
           },
@@ -147,23 +147,23 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 238
   },
-  "active": "53b8b2bbb999439d",
+  "active": "5ca7f240fbc54a3d",
   "lastOpenFiles": [
-    "docs/frontEnd/02-javascript/README.md",
-    "docs/frontEnd/00-HTML&CSS/README.md",
-    "docs/frontEnd/00-HTML&CSS/21-layout_response.md",
-    "docs/frontEnd/00-HTML&CSS/20-layout_rem.md",
-    "docs/frontEnd/00-HTML&CSS/19-layout_flex.md",
-    "docs/frontEnd/00-HTML&CSS/18-layout_fluid.md",
-    "docs/frontEnd/00-HTML&CSS/17-webmobile.md",
-    "docs/frontEnd/00-HTML&CSS/16-animation.md",
-    "docs/frontEnd/00-HTML&CSS/15-3D.md",
-    "docs/frontEnd/00-HTML&CSS/14-2D.md"
+    "docs/tools/git/git.md",
+    "docs/tools/git/git-webstorm.md",
+    "docs/tools/git/git-issue.md",
+    "docs/tools/git/git-intro.md",
+    "docs/tools/common-tools/02mac_shortcut.md",
+    "docs/frontEnd/00-HTML&CSS/03-tables&forms&list.md",
+    "docs/tools/common-tools/01qualitySoftware&tools.md",
+    "docs/tools/common-tools/03win_shortcut_command.md",
+    "docs/tools/common-tools/04little_issue.md",
+    "docs/frontEnd/02-javascript/00-basicconcepts.md"
   ]
 }

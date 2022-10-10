@@ -45,7 +45,7 @@ let nav = [
             { text: "数据可视化", link: "/frontEnd/05-dataVisualization/" },
             { text: "ajax", link: "/frontEnd/06-ajax/" },
             { text: "webpack", link: "/frontEnd/07-webpack/" },
-            { text: "ES6", link: "/frontEnd/08-ES6/"}
+            { text: "ES6", link: "/frontEnd/08-ES6/" }
 
         ]
     },
@@ -69,6 +69,10 @@ let nav = [
 
 
         ]
+    },
+
+    {
+        text: "前端部署", link: '/FEDeploy/'
     },
 
     {
@@ -106,7 +110,7 @@ let nav = [
         items: [
             { text: "前端工程化", link: "/" },
             { text: "Vue3源码阅读和调试", link: "/" },
-            { text: "React的学习",link: "/"},
+            { text: "React的学习", link: "/" },
             { text: "Rust", link: "/" },
         ]
     },

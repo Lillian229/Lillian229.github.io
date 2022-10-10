@@ -288,8 +288,8 @@ Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解
 ## 组件的命名规范
 给组件命名有两种方式，一种是使用链式命名 my-component，一种是使用大
 驼峰命名 MyComponent,
-在字符串模板中`<my-component></my-component>`和`<MyComponent></MyComponent>`都可以使用，
-在非字符串模板中最好使用`<MyComponent></MyComponent>`，因为要遵循 W3C规范中的自定义组件名 (字母全小写且必须包含一个连字符)，避免和当前以及未
+- 在字符串模板中`<my-component></my-component>`和`<MyComponent></MyComponent>`都可以使用，
+- 在非字符串模板中最好使用`<MyComponent></MyComponent>`，因为要遵循 W3C规范中的自定义组件名 (字母全小写且必须包含一个连字符)，避免和当前以及未
 来的 HTML 元素相冲突
 
 
@@ -343,6 +343,8 @@ clearInterval(timer);
 ## Vue 该如何实现组件缓存?
 在面向组件化开发中，我们会把整个项目拆分为很多业务组件，然后按照合理的方式组织起来，那么自然会存在组件之前切换的问题，Vue 中有个动态组件的概念，它能够帮助开发者更好的实现组件之间的切换，但是在面对需求频繁的变化，去要切换组件时，动态组件在切换的过程中，组件的实例都是重新创建的，而我们需要保留组件的状态，为了解决这个问题，需要使用到 Vue 中内置组件\<keep-alive>
 \<keep-alive>\</keep-alive> 包裹动态组件时，会缓存不活动的组件实例,主要用于保留组件状态或避免重新渲染，
+
+
 简单的说: 比如有一个列表和一个详情，那么用户就会经常执行打开详情=>返回列表=>打开详情…这样的话列表和详情都是一个频率很高的页面，那么就可以对列表组件使用<keep-alive></keep-alive>进行缓存，这样用户每次返回列表的时候，都能从缓存中快速渲染，而不是重新渲染
 
 
@@ -350,10 +352,15 @@ clearInterval(timer);
 1）前言：在开发 Vue 项目的时候，大部分组件是没必要多次渲染的，所以Vue 提供了一个内置组件 keep-alive 来缓存组件内部状态，避免重新渲染，在开发 Vue 项目的时候，大部分组件是没必要多次渲染的，所以 Vue 提供了一个内置组件 keep-alive 来缓存组件内部状态，避免重新渲染
 
 2）生命周期函数：在被 keep-alive 包含的组件/路由中，会多出两个生命周期的钩子:activated 与 deactivated。
-1、activated 钩子：在在组件第一次渲染时会被调用，之后在每次缓存组件被激活时调用。
-2、Activated 钩子调用时机： 第一次进入缓存路由/组件，在 mounted 后面，beforeRouteEnter 守卫传给 next 的回调函数之前调用，并且给因为组件被缓存了，再次进入缓存路由、组件时，不会触发这些钩子函数，beforeCreate created ，beforeMount mounted 都不会触发
-1、deactivated 钩子：组件被停用（离开路由）时调用。
-2、deactivated 钩子调用时机：使用 keep-alive 就不会调用 beforeDestroy(组件销毁前钩子)和 destroyed(组件销毁)，因为组件没被销毁，被缓存起来了，这个钩子可以看作 beforeDestroy 的替代，如果你缓存了组件，要在组件销毁的的时候做一些事情，可以放在这个钩子里，组件内的离开当前路由钩子 beforeRouteLeave => 路由前置守卫 beforeEach =>全局后置钩子 afterEach => deactivated 离开缓存组件 => activated 进入缓存组件(如果你进入的也是缓存路由)
+
+1. activated 钩子：在在组件第一次渲染时会被调用，之后在每次缓存组件被激活时调用。
+2. Activated 钩子调用时机： 第一次进入缓存路由/组件，在 mounted 后面，beforeRouteEnter 守卫传给 next 的回调函数之前调用，并且给因为组件被缓存了，再次进入缓存路由、组件时，不会触发这些钩子函数，beforeCreate created ，beforeMount mounted 都不会触发
+- deactivated 钩子：组件被停用（离开路由）时调用。
+- deactivated 钩子调用时机：使用 keep-alive 就不会调用 beforeDestroy(组件销毁前钩子)和 destroyed(组件销毁)，因为组件没被销毁，被缓存起来了，这个钩子可以看作 beforeDestroy 的替代，如果你缓存了组件，要在组件销毁的的时候做一些事情，可以放在这个钩子里，组件内的离开当前路由钩子 
+
+beforeRouteLeave => 路由前置守卫 beforeEach =>全局后置钩子 
+
+afterEach => deactivated 离开缓存组件 => activated 进入缓存组件(如果你进入的也是缓存路由)
 
 
 

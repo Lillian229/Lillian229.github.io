@@ -11,8 +11,7 @@
 函数： 在计算机语言中，函数是拥有固定功能和逻辑的代码块。它只需要声明一次，然后就可以无限次执行。在面向对象（OOP，Object-Oriented-Programming）的语言也叫做方法。
 
 就是**封装了一段可被重复调用执行的代码块**。通过此代码块可以**实现大量代码的重复使用**。  
-<!-- ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/函数（描述详细）.png) -->
-![](../../pic/function(detail).png)
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/函数（描述详细）.png)
 
 ## 二、函数的使用
 标准函数语法：

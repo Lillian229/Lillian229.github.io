@@ -1,5 +1,6 @@
 # obsidian好文分享
 
+## origin: 少数派
 origin: 少数派 ———— 闲者时间_王掌柜
 
 [少数派主页](https://sspai.com/u/5b3wva6y/posts) 
@@ -18,3 +19,8 @@ origin: 少数派 ———— 闲者时间_王掌柜
 
 [玩转 Obsidian 07 ：自动化「间歇式日记」](https://sspai.com/post/69982)
 
+
+## obsidian自定义样式修改教程
+origin: 知乎 ———— 韦钧培
+
+[Obsidian自定义样式修改教程](https://zhuanlan.zhihu.com/p/373888121)

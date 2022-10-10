@@ -104,6 +104,7 @@ let sidebar = {
 
     '/frontEnd/06-ajax/': [
         '',
+        '01-ajax'
     ],
 
 
@@ -186,8 +187,10 @@ let sidebar = {
 
     '/frame/react/': [
         '',
-        'react_basic',
-        'JSX_basic'
+        '01-react_basic',
+        '02-JSX_basic',
+        '03-component',
+        '04-component-communication'
     ],
 
     '/frame/uniapp/': [
@@ -198,12 +201,20 @@ let sidebar = {
     ],
 
 
+    '/FEDeploy/': [
+        '',
+        'docker'
+    ],
+
 
     '/blog/': [
         '',
         'performance_optimization',
         'HTTP1.0 VS HTTP1.1 VS HTTP2.0',
-        'SEO'
+        'SEO',
+        'speedread',
+        'quicker'
+
         // 'performance'
     ],
 
@@ -245,7 +256,8 @@ let sidebar = {
         'git',
         'git-intro',
         'git-team',
-        'git-issue'
+        'git-issue',
+        'git-webstorm'
     ],
 
     '/tools/regexp/': [
@@ -256,6 +268,7 @@ let sidebar = {
 
     '/tools/Linux/': [
         '',
+        '01basic_command'
     ],
 
     '/tools/common-tools/': [

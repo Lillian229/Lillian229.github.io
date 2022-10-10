@@ -5,7 +5,7 @@
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220224231039.png)<br>
 可用软件参考：
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220224231107.png)
-使用方法：
+使用方法：[Quicker好用指南](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/files/Quicker%E5%A5%BD%E7%94%A8%E6%8C%87%E5%8D%97.pdf)
 
 ### 1.1.2.插件&脚本使用
 [脚本下载地址&使用方法（greasyfork）]( https://greasyfork.org/zh-CN)
@@ -80,8 +80,32 @@
 
 
 ## 1.4.工具使用
-### 1.4.1.Markdown写作
+### 1.4.1.写作——Markdown写作
 [Markdown是什么及其用法](../obsidian/markdown.md)
+
+### 1.4.2.文档图片处理——PicGo图床
+[图片处理picgo图床](../obsidian/FAQ.md#图片处理picgo图床)
+
+### 1.4.3.截屏工具——Snipaste
+
+### 1.4.4.截屏工具——Xnip
+可在App Store中下载
+
+![](https://hand-practice.oss-cn-chengdu.aliyuncs.com/images/20220812132253.png)
+
+### 1.4.5.分屏工具——Magnet
+支持多种模式的分屏
+
+![](https://hand-practice.oss-cn-chengdu.aliyuncs.com/images/20220812133145.png)
+
+### 1.4.6.刘海下图标查看——Bartender4
+[Bartender 4_方便的管理菜单栏图标](https://macwk.com/soft/bartender-4)
+
+使用拖拽完成图标管理
+
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220801202627.png)
+
+### 1.4.7.解压工具——The Unarchiver
 
 
 ## 1.5.阅读类

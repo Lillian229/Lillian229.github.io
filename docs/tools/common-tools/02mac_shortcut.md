@@ -1,6 +1,8 @@
 # 2.Mac 下一些常用操作和快捷键
 
 ## 2.1.Mac 软件安装
+[Mac软件下载网站](https://macwk.com/)
+
 
 ### 2.1.1.Homebrew
 
@@ -174,8 +176,18 @@ Mac 的终端就相当于 win 的 git bash
 此应用针对拥有刘海儿的 mac 进行开发.<br>
 使用此工具可以在鼠标经过缺口的时候补充内容,不遗漏重要信息.<br>
 只有鼠标经过缺口,才会补充内容,占用极低的系统资源.<br>
-应用：[刘海儿补全计划](https://macosgame.com/shownotchcontent/shownotchcontent)<br> 效果如下
+应用1：[刘海儿补全计划](https://macosgame.com/shownotchcontent/shownotchcontent)<br> 效果如下
 ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220223161901.png)
+
+应用2：[Bartender 4_方便的管理菜单栏图标](https://macwk.com/soft/bartender-4)
+
+使用拖拽完成图标管理
+
+![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220801202627.png)
+
+
+### 2.2.3.1.mac隐藏屏幕刘海
+[隐藏新款 MBP 屏幕刘海](https://macwk.com/soft/topnotch)
 
 ### 2.2.4.Mac 新建文件夹、txt 文件、其他格式文件
 
@@ -213,9 +225,21 @@ do
 done
 ```
 
+### 2.2.7.Mac多开微信
+1. 首先和常规一样，在「启动台」打开微信，然后登陆一个微信号。
+2. 打开「访达」，在左侧的「应用程序」中找到微信
+3. 右键「微信」，选择「显示包内容」
+4. 进入「Contents」、「MacOS」
+5. 「WeChat」点击右键`make Alias`
+6. 将文件拖到桌面，点击扫码即可登录另一个微信号
+
+- 注意：多开微信会有终端打开，`终端`窗口不可关闭，点击最小化即可
+
+
+
 ## 2.3.快捷键查看
 
-1. Mac 官方快捷键地址： https://support.apple.com/zh-cn/HT201236
+1. Mac [官方快捷键](https://support.apple.com/zh-cn/HT201236)地址： https://support.apple.com/zh-cn/HT201236
 
 2. 本机：系统偏好设置 -> 键盘 -> 快捷键
 
@@ -223,7 +247,7 @@ done
 4. by:yulilong: [Mac 快捷键](http://yu66.vip)
    ![](https://hcx-blog-images.oss-cn-chengdu.aliyuncs.com/images/20220223162208.png)
 
-## 个人常用快捷键
+## 2.4.个人常用快捷键
 
 ⇧ ⌘ ⌥ ⌃ ⇥ ↑ ← → ↓
 
@@ -295,3 +319,28 @@ Saladict：⌘ + 5 / 6
 ### 17.切换一款软件的不同窗口
 
 ⌘ + ～
+
+### 18.聚焦搜索
+⌘ + space
+
+### 19.上移/下移一行
+Control + P / Control + N
+
+### 20.显示/隐藏系统文件
+⇧+⌘+。
+
+## 2.5.Chrome常用快捷键
+### 1.切换Tab页
+1. ⌘  + ⌥ + ← / →
+2. Control + tab / Control  + Shift + Tab
+
+## 2.6. Mac自带应用-便签快捷键
+1. 新建：com + N 
+2. 添加链接： com + K
+3. 设置字体：com + T
+4. 快速折叠&打开纸条：com + M (最大化+shift)
+5. 切换颜色：com + 1-6 (可切换6种颜色)
+6. 字体加粗/倾斜/下划线：com + B / I /U
+7. 字体大小：com + +/-
+8. 字体颜色：com +shift + C
+9. 便签半透明：com + option + T

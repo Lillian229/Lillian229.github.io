@@ -532,6 +532,45 @@ Tip: 使用连字符和管道创建表可能很麻烦。为了加快该过程，
 4. pre 元素中允许的文本可以包括物理样式和基于内容的样式变化，还有链接、图像和水平分隔线。当把其他标签（比如 `<a>` 标签）放到 `<pre>` 块中时，就像放在 HTML/XHTML 文档的其他部分中一样即可。
 
 
+### 17.文字颜色_背景色_大小_样式
+#### 1. 全局更改
+如果是使用的Typora、obsidian这种MD工具，可直接在`.css`中更改类似于各级标题颜色、文件背景的颜色、字体大小等。
+
+origin：知乎_[Obsidian自定义样式修改教程](https://zhuanlan.zhihu.com/p/373888121)
+
+#### 2. 单个文件使用
+可使用一些HTML文件标签
+
+- 颜色
+```html
+<!-- 写法一：使用html标签 -->
+<font color="red">红色文字</font><br /> 
+<font color="#e3c0da">粉色文字</font><br /> 
+
+<!-- 写法二 -->
+<!-- 语法：$\color{颜色}{内容}$ -->
+<!-- 网页渲染未显示 -->
+$\color{#61d3ba}{薄荷绿}$
+$\color{blue}{蓝色}$
+```
+<font color="red">红色文字</font><br /> 
+<font color="#e3c0da">粉色文字</font><br /> 
+$\color{#61d3ba}{薄荷绿}$ <br /> 
+$\color{blue}{蓝色}$ <br /> 
+
+
+- 文字背景颜色
+```html
+<table><tr><td bgcolor=red>背景色为红色</td></tr></table>
+<table><tr><td bgcolor=#61d3ba>背景色为薄荷绿</td></tr></table>
+```
+<table><tr><td bgcolor=red>背景色为红色</td></tr></table>
+<table><tr><td bgcolor=#61d3ba>背景色为薄荷绿</td></tr></table>
+
+
+
+
+
 
 <!--
  * @Description: Markdown的使用
